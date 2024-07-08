@@ -9,8 +9,7 @@
     "build": "rollup -c rollup.config.mjs",
     "generate-icons": "node scripts/generateIcons.js",
     "ship-git": "npm run generate-icons && npm run build && git add . && git commit -m 'Build' && git push origin main && npm version patch && npm publish --access public",
-    "ship": "npm run generate-icons && npm run build && npm version patch && npm publish --access public",
-    "postinstall": "node install.js"
+    "ship": "npm run generate-icons && npm run build && npm version patch && npm publish --access public"
   },
   "keywords": [
     "react",
