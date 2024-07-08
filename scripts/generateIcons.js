@@ -37,7 +37,7 @@ const generateIconComponent = async (filePath, iconName, isStroke = true) => {
       .replace(/<svg /, `<svg viewBox="0 0 24 24" `)
       .replace(/stroke="[^"]*"/g, 'stroke={color ? color : "currentColor"}')
       .replace(/fill="[^"]*"/g, 'stroke={color ? color : "currentColor"}')
-      .replace(/stroke-width="[^"]*"/g, "") // Eliminar stroke-width existente
+      .replace(/stroke-width="[^"]*"/g, "")
       .replace(/<path/g, "<path strokeWidth={strokeWidth}") // Agregar strokeWidth personalizado
       .replace(/<circle/g, "<circle strokeWidth={strokeWidth}")
       .replace(/<rect/g, "<rect strokeWidth={strokeWidth}")
@@ -73,7 +73,7 @@ interface ${iconName}Props extends React.SVGProps<SVGSVGElement> {
   className?: string;
 }
 
-const ${iconName}: React.FC<${iconName}Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
+const ${iconName}: React.FC<${iconName}Props> = ({ size = 24, color, strokeWidth = 1.5, color1, color2, className, ...props }) => (
   ${cleanedJsxCode.replace(
     "<svg ",
     "<svg className={className} color={color} width={size} height={size} {...props} "
@@ -141,7 +141,7 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
 }
 
-const Ethereal: React.FC<IconProps> = ({ name, size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => {
+const Ethereal: React.FC<IconProps> = ({ name, size = 24, color, strokeWidth = 1.5, color1, color2, className, ...props }) => {
   const icons = { ${iconNames.join(", ")} };
   const IconComponent = icons[name];
   if (!IconComponent) {

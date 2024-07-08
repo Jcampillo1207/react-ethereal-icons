@@ -10,7 +10,7 @@ interface Badge4CentProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
 }
 
-const Badge4Cent: React.FC<Badge4CentProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
+const Badge4Cent: React.FC<Badge4CentProps> = ({ size = 24, color, strokeWidth = 1.5, color1, color2, className, ...props }) => (
   <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   stroke={color ? color : "currentColor"}><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 15.999a4.14 4.14 0 0 1-2.799-1.17 3.93 3.93 0 0 1 0-5.657A4.14 4.14 0 0 1 12 8.002m0 7.997a4.14 4.14 0 0 0 3-1.17m-3 1.17V8M12 16V17m0-8.999a4.14 4.14 0 0 1 3 1.17m-3-1.17V7M3 8v8l3.5 3.5L12 21l5.5-1.5L21 16V8l-3.5-3.5L12 3 6.5 4.5z"/></svg>
 );
 
