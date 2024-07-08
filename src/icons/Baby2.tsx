@@ -4,16 +4,15 @@ import React from 'react';
 /**
  * @component
  * @name Baby2
- * @description Componente de ícono SVG generado automáticamente para Baby2.
- * @preview https://your-preview-url.com/baby2
- * @param {object} props - Props del componente SVG, incluyendo cualquier atributo SVG válido.
- * @param {number} [props.size=24] - Tamaño del ícono.
- * @param {string} [props.color] - Color del ícono.
- * @param {number} [props.strokeWidth=1.5] - Ancho del trazo.
- * @param {string} [props.color1] - Primer color de relleno (para íconos con dos colores).
- * @param {string} [props.color2] - Segundo color de relleno (para íconos con dos colores).
- * @param {string} [props.className] - Clase CSS adicional para el ícono.
- * @returns {JSX.Element} Elemento JSX representando el ícono SVG.
+ * @description Automatically generated SVG icon component for Baby2.
+ * @param {object} props - SVG component props, including any valid SVG attribute.
+ * @param {number} [props.size=24] - Icon size.
+ * @param {string} [props.color] - Icon color.
+ * @param {number} [props.strokeWidth=1.5] - Stroke width.
+ * @param {string} [props.color1] - First fill color (for icons with two colors).
+ * @param {string} [props.color2] - Second fill color (for icons with two colors).
+ * @param {string} [props.className] - Additional CSS class for the icon.
+ * @returns {JSX.Element} JSX element representing the SVG icon.
  */
 
 interface Baby2Props extends React.SVGProps<SVGSVGElement> {
@@ -26,7 +25,7 @@ interface Baby2Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Baby2: React.FC<Baby2Props> = ({ size = 24, color, strokeWidth = 1.5, color1, color2, className, ...props }) => (
-  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth}  fill={color ? color : "currentColor"} d="M17 15h.75zm-1.358-3.575-.546-.514zm-7.284 0 .546-.514zM7.3 17.7l-.714.23zM10 7.25a.75.75 0 0 0 0 1.5zm.01 1.5a.75.75 0 0 0 0-1.5zM14 7.25a.75.75 0 0 0 0 1.5zm.01 1.5a.75.75 0 0 0 0-1.5zM7.75 8A4.25 4.25 0 0 1 12 3.75v-1.5A5.75 5.75 0 0 0 6.25 8zM12 3.75A4.25 4.25 0 0 1 16.25 8h1.5A5.75 5.75 0 0 0 12 2.25zM7.75 16v-1h-1.5v1zm8.5-1v1h1.5v-1zm.75 1h-.75v-.002.034l-.008.13a5 5 0 0 1-.06.496c-.07.42-.208.968-.478 1.507-.268.536-.658 1.049-1.23 1.43-.566.378-1.355.655-2.474.655v1.5c1.381 0 2.467-.348 3.307-.907.835-.557 1.382-1.294 1.739-2.008.355-.71.53-1.413.616-1.93a7 7 0 0 0 .088-.879v-.025zm-1.91-4.067c.562.612.858 1.371 1.01 2.009a6 6 0 0 1 .148.998l.002.052v.01V15L17 15h.75v-.04l-.003-.086a7.276 7.276 0 0 0-.187-1.282c-.187-.78-.57-1.808-1.365-2.674zM16.25 8c0 1.127-.438 2.15-1.154 2.912l1.093 1.027A5.73 5.73 0 0 0 17.75 8zm-1.154 2.912A4.24 4.24 0 0 1 12 12.25v1.5c1.651 0 3.14-.697 4.189-1.81zm-7.29.006c-.796.866-1.179 1.894-1.366 2.674a7.3 7.3 0 0 0-.187 1.282l-.003.112V15L7 15h.75v.002-.01q0-.015.002-.052.002-.073.016-.219a6 6 0 0 1 .131-.78c.153-.637.449-1.396 1.011-2.008zM12 12.25c-1.22 0-2.32-.514-3.096-1.338L7.81 11.939A5.74 5.74 0 0 0 12 13.75zm-3.096-1.338A4.23 4.23 0 0 1 7.75 8h-1.5c0 1.524.594 2.911 1.561 3.94zM12 20.25c-1.355 0-2.234-.407-2.822-.921-.602-.527-.957-1.216-1.164-1.859l-1.428.46c.26.806.734 1.767 1.605 2.528.884.774 2.122 1.292 3.809 1.292zm-3.986-2.78a5.8 5.8 0 0 1-.26-1.376l-.004-.079V16L7 16h-.75v.007a3 3 0 0 0 .006.168 7.288 7.288 0 0 0 .33 1.755zm3.456-5-4.7 4.7 1.06 1.06 4.7-4.7zM10 8.75h.01v-1.5H10zm4 0h.01v-1.5H14z"/></svg>
+  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth}  fill={color ? color : "currentColor"} d="M17 15h1zm-1.358-3.575-.728-.685zm-7.284 0 .728-.685zM7.3 17.7l-.952.306zM10 7a1 1 0 0 0 0 2zm.01 2a1 1 0 1 0 0-2zM14 7a1 1 0 1 0 0 2zm.01 2a1 1 0 1 0 0-2zM8 8a4 4 0 0 1 4-4V2a6 6 0 0 0-6 6zm4-4a4 4 0 0 1 4 4h2a6 6 0 0 0-6-6zM8 16v-1H6v1zm8-1v1h2v-1zm1 1h-1v-.004.027l-.007.12c-.008.11-.024.275-.058.474-.067.403-.2.925-.454 1.436-.254.506-.618.982-1.145 1.334-.521.347-1.261.613-2.336.613v2c1.425 0 2.56-.36 3.445-.95.88-.585 1.453-1.36 1.824-2.103.37-.74.55-1.467.64-2.001a7 7 0 0 0 .09-.916v-.018l.001-.007V16zm-2.094-3.898c.523.57.805 1.284.952 1.898a5.5 5.5 0 0 1 .14.951l.002.053V15L17 15h1v-.045l-.004-.092a7.525 7.525 0 0 0-.194-1.329c-.192-.804-.589-1.877-1.423-2.785zM16 8c0 1.06-.412 2.024-1.086 2.74l1.457 1.37A5.98 5.98 0 0 0 18 8zm-1.086 2.74A3.99 3.99 0 0 1 12 12v2a5.99 5.99 0 0 0 4.37-1.89zm-7.293.009c-.834.908-1.231 1.98-1.424 2.785a7.5 7.5 0 0 0-.193 1.329l-.004.12V15L7 15h1v.004l.002-.053q.002-.068.015-.206A5.5 5.5 0 0 1 8.142 14c.147-.614.429-1.328.952-1.898zM12 12a3.99 3.99 0 0 1-2.914-1.26l-1.457 1.37A5.99 5.99 0 0 0 12 14zm-2.914-1.26A3.98 3.98 0 0 1 8 8H6c0 1.59.62 3.038 1.63 4.11zm-.834 6.653a5.5 5.5 0 0 1-.249-1.313L8 15.996v.003L7 16H6v.061l.006.128a7.538 7.538 0 0 0 .342 1.817zM10 9h.01V7H10zm4 0h.01V7H14zm-2 11c-1.23 0-2.026-.348-2.561-.779L8.184 20.78C9.108 21.523 10.359 22 12 22zm-2.561-.779c-.616-.495-.977-1.177-1.187-1.828l-1.904.613c.284.88.819 1.953 1.836 2.773zm1.651-6.635-3.189 7 1.82.829 3.189-7z"/></svg>
 );
 
 export default Baby2;
