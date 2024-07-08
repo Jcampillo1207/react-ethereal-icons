@@ -69,7 +69,7 @@ export default ${iconName};
 
 const generateUniversalIconComponent = async (iconNames) => {
   const iconImports = iconNames
-    .map((iconName) => `import ${iconName} from './icons/${iconName}';`)
+    .map((iconName) => `import ${iconName} from './${iconName}';`)
     .join("\n");
   const iconType = iconNames.map((iconName) => `'${iconName}'`).join(" | ");
 

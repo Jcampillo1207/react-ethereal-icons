@@ -1,12 +1,12 @@
 
 import React from 'react';
-import Apple from './Apple';
-import Boost from './Boost';
-import Forge from './Forge';
-import Grow from './Grow';
-import Intello from './Intello';
-import Studio from './Studio';
-import User from './User';
+import Apple from './icons/Apple';
+import Boost from './icons/Boost';
+import Forge from './icons/Forge';
+import Grow from './icons/Grow';
+import Intello from './icons/Intello';
+import Studio from './icons/Studio';
+import User from './icons/User';
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
   name: 'Apple' | 'Boost' | 'Forge' | 'Grow' | 'Intello' | 'Studio' | 'User';
