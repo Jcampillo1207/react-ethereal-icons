@@ -4,6 +4,7 @@ import Accesibility1 from './Accesibility1';
 import Accesibility2 from './Accesibility2';
 import Accesibility3 from './Accesibility3';
 import Accesibility4 from './Accesibility4';
+import Audac from './Audac';
 import Baby1 from './Baby1';
 import Baby2 from './Baby2';
 import Baby3 from './Baby3';
@@ -53,6 +54,7 @@ import Badge4Percent from './Badge4Percent';
 import Badge4Plus from './Badge4Plus';
 import Badge4X from './Badge4X';
 import Boost from './Boost';
+import Colecto from './Colecto';
 import Contrast1 from './Contrast1';
 import Contrast2 from './Contrast2';
 import Contrast3 from './Contrast3';
@@ -67,7 +69,9 @@ import Eye4 from './Eye4';
 import Eye4Closed from './Eye4Closed';
 import Forge from './Forge';
 import Grow from './Grow';
+import Habitaloo from './Habitaloo';
 import Intello from './Intello';
+import Lojit from './Lojit';
 import Studio from './Studio';
 import User1 from './User1';
 import User1Check from './User1Check';
@@ -77,9 +81,10 @@ import User3 from './User3';
 import User3Check from './User3Check';
 import User4 from './User4';
 import User4Check from './User4Check';
+import Zetline from './Zetline';
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
-  name: 'Accesibility1' | 'Accesibility2' | 'Accesibility3' | 'Accesibility4' | 'Baby1' | 'Baby2' | 'Baby3' | 'Baby4' | 'Badge1' | 'Badge1Cent' | 'Badge1Check' | 'Badge1Dollarsign' | 'Badge1Euro' | 'Badge1Help' | 'Badge1Info' | 'Badge1Minus' | 'Badge1Percent' | 'Badge1Plus' | 'Badge1X' | 'Badge2' | 'Badge2Cent' | 'Badge2Check' | 'Badge2Dollarsign' | 'Badge2Euro' | 'Badge2Help' | 'Badge2Info' | 'Badge2Minus' | 'Badge2Percent' | 'Badge2Plus' | 'Badge2X' | 'Badge3' | 'Badge3Cent' | 'Badge3Check' | 'Badge3Dollarsign' | 'Badge3Euro' | 'Badge3Help' | 'Badge3Info' | 'Badge3Minus' | 'Badge3Percent' | 'Badge3Plus' | 'Badge3X' | 'Badge4' | 'Badge4Cent' | 'Badge4Check' | 'Badge4Dollarsign' | 'Badge4Euro' | 'Badge4Help' | 'Badge4Info' | 'Badge4Minus' | 'Badge4Percent' | 'Badge4Plus' | 'Badge4X' | 'Boost' | 'Contrast1' | 'Contrast2' | 'Contrast3' | 'Contrast4' | 'Eye1' | 'Eye1Closed' | 'Eye2' | 'Eye2Closed' | 'Eye3' | 'Eye3Closed' | 'Eye4' | 'Eye4Closed' | 'Forge' | 'Grow' | 'Intello' | 'Studio' | 'User1' | 'User1Check' | 'User2' | 'User2Check' | 'User3' | 'User3Check' | 'User4' | 'User4Check';
+  name: 'Accesibility1' | 'Accesibility2' | 'Accesibility3' | 'Accesibility4' | 'Audac' | 'Baby1' | 'Baby2' | 'Baby3' | 'Baby4' | 'Badge1' | 'Badge1Cent' | 'Badge1Check' | 'Badge1Dollarsign' | 'Badge1Euro' | 'Badge1Help' | 'Badge1Info' | 'Badge1Minus' | 'Badge1Percent' | 'Badge1Plus' | 'Badge1X' | 'Badge2' | 'Badge2Cent' | 'Badge2Check' | 'Badge2Dollarsign' | 'Badge2Euro' | 'Badge2Help' | 'Badge2Info' | 'Badge2Minus' | 'Badge2Percent' | 'Badge2Plus' | 'Badge2X' | 'Badge3' | 'Badge3Cent' | 'Badge3Check' | 'Badge3Dollarsign' | 'Badge3Euro' | 'Badge3Help' | 'Badge3Info' | 'Badge3Minus' | 'Badge3Percent' | 'Badge3Plus' | 'Badge3X' | 'Badge4' | 'Badge4Cent' | 'Badge4Check' | 'Badge4Dollarsign' | 'Badge4Euro' | 'Badge4Help' | 'Badge4Info' | 'Badge4Minus' | 'Badge4Percent' | 'Badge4Plus' | 'Badge4X' | 'Boost' | 'Colecto' | 'Contrast1' | 'Contrast2' | 'Contrast3' | 'Contrast4' | 'Eye1' | 'Eye1Closed' | 'Eye2' | 'Eye2Closed' | 'Eye3' | 'Eye3Closed' | 'Eye4' | 'Eye4Closed' | 'Forge' | 'Grow' | 'Habitaloo' | 'Intello' | 'Lojit' | 'Studio' | 'User1' | 'User1Check' | 'User2' | 'User2Check' | 'User3' | 'User3Check' | 'User4' | 'User4Check' | 'Zetline';
   size?: number;
   color?: string;
   strokeWidth?: number;
@@ -89,7 +94,7 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Ethereal: React.FC<IconProps> = ({ name, size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => {
-  const icons = { Accesibility1, Accesibility2, Accesibility3, Accesibility4, Baby1, Baby2, Baby3, Baby4, Badge1, Badge1Cent, Badge1Check, Badge1Dollarsign, Badge1Euro, Badge1Help, Badge1Info, Badge1Minus, Badge1Percent, Badge1Plus, Badge1X, Badge2, Badge2Cent, Badge2Check, Badge2Dollarsign, Badge2Euro, Badge2Help, Badge2Info, Badge2Minus, Badge2Percent, Badge2Plus, Badge2X, Badge3, Badge3Cent, Badge3Check, Badge3Dollarsign, Badge3Euro, Badge3Help, Badge3Info, Badge3Minus, Badge3Percent, Badge3Plus, Badge3X, Badge4, Badge4Cent, Badge4Check, Badge4Dollarsign, Badge4Euro, Badge4Help, Badge4Info, Badge4Minus, Badge4Percent, Badge4Plus, Badge4X, Boost, Contrast1, Contrast2, Contrast3, Contrast4, Eye1, Eye1Closed, Eye2, Eye2Closed, Eye3, Eye3Closed, Eye4, Eye4Closed, Forge, Grow, Intello, Studio, User1, User1Check, User2, User2Check, User3, User3Check, User4, User4Check };
+  const icons = { Accesibility1, Accesibility2, Accesibility3, Accesibility4, Audac, Baby1, Baby2, Baby3, Baby4, Badge1, Badge1Cent, Badge1Check, Badge1Dollarsign, Badge1Euro, Badge1Help, Badge1Info, Badge1Minus, Badge1Percent, Badge1Plus, Badge1X, Badge2, Badge2Cent, Badge2Check, Badge2Dollarsign, Badge2Euro, Badge2Help, Badge2Info, Badge2Minus, Badge2Percent, Badge2Plus, Badge2X, Badge3, Badge3Cent, Badge3Check, Badge3Dollarsign, Badge3Euro, Badge3Help, Badge3Info, Badge3Minus, Badge3Percent, Badge3Plus, Badge3X, Badge4, Badge4Cent, Badge4Check, Badge4Dollarsign, Badge4Euro, Badge4Help, Badge4Info, Badge4Minus, Badge4Percent, Badge4Plus, Badge4X, Boost, Colecto, Contrast1, Contrast2, Contrast3, Contrast4, Eye1, Eye1Closed, Eye2, Eye2Closed, Eye3, Eye3Closed, Eye4, Eye4Closed, Forge, Grow, Habitaloo, Intello, Lojit, Studio, User1, User1Check, User2, User2Check, User3, User3Check, User4, User4Check, Zetline };
   const IconComponent = icons[name];
   if (!IconComponent) {
     return null;
