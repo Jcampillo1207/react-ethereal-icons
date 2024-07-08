@@ -1,0 +1,37 @@
+const { execSync } = require("child_process");
+const inquirer = require("inquirer");
+const fs = require("fs");
+const path = require("path");
+
+// Read package.json to get the version
+const packageJsonPath = path.join(__dirname, "..", "package.json");
+const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf-8"));
+const version = packageJson.version;
+
+(async () => {
+  // Ask the user for the release name and description
+  const answers = await inquirer.prompt([
+    {
+      type: "input",
+      name: "releaseName",
+      message: "Enter the release name:",
+      default: `v${version}`,
+    },
+    {
+      type: "input",
+      name: "releaseDescription",
+      message: "Enter the release description:",
+    },
+  ]);
+
+  // Create a new release using the GitHub CLI
+  try {
+    execSync(
+      `gh release create ${answers.releaseName} --title "${answers.releaseName}" --notes "${answers.releaseDescription}" --target main`,
+      { stdio: "inherit" }
+    );
+    console.log("GitHub release created successfully.");
+  } catch (error) {
+    console.error("Error creating GitHub release:", error.message);
+  }
+})();
