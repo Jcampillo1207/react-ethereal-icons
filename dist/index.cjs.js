@@ -54,6 +54,20 @@ var Apple = function (_a) {
         React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M10 3C8 1 4 1 4 1s0 3 2 5 6 2 6 2 0-3-2-5", opacity: ".5" })));
 };
 
+var BadgeAlert = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', "fill-rule": "evenodd", d: "M3.022 5.86a4.2 4.2 0 0 0-.069 2.087 4.2 4.2 0 0 0 0 7.098 4.202 4.202 0 0 0 5.018 5.01 4.2 4.2 0 0 0 7.085 0A4.196 4.196 0 0 0 20 17.121c.197-.68.219-1.397.064-2.087a4.2 4.2 0 0 0 0-7.078 4.203 4.203 0 0 0-2.927-4.956c-.68-.197-1.4-.219-2.09-.063a4.2 4.2 0 0 0-7.075 0 4.197 4.197 0 0 0-4.95 2.921M11.5 6A1.5 1.5 0 0 0 10 7.5v4a1.5 1.5 0 0 0 3 0v-4A1.5 1.5 0 0 0 11.5 6m0 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3", "clip-rule": "evenodd" }),
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M15.744 17.646a1.6 1.6 0 0 1 1.912-1.908 1.6 1.6 0 0 1 2.695 0 1.6 1.6 0 0 1 1.911 1.912 1.6 1.6 0 0 1 0 2.697 1.6 1.6 0 0 1-1.907 1.912 1.6 1.6 0 0 1-2.7 0 1.598 1.598 0 0 1-1.91-1.908 1.6 1.6 0 0 1 0-2.705", opacity: ".5" })));
+};
+
+var Badge = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M2.953 7.947a4.202 4.202 0 0 1 5.018-5.01 4.2 4.2 0 0 1 7.075 0 4.197 4.197 0 0 1 5.017 5.02 4.2 4.2 0 0 1 0 7.078 4.2 4.2 0 0 1-5.007 5.02 4.2 4.2 0 0 1-7.085 0 4.198 4.198 0 0 1-5.018-5.01 4.2 4.2 0 0 1 0-7.098" }),
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M15.744 17.646a1.6 1.6 0 0 1 1.912-1.908 1.6 1.6 0 0 1 2.695 0 1.6 1.6 0 0 1 1.911 1.912 1.6 1.6 0 0 1 0 2.697 1.6 1.6 0 0 1-1.907 1.912 1.6 1.6 0 0 1-2.7 0 1.598 1.598 0 0 1-1.91-1.908 1.6 1.6 0 0 1 0-2.705", opacity: ".5" })));
+};
+
 var Boost = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
@@ -99,7 +113,7 @@ var User = function (_a) {
 
 var IconUniversal = function (_a) {
     var name = _a.name, _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["name", "size", "color1", "color2", "className"]);
-    var icons = { Apple: Apple, Boost: Boost, Forge: Forge, Grow: Grow, Intello: Intello, Studio: Studio, User: User };
+    var icons = { Apple: Apple, BadgeAlert: BadgeAlert, Badge: Badge, Boost: Boost, Forge: Forge, Grow: Grow, Intello: Intello, Studio: Studio, User: User };
     var IconComponent = icons[name];
     if (!IconComponent) {
         return null;
@@ -108,6 +122,8 @@ var IconUniversal = function (_a) {
 };
 
 exports.Apple = Apple;
+exports.Badge = Badge;
+exports.BadgeAlert = BadgeAlert;
 exports.Boost = Boost;
 exports.Forge = Forge;
 exports.Grow = Grow;

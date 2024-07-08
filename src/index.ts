@@ -1,4 +1,6 @@
 export { default as Apple } from './icons/Apple';
+export { default as BadgeAlert } from './icons/BadgeAlert';
+export { default as Badge } from './icons/Badge';
 export { default as Boost } from './icons/Boost';
 export { default as Forge } from './icons/Forge';
 export { default as Grow } from './icons/Grow';
