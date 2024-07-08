@@ -12,14 +12,26 @@ import BadgeMinus from './BadgeMinus';
 import BadgePlus from './BadgePlus';
 import BadgeX from './BadgeX';
 import Badge from './Badge';
+import Bag from './Bag';
 import Boost from './Boost';
+import Contrast from './Contrast';
+import CreditCard2 from './CreditCard2';
+import CreditCard from './CreditCard';
 import File2 from './File2';
 import File from './File';
 import Forge from './Forge';
 import Grow from './Grow';
+import Home from './Home';
 import Intello from './Intello';
 import Layers from './Layers';
+import Mail from './Mail';
 import MapPin from './MapPin';
+import MessageCircleDots from './MessageCircleDots';
+import MessageCircle from './MessageCircle';
+import MessageSquareDots from './MessageSquareDots';
+import MessageSquare from './MessageSquare';
+import MessagesCircle from './MessagesCircle';
+import MessagesSquare from './MessagesSquare';
 import PillHorizontal2 from './PillHorizontal2';
 import PillHorizontal from './PillHorizontal';
 import PillVertical2 from './PillVertical2';
@@ -36,7 +48,7 @@ import Tags from './Tags';
 import User from './User';
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
-  name: 'Apple' | 'Backpack' | 'BadgeAlert' | 'BadgeCheck' | 'BadgeDollarSign' | 'BadgeEuroSign' | 'BadgeHelp' | 'BadgeInfo' | 'BadgeMinus' | 'BadgePlus' | 'BadgeX' | 'Badge' | 'Boost' | 'File2' | 'File' | 'Forge' | 'Grow' | 'Intello' | 'Layers' | 'MapPin' | 'PillHorizontal2' | 'PillHorizontal' | 'PillVertical2' | 'PillVertical' | 'Pills2' | 'Pills' | 'Squares2' | 'Squares3' | 'Squares4' | 'Squares' | 'Studio' | 'Tag' | 'Tags' | 'User';
+  name: 'Apple' | 'Backpack' | 'BadgeAlert' | 'BadgeCheck' | 'BadgeDollarSign' | 'BadgeEuroSign' | 'BadgeHelp' | 'BadgeInfo' | 'BadgeMinus' | 'BadgePlus' | 'BadgeX' | 'Badge' | 'Bag' | 'Boost' | 'Contrast' | 'CreditCard2' | 'CreditCard' | 'File2' | 'File' | 'Forge' | 'Grow' | 'Home' | 'Intello' | 'Layers' | 'Mail' | 'MapPin' | 'MessageCircleDots' | 'MessageCircle' | 'MessageSquareDots' | 'MessageSquare' | 'MessagesCircle' | 'MessagesSquare' | 'PillHorizontal2' | 'PillHorizontal' | 'PillVertical2' | 'PillVertical' | 'Pills2' | 'Pills' | 'Squares2' | 'Squares3' | 'Squares4' | 'Squares' | 'Studio' | 'Tag' | 'Tags' | 'User';
   size?: number;
   color1?: string;
   color2?: string;
@@ -44,7 +56,7 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const IconUniversal: React.FC<IconProps> = ({ name, size = 24, color1, color2, className, ...props }) => {
-  const icons = { Apple, Backpack, BadgeAlert, BadgeCheck, BadgeDollarSign, BadgeEuroSign, BadgeHelp, BadgeInfo, BadgeMinus, BadgePlus, BadgeX, Badge, Boost, File2, File, Forge, Grow, Intello, Layers, MapPin, PillHorizontal2, PillHorizontal, PillVertical2, PillVertical, Pills2, Pills, Squares2, Squares3, Squares4, Squares, Studio, Tag, Tags, User };
+  const icons = { Apple, Backpack, BadgeAlert, BadgeCheck, BadgeDollarSign, BadgeEuroSign, BadgeHelp, BadgeInfo, BadgeMinus, BadgePlus, BadgeX, Badge, Bag, Boost, Contrast, CreditCard2, CreditCard, File2, File, Forge, Grow, Home, Intello, Layers, Mail, MapPin, MessageCircleDots, MessageCircle, MessageSquareDots, MessageSquare, MessagesCircle, MessagesSquare, PillHorizontal2, PillHorizontal, PillVertical2, PillVertical, Pills2, Pills, Squares2, Squares3, Squares4, Squares, Studio, Tag, Tags, User };
   const IconComponent = icons[name];
   if (!IconComponent) {
     return null;
