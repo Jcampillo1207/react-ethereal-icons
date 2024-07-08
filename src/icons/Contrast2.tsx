@@ -12,6 +12,10 @@ import React from 'react';
  * @param {string} [props.color1] - First fill color (for icons with two colors).
  * @param {string} [props.color2] - Second fill color (for icons with two colors).
  * @param {string} [props.className] - Additional CSS class for the icon.
+ * @author José Campillo - https://github.com/josecampillo
+ * @website ethereal.dev
+ * @twitter https://x.com/Chema12071
+ * @returns {JSX.Element} JSX element representing the SVG icon.
  */
 
 interface Contrast2Props extends React.SVGProps<SVGSVGElement> {
@@ -24,7 +28,7 @@ interface Contrast2Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Contrast2: React.FC<Contrast2Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M8 6.083a6 6 0 0 0 0 11.833m11.243-1.673a6 6 0 1 0-8.485-8.486 6 6 0 0 0 8.485 8.486"/></svg>
+  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M7.556 5.097A6.53 6.53 0 0 0 3.953 7.05c-2.604 2.734-2.604 7.166 0 9.9a6.53 6.53 0 0 0 3.603 1.953m12.491-1.953c2.604-2.734 2.604-7.166 0-9.9s-6.824-2.733-9.428 0c-2.603 2.734-2.603 7.166 0 9.9s6.825 2.733 9.428 0"/></svg>
 );
 
 export default Contrast2;

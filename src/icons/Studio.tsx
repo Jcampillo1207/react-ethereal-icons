@@ -12,6 +12,10 @@ import React from 'react';
  * @param {string} [props.color1] - First fill color (for icons with two colors).
  * @param {string} [props.color2] - Second fill color (for icons with two colors).
  * @param {string} [props.className] - Additional CSS class for the icon.
+ * @author José Campillo - https://github.com/josecampillo
+ * @website ethereal.dev
+ * @twitter https://x.com/Chema12071
+ * @returns {JSX.Element} JSX element representing the SVG icon.
  */
 
 interface StudioProps extends React.SVGProps<SVGSVGElement> {

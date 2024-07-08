@@ -12,6 +12,10 @@ import React from 'react';
  * @param {string} [props.color1] - First fill color (for icons with two colors).
  * @param {string} [props.color2] - Second fill color (for icons with two colors).
  * @param {string} [props.className] - Additional CSS class for the icon.
+ * @author José Campillo - https://github.com/josecampillo
+ * @website ethereal.dev
+ * @twitter https://x.com/Chema12071
+ * @returns {JSX.Element} JSX element representing the SVG icon.
  */
 
 interface Badge3XProps extends React.SVGProps<SVGSVGElement> {
@@ -24,7 +28,7 @@ interface Badge3XProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Badge3X: React.FC<Badge3XProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M9 9.172 11.828 12m0 0 2.829 2.828M11.828 12l2.829-2.828M11.828 12 9 14.828M21 12l-2.5-6.5L12 3 5.5 5.5 3 12l2.5 6.5L12 21l6.5-2.5z"/></svg>
+  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M8.667 8.857 11.809 12m0 0 3.143 3.143M11.81 12l3.143-3.143M11.81 12l-3.142 3.143M22 12l-2.778-7.222L12 2 4.778 4.778 2 12l2.778 7.222L12 22l7.222-2.778z"/></svg>
 );
 
 export default Badge3X;

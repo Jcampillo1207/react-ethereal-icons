@@ -12,6 +12,10 @@ import React from 'react';
  * @param {string} [props.color1] - First fill color (for icons with two colors).
  * @param {string} [props.color2] - Second fill color (for icons with two colors).
  * @param {string} [props.className] - Additional CSS class for the icon.
+ * @author José Campillo - https://github.com/josecampillo
+ * @website ethereal.dev
+ * @twitter https://x.com/Chema12071
+ * @returns {JSX.Element} JSX element representing the SVG icon.
  */
 
 interface Eye3ClosedProps extends React.SVGProps<SVGSVGElement> {
@@ -24,7 +28,7 @@ interface Eye3ClosedProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Eye3Closed: React.FC<Eye3ClosedProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M6 9.202C3.939 10.914 3 13 3 13s2.7 6 9 6c2.198 0 3.958-.73 5.318-1.682M6 9.202l-2-2m2 2a10 10 0 0 1 1.937-1.265M12 5v2c2.586 0 4.565 1.01 6 2.202m0 0C20.061 10.914 21 13 21 13s-.321.713-1 1.648m-2-5.446 2-2M4 4l3.937 3.937m2.501 2.501a3 3 0 1 0 4.124 4.124m-4.124-4.124 4.124 4.124m-4.124-4.124L7.937 7.937m6.625 6.625 2.756 2.756M20 20l-2.682-2.682"/></svg>
+  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M5.333 8.853C3.043 10.779 2 13.125 2 13.125s3 6.75 10 6.75c2.443 0 4.398-.822 5.91-1.892M5.332 8.853l-2.222-2.25m2.222 2.25a11 11 0 0 1 2.153-1.424M12 4.125v2.25c2.873 0 5.072 1.137 6.667 2.478m0 0C20.957 10.779 22 13.125 22 13.125s-.357.803-1.111 1.854m-2.222-6.126 2.222-2.25M3.11 3l4.375 4.43m2.779 2.813a3.38 3.38 0 0 0-1.598 2.882c0 1.864 1.492 3.375 3.333 3.375a3.32 3.32 0 0 0 2.847-1.618m-4.582-4.64 4.582 4.64m-4.582-4.64L7.485 7.43m7.362 7.453 3.062 3.101M20.89 21l-2.98-3.017"/></svg>
 );
 
 export default Eye3Closed;

@@ -12,6 +12,10 @@ import React from 'react';
  * @param {string} [props.color1] - First fill color (for icons with two colors).
  * @param {string} [props.color2] - Second fill color (for icons with two colors).
  * @param {string} [props.className] - Additional CSS class for the icon.
+ * @author José Campillo - https://github.com/josecampillo
+ * @website ethereal.dev
+ * @twitter https://x.com/Chema12071
+ * @returns {JSX.Element} JSX element representing the SVG icon.
  */
 
 interface Badge4EuroProps extends React.SVGProps<SVGSVGElement> {
@@ -24,7 +28,7 @@ interface Badge4EuroProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Badge4Euro: React.FC<Badge4EuroProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M16 14.828c-1.601 1.563-4.198 1.563-5.799 0A3.94 3.94 0 0 1 9 12m0 0c0-1.024.4-2.047 1.201-2.828 1.601-1.563 4.198-1.563 5.799 0M9 12H7m2 0h4M3 8v8l3.5 3.5L12 21l5.5-1.5L21 16V8l-3.5-3.5L12 3 6.5 4.5z"/></svg>
+  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M16.444 15.143c-1.779 1.735-4.664 1.735-6.443 0A4.38 4.38 0 0 1 8.667 12m0 0c0-1.137.444-2.275 1.334-3.143 1.78-1.735 4.664-1.735 6.443 0M8.667 12H6.444m2.223 0h4.444M2 7.556v8.888l3.889 3.89L12 22l6.111-1.667L22 16.444V7.556l-3.889-3.89L12 2 5.889 3.667z"/></svg>
 );
 
 export default Badge4Euro;

@@ -12,6 +12,10 @@ import React from 'react';
  * @param {string} [props.color1] - First fill color (for icons with two colors).
  * @param {string} [props.color2] - Second fill color (for icons with two colors).
  * @param {string} [props.className] - Additional CSS class for the icon.
+ * @author José Campillo - https://github.com/josecampillo
+ * @website ethereal.dev
+ * @twitter https://x.com/Chema12071
+ * @returns {JSX.Element} JSX element representing the SVG icon.
  */
 
 interface Eye2ClosedProps extends React.SVGProps<SVGSVGElement> {
@@ -24,7 +28,7 @@ interface Eye2ClosedProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Eye2Closed: React.FC<Eye2ClosedProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 7c6.3 0 9 6 9 6s-.404.898-1.265 2M3 8s.836-1.238 2.663-2.337M21 8s-2.7-4-9-4c-1.11 0-2.108.124-3 .329M4 4l1.663 1.663m4.775 4.775a3 3 0 1 0 4.124 4.124m-4.124-4.124 4.124 4.124m-4.124-4.124L7.937 7.937m6.625 6.625 2.756 2.756M20 20l-2.682-2.682M5.663 5.663l2.274 2.274m0 0C4.519 9.624 3 13 3 13s2.7 6 9 6c2.198 0 3.958-.73 5.318-1.682"/></svg>
+  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 6.375c7 0 10 6.75 10 6.75s-.45 1.01-1.406 2.25M2 7.5s.929-1.393 2.959-2.63M22 7.5S19 3 12 3c-1.233 0-2.343.14-3.333.37M3.11 3 4.96 4.87m5.306 5.373a3.38 3.38 0 0 0-1.598 2.882c0 1.864 1.492 3.375 3.333 3.375a3.32 3.32 0 0 0 2.847-1.618m-4.582-4.64 4.582 4.64m-4.582-4.64L7.485 7.43m7.362 7.453 3.062 3.101M20.89 21l-2.98-3.017M4.96 4.871l2.527 2.558m0 0C3.688 9.327 2 13.125 2 13.125s3 6.75 10 6.75c2.443 0 4.398-.822 5.91-1.892"/></svg>
 );
 
 export default Eye2Closed;

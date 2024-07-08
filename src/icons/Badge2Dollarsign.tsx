@@ -12,6 +12,10 @@ import React from 'react';
  * @param {string} [props.color1] - First fill color (for icons with two colors).
  * @param {string} [props.color2] - Second fill color (for icons with two colors).
  * @param {string} [props.className] - Additional CSS class for the icon.
+ * @author José Campillo - https://github.com/josecampillo
+ * @website ethereal.dev
+ * @twitter https://x.com/Chema12071
+ * @returns {JSX.Element} JSX element representing the SVG icon.
  */
 
 interface Badge2DollarsignProps extends React.SVGProps<SVGSVGElement> {
@@ -24,7 +28,7 @@ interface Badge2DollarsignProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Badge2Dollarsign: React.FC<Badge2DollarsignProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M15 8.667h-4.5c-.398 0-.78.175-1.06.488-.282.312-.44.736-.44 1.178s.158.866.44 1.179c.28.312.662.488 1.06.488h3c.398 0 .78.176 1.06.488.282.313.44.737.44 1.179s-.158.866-.44 1.178a1.43 1.43 0 0 1-1.06.488H9M12 17V7m0-4 4.05 1.45 4.05-.55-.55 4.05L21 12l-1.45 4.05.55 4.05-4.05-.55L12 21l-4.05-1.45-4.05.55.55-4.05L3 12l1.45-4.05L3.9 3.9l4.05.55z"/></svg>
+  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M15.333 8.296h-5c-.442 0-.866.195-1.178.543a1.96 1.96 0 0 0-.488 1.31c0 .49.175.961.488 1.309.312.347.736.542 1.178.542h3.334c.442 0 .866.195 1.178.542.313.348.488.819.488 1.31s-.175.962-.488 1.31a1.59 1.59 0 0 1-1.178.542h-5M12 17.556V6.444M12 2l4.5 1.611L21 3l-.611 4.5L22 12l-1.611 4.5L21 21l-4.5-.611L12 22l-4.5-1.611L3 21l.611-4.5L2 12l1.611-4.5L3 3l4.5.611z"/></svg>
 );
 
 export default Badge2Dollarsign;

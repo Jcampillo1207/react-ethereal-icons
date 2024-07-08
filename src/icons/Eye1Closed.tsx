@@ -12,6 +12,10 @@ import React from 'react';
  * @param {string} [props.color1] - First fill color (for icons with two colors).
  * @param {string} [props.color2] - Second fill color (for icons with two colors).
  * @param {string} [props.className] - Additional CSS class for the icon.
+ * @author José Campillo - https://github.com/josecampillo
+ * @website ethereal.dev
+ * @twitter https://x.com/Chema12071
+ * @returns {JSX.Element} JSX element representing the SVG icon.
  */
 
 interface Eye1ClosedProps extends React.SVGProps<SVGSVGElement> {
@@ -24,7 +28,7 @@ interface Eye1ClosedProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Eye1Closed: React.FC<Eye1ClosedProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m4 4 3.29 3.29m2.589 2.589a3 3 0 0 0 4.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-2.59-2.59m6.832 6.832 2.59 2.59M20 20l-3.29-3.29M7.29 7.29C4.325 9.051 3 12 3 12s2.7 6 9 6a9.1 9.1 0 0 0 4.71-1.29m2.929-2.589C20.566 12.965 21 12 21 12s-2.7-6-9-6q-.516 0-1 .052"/></svg>
+  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m3.111 3 3.655 3.7m2.877 2.914A3.39 3.39 0 0 0 8.667 12c0 1.864 1.492 3.375 3.333 3.375.92 0 1.754-.378 2.357-.989M9.643 9.615l4.714 4.772M9.643 9.615 6.766 6.7m7.591 7.687 2.877 2.913M20.89 21l-3.655-3.7M6.766 6.7C3.474 8.684 2 12 2 12s3 6.75 10 6.75a10 10 0 0 0 5.234-1.45m3.254-2.914C21.518 13.087 22 12 22 12s-3-6.75-10-6.75q-.573 0-1.111.058"/></svg>
 );
 
 export default Eye1Closed;

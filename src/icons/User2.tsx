@@ -12,6 +12,10 @@ import React from 'react';
  * @param {string} [props.color1] - First fill color (for icons with two colors).
  * @param {string} [props.color2] - Second fill color (for icons with two colors).
  * @param {string} [props.className] - Additional CSS class for the icon.
+ * @author José Campillo - https://github.com/josecampillo
+ * @website ethereal.dev
+ * @twitter https://x.com/Chema12071
+ * @returns {JSX.Element} JSX element representing the SVG icon.
  */
 
 interface User2Props extends React.SVGProps<SVGSVGElement> {
@@ -24,7 +28,7 @@ interface User2Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const User2: React.FC<User2Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke- d="M4 21s2-5 8-5 8 5 8 5m-4.464-9.464a5 5 0 1 0-7.071-7.072 5 5 0 0 0 7.07 7.072Z"/></svg>
+  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke- d="M3 22s2.25-5.556 9-5.556S21 22 21 22m-5.023-10.516a5.507 5.507 0 0 0 0-7.857c-2.196-2.17-5.758-2.17-7.954 0a5.507 5.507 0 0 0 0 7.857c2.196 2.17 5.758 2.17 7.954 0Z"/></svg>
 );
 
 export default User2;
