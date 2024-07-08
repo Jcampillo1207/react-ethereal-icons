@@ -243,29 +243,29 @@ var Pills = function (_a) {
 var Squares2 = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
-        React.createElement("rect", { x: "1", y: "8", fill: color1 ? color1 : '#735CFF', rx: "2" }),
-        React.createElement("rect", { x: "8", y: "1", fill: color2 ? color2 : '#61FFFF', opacity: ".5", rx: "2" })));
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M14 8H3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2" }),
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M21 1H10a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2", opacity: ".5" })));
 };
 
 var Squares3 = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
-        React.createElement("rect", { x: "8", y: "8", fill: color1 ? color1 : '#735CFF', rx: "2" }),
-        React.createElement("rect", { x: "1", y: "1", fill: color2 ? color2 : '#61FFFF', opacity: ".5", rx: "2" })));
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M21 8H10a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2" }),
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M14 1H3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2", opacity: ".5" })));
 };
 
 var Squares4 = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
-        React.createElement("rect", { x: "8", y: "1", fill: color1 ? color1 : '#735CFF', rx: "2" }),
-        React.createElement("rect", { x: "1", y: "8", fill: color2 ? color2 : '#61FFFF', opacity: ".5", rx: "2" })));
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M21 1H10a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2" }),
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M14 8H3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2", opacity: ".5" })));
 };
 
 var Squares = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
-        React.createElement("rect", { x: "1", y: "1", fill: color1 ? color1 : '#735CFF', rx: "2" }),
-        React.createElement("rect", { x: "8", y: "8", fill: color2 ? color2 : '#61FFFF', opacity: ".5", rx: "2" })));
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M14 1H3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2" }),
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M21 8H10a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2", opacity: ".5" })));
 };
 
 var Studio = function (_a) {
