@@ -1,6 +1,6 @@
 import React from 'react';
 interface IconProps extends React.SVGProps<SVGSVGElement> {
-    name: 'Apple' | 'BadgeAlert' | 'Badge' | 'Boost' | 'Forge' | 'Grow' | 'Intello' | 'Studio' | 'User';
+    name: 'Apple' | 'Backpack' | 'BadgeAlert' | 'BadgeCheck' | 'BadgeDollarSign' | 'BadgeEuroSign' | 'BadgeHelp' | 'BadgeInfo' | 'BadgeMinus' | 'BadgePlus' | 'BadgeX' | 'Badge' | 'Boost' | 'Forge' | 'Grow' | 'Intello' | 'Studio' | 'Tag' | 'Tags' | 'User';
     size?: number;
     color1?: string;
     color2?: string;

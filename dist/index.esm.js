@@ -52,10 +52,74 @@ var Apple = function (_a) {
         React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M10 3C8 1 4 1 4 1s0 3 2 5 6 2 6 2 0-3-2-5", opacity: ".5" })));
 };
 
+var Backpack = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1; _a.color2; var className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M3 9.5A4.5 4.5 0 0 1 7.5 5h9A4.5 4.5 0 0 1 21 9.5v11.25A2.25 2.25 0 0 1 18.75 23H5.25A2.25 2.25 0 0 1 3 20.75z" }),
+        React.createElement("path", { stroke: "#61FFFF", "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-": true, d: "M8 10h8M8 22v-5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v5m-8 0h8m-8 0v-3h8v3M9 5V3.5c0-.398.21-.78.586-1.06C9.96 2.157 10.47 2 11 2h2c.53 0 1.04.158 1.414.44.375.28.586.662.586 1.06V5", opacity: ".5" })));
+};
+
 var BadgeAlert = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
         React.createElement("path", { fill: color1 ? color1 : '#735CFF', "fill-rule": "evenodd", d: "M3.022 5.86a4.2 4.2 0 0 0-.069 2.087 4.2 4.2 0 0 0 0 7.098 4.202 4.202 0 0 0 5.018 5.01 4.2 4.2 0 0 0 7.085 0A4.196 4.196 0 0 0 20 17.121c.197-.68.219-1.397.064-2.087a4.2 4.2 0 0 0 0-7.078 4.203 4.203 0 0 0-2.927-4.956c-.68-.197-1.4-.219-2.09-.063a4.2 4.2 0 0 0-7.075 0 4.197 4.197 0 0 0-4.95 2.921M11.5 6A1.5 1.5 0 0 0 10 7.5v4a1.5 1.5 0 0 0 3 0v-4A1.5 1.5 0 0 0 11.5 6m0 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3", "clip-rule": "evenodd" }),
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M15.744 17.646a1.6 1.6 0 0 1 1.912-1.908 1.6 1.6 0 0 1 2.695 0 1.6 1.6 0 0 1 1.911 1.912 1.6 1.6 0 0 1 0 2.697 1.6 1.6 0 0 1-1.907 1.912 1.6 1.6 0 0 1-2.7 0 1.598 1.598 0 0 1-1.91-1.908 1.6 1.6 0 0 1 0-2.705", opacity: ".5" })));
+};
+
+var BadgeCheck = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', "fill-rule": "evenodd", d: "M2.953 7.947a4.202 4.202 0 0 1 5.018-5.01 4.2 4.2 0 0 1 7.075 0 4.197 4.197 0 0 1 5.017 5.02 4.2 4.2 0 0 1 0 7.078 4.2 4.2 0 0 1-5.007 5.02 4.2 4.2 0 0 1-7.085 0 4.198 4.198 0 0 1-5.018-5.01 4.2 4.2 0 0 1 0-7.098m12.754 2.76a1 1 0 0 0-1.414-1.414L11 12.586l-1.293-1.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0z", "clip-rule": "evenodd" }),
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M15.744 17.646a1.6 1.6 0 0 1 1.912-1.908 1.6 1.6 0 0 1 2.695 0 1.6 1.6 0 0 1 1.911 1.912 1.6 1.6 0 0 1 0 2.697 1.6 1.6 0 0 1-1.907 1.912 1.6 1.6 0 0 1-2.7 0 1.598 1.598 0 0 1-1.91-1.908 1.6 1.6 0 0 1 0-2.705", opacity: ".5" })));
+};
+
+var BadgeDollarSign = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M9.75 9.25h1v1.5h-1c-.3 0-.568-.103-.75-.259-.178-.152-.25-.333-.25-.491s.072-.338.25-.491a1.16 1.16 0 0 1 .75-.259M12.25 13.75v-1.5h1c.3 0 .568.103.75.259.178.152.25.333.25.491s-.072.338-.25.491a1.16 1.16 0 0 1-.75.259z" }),
+        React.createElement("path", { fill: color2 ? color2 : '#735CFF', "fill-rule": "evenodd", d: "M3.022 5.86a4.2 4.2 0 0 0-.069 2.087 4.2 4.2 0 0 0 0 7.098 4.202 4.202 0 0 0 5.018 5.01 4.2 4.2 0 0 0 7.085 0A4.196 4.196 0 0 0 20 17.121c.197-.68.219-1.397.064-2.087a4.2 4.2 0 0 0 0-7.078 4.203 4.203 0 0 0-2.927-4.956c-.68-.197-1.4-.219-2.09-.063a4.2 4.2 0 0 0-7.075 0 4.197 4.197 0 0 0-4.95 2.921M12.25 7a.75.75 0 0 0-1.5 0v.75h-1c-.629 0-1.25.213-1.726.62-.478.41-.774.993-.774 1.63s.296 1.22.774 1.63c.475.407 1.097.62 1.726.62h1v1.5H8a.75.75 0 0 0 0 1.5h2.75V16a.75.75 0 0 0 1.5 0v-.75h1c.629 0 1.25-.213 1.726-.62.478-.41.774-.993.774-1.63s-.296-1.22-.774-1.63a2.66 2.66 0 0 0-1.726-.62h-1v-1.5H15a.75.75 0 0 0 0-1.5h-2.75z", "clip-rule": "evenodd" }),
+        React.createElement("path", { fill: color1 ? color1 : '#61FFFF', d: "M15.744 17.646a1.6 1.6 0 0 1 1.912-1.908 1.6 1.6 0 0 1 2.695 0 1.6 1.6 0 0 1 1.911 1.912 1.6 1.6 0 0 1 0 2.697 1.6 1.6 0 0 1-1.907 1.912 1.6 1.6 0 0 1-2.7 0 1.598 1.598 0 0 1-1.91-1.908 1.6 1.6 0 0 1 0-2.705", opacity: ".5" })));
+};
+
+var BadgeEuroSign = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', "fill-rule": "evenodd", d: "M3.022 5.86a4.2 4.2 0 0 0-.069 2.087 4.2 4.2 0 0 0 0 7.098 4.202 4.202 0 0 0 5.018 5.01 4.2 4.2 0 0 0 7.085 0A4.196 4.196 0 0 0 20 17.121c.197-.68.219-1.397.064-2.087a4.2 4.2 0 0 0 0-7.078 4.203 4.203 0 0 0-2.927-4.956c-.68-.197-1.4-.219-2.09-.063a4.2 4.2 0 0 0-7.075 0 4.197 4.197 0 0 0-4.95 2.921M13.22 7.16A5 5 0 0 0 7.061 11H7a1 1 0 1 0 0 2h.061a5 5 0 0 0 8.699 2.25 1 1 0 1 0-1.52-1.3A3 3 0 0 1 9.132 13H12a1 1 0 1 0 0-2H9.132a3 3 0 0 1 3.584-1.903 3 3 0 0 1 1.524.953 1 1 0 1 0 1.52-1.3 5 5 0 0 0-2.54-1.589", "clip-rule": "evenodd" }),
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M15.744 17.646a1.6 1.6 0 0 1 1.912-1.908 1.6 1.6 0 0 1 2.695 0 1.6 1.6 0 0 1 1.911 1.912 1.6 1.6 0 0 1 0 2.697 1.6 1.6 0 0 1-1.907 1.912 1.6 1.6 0 0 1-2.7 0 1.598 1.598 0 0 1-1.91-1.908 1.6 1.6 0 0 1 0-2.705", opacity: ".5" })));
+};
+
+var BadgeHelp = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', "fill-rule": "evenodd", d: "M2.953 7.947a4.202 4.202 0 0 1 5.018-5.01 4.2 4.2 0 0 1 7.075 0 4.197 4.197 0 0 1 5.017 5.02 4.2 4.2 0 0 1 0 7.078 4.2 4.2 0 0 1-5.007 5.02 4.2 4.2 0 0 1-7.085 0 4.198 4.198 0 0 1-5.018-5.01 4.2 4.2 0 0 1 0-7.098M9.995 16a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1m-.158-7.722c.429-.24.938-.33 1.436-.249s.94.327 1.252.68c.311.354.476.792.475 1.238v.002c0 .427-.356.903-1.08 1.364a6.4 6.4 0 0 1-1.294.621l-.017.006h-.001a1 1 0 0 0 .607 1.906h.002l.001-.001.004-.001.011-.004.035-.012q.045-.014.119-.041A8.37 8.37 0 0 0 12.993 13c.819-.521 2.006-1.517 2.007-3.05a3.86 3.86 0 0 0-.976-2.565 4.13 4.13 0 0 0-2.428-1.33 4.2 4.2 0 0 0-2.737.478A3.98 3.98 0 0 0 7.062 8.62a1 1 0 0 0 1.876.692 1.98 1.98 0 0 1 .899-1.035", "clip-rule": "evenodd" }),
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M15.744 17.646a1.6 1.6 0 0 1 1.912-1.908 1.6 1.6 0 0 1 2.695 0 1.6 1.6 0 0 1 1.911 1.912 1.6 1.6 0 0 1 0 2.697 1.6 1.6 0 0 1-1.907 1.912 1.6 1.6 0 0 1-2.7 0 1.598 1.598 0 0 1-1.91-1.908 1.6 1.6 0 0 1 0-2.705", opacity: ".5" })));
+};
+
+var BadgeInfo = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', "fill-rule": "evenodd", d: "M19.978 17.14a4.2 4.2 0 0 0 .069-2.087 4.2 4.2 0 0 0 0-7.098 4.202 4.202 0 0 0-5.018-5.01 4.2 4.2 0 0 0-5.563-1.427 4.2 4.2 0 0 0-1.522 1.428 4.197 4.197 0 0 0-5.007 5.02 4.2 4.2 0 0 0 0 7.077 4.202 4.202 0 0 0 5.017 5.02 4.2 4.2 0 0 0 7.075 0 4.2 4.2 0 0 0 4.95-2.922M11.5 17a1.5 1.5 0 0 0 1.5-1.5v-4a1.5 1.5 0 0 0-3 0v4a1.5 1.5 0 0 0 1.5 1.5m0-11a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3", "clip-rule": "evenodd" }),
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M15.744 17.646a1.6 1.6 0 0 1 1.912-1.908 1.6 1.6 0 0 1 2.695 0 1.6 1.6 0 0 1 1.911 1.912 1.6 1.6 0 0 1 0 2.697 1.6 1.6 0 0 1-1.907 1.912 1.6 1.6 0 0 1-2.7 0 1.598 1.598 0 0 1-1.91-1.908 1.6 1.6 0 0 1 0-2.705", opacity: ".5" })));
+};
+
+var BadgeMinus = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', "fill-rule": "evenodd", d: "M3.022 5.86a4.2 4.2 0 0 0-.069 2.087 4.2 4.2 0 0 0 0 7.098 4.202 4.202 0 0 0 5.018 5.01 4.2 4.2 0 0 0 7.085 0A4.196 4.196 0 0 0 20 17.121c.197-.68.219-1.397.064-2.087a4.2 4.2 0 0 0 0-7.078 4.203 4.203 0 0 0-2.927-4.956c-.68-.197-1.4-.219-2.09-.063a4.2 4.2 0 0 0-7.075 0 4.197 4.197 0 0 0-4.95 2.921M8.5 13a1.5 1.5 0 0 1 0-3h6a1.5 1.5 0 0 1 0 3z", "clip-rule": "evenodd" }),
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M15.744 17.646a1.6 1.6 0 0 1 1.912-1.908 1.6 1.6 0 0 1 2.695 0 1.6 1.6 0 0 1 1.911 1.912 1.6 1.6 0 0 1 0 2.697 1.6 1.6 0 0 1-1.907 1.912 1.6 1.6 0 0 1-2.7 0 1.598 1.598 0 0 1-1.91-1.908 1.6 1.6 0 0 1 0-2.705", opacity: ".5" })));
+};
+
+var BadgePlus = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', "fill-rule": "evenodd", d: "M3.022 5.86a4.2 4.2 0 0 0-.069 2.087 4.2 4.2 0 0 0 0 7.098 4.202 4.202 0 0 0 5.018 5.01 4.2 4.2 0 0 0 7.085 0A4.196 4.196 0 0 0 20 17.121c.197-.68.219-1.397.064-2.087a4.2 4.2 0 0 0 0-7.078 4.203 4.203 0 0 0-2.927-4.956c-.68-.197-1.4-.219-2.09-.063a4.2 4.2 0 0 0-7.075 0 4.197 4.197 0 0 0-4.95 2.921M11.5 5A1.5 1.5 0 0 0 10 6.5V10H6.5a1.5 1.5 0 0 0 0 3H10v3.5a1.5 1.5 0 0 0 3 0V13h3.5a1.5 1.5 0 0 0 0-3H13V6.5A1.5 1.5 0 0 0 11.5 5", "clip-rule": "evenodd" }),
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M15.744 17.646a1.6 1.6 0 0 1 1.912-1.908 1.6 1.6 0 0 1 2.695 0 1.6 1.6 0 0 1 1.911 1.912 1.6 1.6 0 0 1 0 2.697 1.6 1.6 0 0 1-1.907 1.912 1.6 1.6 0 0 1-2.7 0 1.598 1.598 0 0 1-1.91-1.908 1.6 1.6 0 0 1 0-2.705", opacity: ".5" })));
+};
+
+var BadgeX = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', "fill-rule": "evenodd", d: "M3.022 5.86a4.2 4.2 0 0 0-.069 2.087 4.2 4.2 0 0 0 0 7.098 4.202 4.202 0 0 0 5.018 5.01 4.2 4.2 0 0 0 7.085 0A4.196 4.196 0 0 0 20 17.121c.197-.68.219-1.397.064-2.087a4.2 4.2 0 0 0 0-7.078 4.203 4.203 0 0 0-2.927-4.956c-.68-.197-1.4-.219-2.09-.063a4.2 4.2 0 0 0-7.075 0 4.197 4.197 0 0 0-4.95 2.921m13.074 1.044a1.5 1.5 0 0 0-2.121 0L11.5 9.379 9.025 6.904a1.5 1.5 0 0 0-2.121 2.121L9.379 11.5l-2.475 2.475a1.5 1.5 0 1 0 2.121 2.121l2.475-2.475 2.475 2.475a1.5 1.5 0 1 0 2.121-2.121L13.621 11.5l2.475-2.475a1.5 1.5 0 0 0 0-2.121", "clip-rule": "evenodd" }),
         React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M15.744 17.646a1.6 1.6 0 0 1 1.912-1.908 1.6 1.6 0 0 1 2.695 0 1.6 1.6 0 0 1 1.911 1.912 1.6 1.6 0 0 1 0 2.697 1.6 1.6 0 0 1-1.907 1.912 1.6 1.6 0 0 1-2.7 0 1.598 1.598 0 0 1-1.91-1.908 1.6 1.6 0 0 1 0-2.705", opacity: ".5" })));
 };
 
@@ -102,16 +166,30 @@ var Studio = function (_a) {
         React.createElement("path", { fill: color2 ? color2 : '#2CD7A4', "fill-rule": "evenodd", d: "M4.633 15.764c-1.303 2.307-.53 5.257 1.727 6.589 2.256 1.332 5.141.541 6.444-1.766l8.074-14.3a.94.94 0 0 0-.332-1.267l-6.6-3.896a.896.896 0 0 0-1.239.34zm3.087 4.179a1.793 1.793 0 0 0 2.479-.68c.501-.887.204-2.021-.664-2.533a1.793 1.793 0 0 0-2.479.678c-.5.888-.203 2.023.664 2.535", "clip-rule": "evenodd", opacity: ".5" })));
 };
 
+var Tag = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1; _a.color2; var className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', "fill-rule": "evenodd", d: "M10.673 2.67A2.29 2.29 0 0 0 9.056 2H3.143A1.143 1.143 0 0 0 2 3.143v5.913c0 .607.241 1.188.67 1.617l6.521 6.52a2.774 2.774 0 0 0 3.91 0l4.093-4.092a2.774 2.774 0 0 0 0-3.91zM8 6.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0", "clip-rule": "evenodd" }),
+        React.createElement("path", { stroke: "#61FFFF", "stroke-linecap": "round", "stroke-": true, d: "M17.5 14.5c1.907 1.126 2.252 1.619 3.5 3.5m1 4-1.315-.564A12.47 12.47 0 0 1 13.5 13", opacity: ".5" })));
+};
+
+var Tags = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', "fill-rule": "evenodd", d: "M9.673 4.67A2.29 2.29 0 0 0 8.056 4H2.143A1.143 1.143 0 0 0 1 5.143v5.913c0 .607.241 1.188.67 1.617l6.521 6.52a2.774 2.774 0 0 0 3.91 0l4.093-4.092a2.774 2.774 0 0 0 0-3.91zM7 8.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0", "clip-rule": "evenodd" }),
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', "fill-rule": "evenodd", d: "M16.589 7.586A2 2 0 0 0 15.174 7H10a1 1 0 0 0-1 1v5.174a2 2 0 0 0 .586 1.415l5.706 5.706a2.427 2.427 0 0 0 3.421 0l3.582-3.582a2.427 2.427 0 0 0 0-3.42zm-2.339 3.351a1.312 1.312 0 1 1-2.625 0 1.312 1.312 0 0 1 2.625 0", "clip-rule": "evenodd", opacity: ".5" })));
+};
+
 var User = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
-        React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M12 10c-7.71 0-9.475 7.132-9.88 10.4-.06.493-.091.74.01.983.079.19.25.385.43.486.23.131.503.131 1.05.131h16.78c.547 0 .82 0 1.05-.13.18-.102.351-.297.43-.487.101-.244.07-.49.01-.983C21.475 17.132 19.71 10 12 10" }),
-        React.createElement("circle", { cx: "12", cy: "8", r: "6", fill: color2 ? color2 : '#61FFFF', opacity: ".5" })));
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M12 10C3.415 10 1.53 17.919 1.116 21.395c-.059.5-.089.748.013.991.08.19.25.383.43.484.229.13.503.13 1.051.13h18.78c.548 0 .822 0 1.051-.13.18-.101.35-.294.43-.484.102-.243.072-.492.013-.99C22.47 17.918 20.585 10 12 10" }),
+        React.createElement("ellipse", { cx: "12", cy: "7.5", fill: color2 ? color2 : '#61FFFF', opacity: ".5", rx: "7", ry: "6.5" })));
 };
 
 var IconUniversal = function (_a) {
     var name = _a.name, _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["name", "size", "color1", "color2", "className"]);
-    var icons = { Apple: Apple, BadgeAlert: BadgeAlert, Badge: Badge, Boost: Boost, Forge: Forge, Grow: Grow, Intello: Intello, Studio: Studio, User: User };
+    var icons = { Apple: Apple, Backpack: Backpack, BadgeAlert: BadgeAlert, BadgeCheck: BadgeCheck, BadgeDollarSign: BadgeDollarSign, BadgeEuroSign: BadgeEuroSign, BadgeHelp: BadgeHelp, BadgeInfo: BadgeInfo, BadgeMinus: BadgeMinus, BadgePlus: BadgePlus, BadgeX: BadgeX, Badge: Badge, Boost: Boost, Forge: Forge, Grow: Grow, Intello: Intello, Studio: Studio, Tag: Tag, Tags: Tags, User: User };
     var IconComponent = icons[name];
     if (!IconComponent) {
         return null;
@@ -119,5 +197,5 @@ var IconUniversal = function (_a) {
     return React.createElement(IconComponent, __assign({ width: size, height: size, color1: color1, color2: color2, className: className }, props));
 };
 
-export { Apple, Badge, BadgeAlert, Boost, Forge, Grow, IconUniversal, Intello, Studio, User };
+export { Apple, Backpack, Badge, BadgeAlert, BadgeCheck, BadgeDollarSign, BadgeEuroSign, BadgeHelp, BadgeInfo, BadgeMinus, BadgePlus, BadgeX, Boost, Forge, Grow, IconUniversal, Intello, Studio, Tag, Tags, User };
 //# sourceMappingURL=index.esm.js.map
