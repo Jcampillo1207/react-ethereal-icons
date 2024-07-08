@@ -11,6 +11,8 @@ const isInteractive = () => {
 };
 
 if (isInteractive()) {
+  console.log("Interactive environment detected.");
+
   inquirer
     .prompt([
       {
