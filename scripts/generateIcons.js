@@ -38,8 +38,8 @@ const generateIconComponent = async (filePath, iconName, isStroke = true) => {
       .replace(/stroke="[^"]*"/g, 'stroke={color ? color : "currentColor"}')
       .replace(
         /(<(path|circle|rect|polygon|line|polyline|ellipse)[^>]*?)fill="[^"]*"/g,
-        "$1"
-      ) // Eliminar fill existente solo de elementos internos
+        '$1 stroke={color ? color : "currentColor"}'
+      ) // Reemplazar fill existente solo de elementos internos con stroke
       .replace(/stroke-width="[^"]*"/g, "") // Eliminar stroke-width existente
       .replace(/<path/g, "<path strokeWidth={strokeWidth}") // Agregar strokeWidth personalizado
       .replace(/<circle/g, "<circle strokeWidth={strokeWidth}")
