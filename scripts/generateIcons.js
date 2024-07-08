@@ -1,28 +1,140 @@
-const { exec } = require("child_process");
+const fs = require("fs-extra");
+const path = require("path");
+const { transform } = require("@svgr/core");
+const { optimize } = require("svgo");
 
-const runScript = (script) => {
-  return new Promise((resolve, reject) => {
-    exec(`node scripts/${script}`, (error, stdout, stderr) => {
-      if (error) {
-        console.error(`Error executing ${script}:`, error);
-        reject(error);
-        return;
+const svgDir = path.join(__dirname, "../svg");
+const iconsDir = path.join(__dirname, "../src/icons");
+const indexFile = path.join(__dirname, "../src/index.ts");
+
+const generateIconComponent = async (filePath, iconName) => {
+  let svgCode = await fs.readFile(filePath, "utf-8");
+
+  // Optimizar el SVG
+  const optimizedSvg = optimize(svgCode, { path: filePath });
+  svgCode = optimizedSvg.data;
+
+  // Transformar el SVG optimizado en un componente React
+  const jsxCode = await transform(
+    svgCode,
+    {
+      icon: true,
+      typescript: true,
+      expandProps: "end",
+      prettier: false,
+      svgo: false, // No usar SVGO de SVGR, ya optimizamos manualmente
+    },
+    { componentName: iconName }
+  );
+
+  // Mantener el viewBox y permitir la personalización de color
+  let fillCounter = 0;
+  const cleanedJsxCode = jsxCode
+    .replace(/width=".*?"/g, "")
+    .replace(/height=".*?"/g, "")
+    .replace(/<svg /, `<svg viewBox="0 0 24 24" `)
+    .replace(
+      /<(path|circle|rect|polygon|line|polyline|ellipse)([^>]*) stroke="([^"]*)"/g,
+      (match, p1, p2, p3) => {
+        const colorProp = `color${(fillCounter++ % 2) + 1}`;
+        return `<${p1}${p2} stroke={${colorProp} ? ${colorProp} : 'currentColor'}`;
       }
-      console.log(`Output of ${script}:\n`, stdout);
-      resolve();
-    });
-  });
+    );
+
+  // Añadir props TypeScript para el componente
+  const tsxCode = `
+import React from 'react';
+
+interface ${iconName}Props extends React.SVGProps<SVGSVGElement> {
+  size?: number;
+  color1?: string;
+  color2?: string;
+  className?: string;
+}
+
+const ${iconName}: React.FC<${iconName}Props> = ({ size = 24, color1, color2, className, ...props }) => (
+  ${cleanedJsxCode.replace(
+    "<svg ",
+    "<svg className={className} width={size} height={size} {...props} "
+  )}
+);
+
+export default ${iconName};
+  `;
+
+  // Escribir el componente en el archivo correspondiente
+  const componentPath = path.join(iconsDir, `${iconName}.tsx`);
+  await fs.outputFile(componentPath, tsxCode);
 };
 
-const generateAllIcons = async () => {
-  try {
-    await runScript("generateIconsEthereal.js");
-    await runScript("generateIconsSolid.js");
-    await runScript("generateIconsOutline.js");
-    console.log("All icons generated successfully");
-  } catch (error) {
-    console.error("Error generating icons:", error);
+const generateUniversalIconComponent = async (iconNames) => {
+  const iconImports = iconNames
+    .map((iconName) => `import ${iconName} from './${iconName}';`)
+    .join("\n");
+  const iconType = iconNames.map((iconName) => `'${iconName}'`).join(" | ");
+
+  const componentCode = `
+import React from 'react';
+${iconImports}
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  name: ${iconType};
+  size?: number;
+  color1?: string;
+  color2?: string;
+  className?: string;
+}
+
+const IconUniversal: React.FC<IconProps> = ({ name, size = 24, color1, color2, className, ...props }) => {
+  const icons = { ${iconNames.join(", ")} };
+  const IconComponent = icons[name];
+  if (!IconComponent) {
+    return null;
   }
+
+  return <IconComponent width={size} height={size} color1={color1} color2={color2} className={className} {...props} />;
 };
 
-generateAllIcons();
+export default IconUniversal;
+`;
+
+  const componentPath = path.join(iconsDir, "IconUniversal.tsx");
+  await fs.outputFile(componentPath, componentCode);
+};
+
+const generateIndexFile = async (iconNames) => {
+  const exports = iconNames
+    .map(
+      (iconName) =>
+        `export { default as ${iconName} } from './icons/${iconName}';`
+    )
+    .join("\n");
+  const indexContent = `${exports}\nexport { default as IconUniversal } from './icons/IconUniversal';\n`;
+  await fs.outputFile(indexFile, indexContent);
+};
+
+const toPascalCase = (str) => {
+  return str.replace(/(^\w|-\w)/g, (s) => s.replace("-", "").toUpperCase());
+};
+
+const generateIcons = async () => {
+  await fs.emptyDir(iconsDir);
+  const files = await fs.readdir(svgDir);
+
+  const iconNames = [];
+
+  for (const file of files) {
+    if (path.extname(file) === ".svg") {
+      const iconName = toPascalCase(path.basename(file, ".svg"));
+      iconNames.push(iconName);
+      await generateIconComponent(path.join(svgDir, file), iconName);
+    }
+  }
+
+  await generateUniversalIconComponent(iconNames);
+  await generateIndexFile(iconNames);
+};
+
+generateIcons()
+  .then(() => console.log("Icons generated successfully"))
+  .catch((err) => console.error("Error generating icons:", err));
