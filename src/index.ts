@@ -60,6 +60,7 @@ export { default as Contrast2 } from './icons/Contrast2';
 export { default as Contrast3 } from './icons/Contrast3';
 export { default as Contrast4 } from './icons/Contrast4';
 export { default as Ethereal } from './icons/Ethereal';
+export { default as EtherealLogo } from './icons/EtherealLogo';
 export { default as Eye1 } from './icons/Eye1';
 export { default as Eye1Closed } from './icons/Eye1Closed';
 export { default as Eye2 } from './icons/Eye2';
