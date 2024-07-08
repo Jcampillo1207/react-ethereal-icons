@@ -140,6 +140,15 @@ var Boost = function (_a) {
         React.createElement("path", { fill: color1 ? color1 : '#A635FF', d: "M21.959 10.244c1.35.78 1.35 2.728 0 3.507l-10.588 6.114c-1.35.779-3.038-.195-3.038-1.754V5.885c0-1.56 1.688-2.533 3.038-1.754z", opacity: ".5" })));
 };
 
+var File = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M3 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" }),
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M16 1H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6z", opacity: ".5" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M15 1v4a2 2 0 0 0 2 2h4" }),
+        React.createElement("path", { fill: color2 ? color2 : '#735CFF', d: "m21 6-5-5h-1v4a2 2 0 0 0 2 2h4z" })));
+};
+
 var Forge = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
@@ -165,85 +174,87 @@ var Layers = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
         React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "m2.078 14.64 8.672-4.353a2.87 2.87 0 0 1 2.5 0l8.672 4.353c1.385.695 1.447 2.273.119 3.034L13.37 22.65c-.817.468-1.923.468-2.74 0L1.96 17.674c-1.328-.761-1.266-2.339.12-3.034" }),
-        React.createElement("path", { fill: color2 ? color2 : '#B0FFFF', d: "m2.078 9.64 8.672-4.353a2.87 2.87 0 0 1 2.5 0l8.672 4.353c1.385.695 1.447 2.273.119 3.034L13.37 17.65c-.817.468-1.923.468-2.74 0L1.96 12.674c-1.328-.761-1.266-2.339.12-3.034", opacity: ".5" }),
-        React.createElement("path", { fill: color1 ? color1 : '#B0FFFF', d: "m2.078 5.64 8.672-4.353a2.87 2.87 0 0 1 2.5 0l8.672 4.353c1.385.695 1.447 2.273.119 3.034L13.37 13.65c-.817.468-1.923.468-2.74 0L1.96 8.674C.631 7.913.693 6.335 2.079 5.64", opacity: ".5" })));
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "m2.078 9.64 8.672-4.353a2.87 2.87 0 0 1 2.5 0l8.672 4.353c1.385.695 1.447 2.273.119 3.034L13.37 17.65c-.817.468-1.923.468-2.74 0L1.96 12.674c-1.328-.761-1.266-2.339.12-3.034", opacity: ".5" }),
+        React.createElement("path", { fill: color1 ? color1 : '#61FFFF', d: "m2.078 5.64 8.672-4.353a2.87 2.87 0 0 1 2.5 0l8.672 4.353c1.385.695 1.447 2.273.119 3.034L13.37 13.65c-.817.468-1.923.468-2.74 0L1.96 8.674C.631 7.913.693 6.335 2.079 5.64", opacity: ".5" })));
 };
 
 var MapPin = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
         React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M3.685 14.235c.176-.14.391-.223.615-.235h15.4c.224.012.439.095.616.235.176.141.307.334.374.553l2.2 6.75c.11.112.11.224.11.337C23 22.55 22.56 23 21.9 23H2.1c-.66 0-1.1-.45-1.1-1.125 0-.113 0-.225.11-.337l2.2-6.75c.067-.22.198-.412.375-.553" }),
-        React.createElement("path", { fill: color2 ? color2 : '#B0FFFF', "fill-rule": "evenodd", d: "M10.866 17.089c.66.564 1.608.564 2.268 0C15.116 15.398 19 11.599 19 7.8a6.7 6.7 0 0 0-2.05-4.808A7.1 7.1 0 0 0 12 1a7.1 7.1 0 0 0-4.95 1.992A6.7 6.7 0 0 0 5 7.8c0 3.799 3.884 7.598 5.866 9.289M14.333 7.8c0 1.252-1.044 2.267-2.333 2.267S9.667 9.052 9.667 7.8 10.71 5.533 12 5.533s2.333 1.015 2.333 2.267", "clip-rule": "evenodd", opacity: ".5" })));
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', "fill-rule": "evenodd", d: "M10.866 17.089c.66.564 1.608.564 2.268 0C15.116 15.398 19 11.599 19 7.8a6.7 6.7 0 0 0-2.05-4.808A7.1 7.1 0 0 0 12 1a7.1 7.1 0 0 0-4.95 1.992A6.7 6.7 0 0 0 5 7.8c0 3.799 3.884 7.598 5.866 9.289M14.333 7.8c0 1.252-1.044 2.267-2.333 2.267S9.667 9.052 9.667 7.8 10.71 5.533 12 5.533s2.333 1.015 2.333 2.267", "clip-rule": "evenodd", opacity: ".5" })));
 };
 
 var PillHorizontal2 = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
         React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M17 6a6 6 0 0 1 0 12h-5V6z" }),
-        React.createElement("path", { fill: color2 ? color2 : '#B0FFFF', d: "M7 18A6 6 0 0 1 7 6h5v12z", opacity: ".5" })));
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M7 18A6 6 0 0 1 7 6h5v12z", opacity: ".5" })));
 };
 
 var PillHorizontal = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
         React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M7 18A6 6 0 0 1 7 6h5v12z" }),
-        React.createElement("path", { fill: color2 ? color2 : '#B0FFFF', d: "M17 6a6 6 0 0 1 0 12h-5V6z", opacity: ".5" })));
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M17 6a6 6 0 0 1 0 12h-5V6z", opacity: ".5" })));
 };
 
 var PillVertical2 = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
         React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M18 17a6 6 0 0 1-12 0v-5h12z" }),
-        React.createElement("path", { fill: color2 ? color2 : '#B0FFFF', d: "M6 7a6 6 0 1 1 12 0v5H6z", opacity: ".5" })));
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M6 7a6 6 0 1 1 12 0v5H6z", opacity: ".5" })));
 };
 
 var PillVertical = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
         React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M6 7a6 6 0 1 1 12 0v5H6z" }),
-        React.createElement("path", { fill: color2 ? color2 : '#B0FFFF', d: "M18 17a6 6 0 0 1-12 0v-5h12z", opacity: ".5" })));
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M18 17a6 6 0 0 1-12 0v-5h12z", opacity: ".5" })));
 };
 
 var Pills2 = function (_a) {
-    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1; _a.color2; var className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
-        React.createElement("path", { fill: color1 ? color1 : '#B0FFFF', d: "M12.778 4.172a4 4 0 0 1 0 5.656l-2.475 2.475-5.657-5.657 2.475-2.474a4 4 0 0 1 5.657 0M11.172 19.778a4 4 0 0 1 0-5.657l2.474-2.475 5.657 5.657-2.475 2.475a4 4 0 0 1-5.656 0", opacity: ".5" }),
-        React.createElement("path", { fill: color2 ? color2 : '#735CFF', d: "M2.172 9.121a4 4 0 0 0 5.656 5.657l2.475-2.475-5.657-5.657zM21.778 14.828a4 4 0 1 0-5.657-5.656l-2.475 2.474 5.657 5.657z" })));
+        React.createElement("g", { fill: "#61FFFF", opacity: ".5" },
+            React.createElement("path", { d: "M12.778 4.172a4 4 0 0 1 0 5.656l-2.475 2.475-5.657-5.657 2.475-2.474a4 4 0 0 1 5.657 0M11.172 19.778a4 4 0 0 1 0-5.657l2.474-2.475 5.657 5.657-2.475 2.475a4 4 0 0 1-5.656 0" })),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M2.172 9.121a4 4 0 0 0 5.656 5.657l2.475-2.475-5.657-5.657zM21.778 14.828a4 4 0 1 0-5.657-5.656l-2.475 2.474 5.657 5.657z" })));
 };
 
 var Pills = function (_a) {
-    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1; _a.color2; var className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
-        React.createElement("path", { fill: color1 ? color1 : '#B0FFFF', d: "M7 1a4 4 0 0 1 4 4v3.5H3V5a4 4 0 0 1 4-4M17 23a4 4 0 0 1-4-4v-3.5h8V19a4 4 0 0 1-4 4", opacity: ".5" }),
-        React.createElement("path", { fill: color2 ? color2 : '#735CFF', d: "M3 12a4 4 0 0 0 8 0V8.5H3zM21 12a4 4 0 0 0-8 0v3.5h8z" })));
+        React.createElement("g", { fill: "#61FFFF", opacity: ".5" },
+            React.createElement("path", { d: "M7 1a4 4 0 0 1 4 4v3.5H3V5a4 4 0 0 1 4-4M17 23a4 4 0 0 1-4-4v-3.5h8V19a4 4 0 0 1-4 4" })),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M3 12a4 4 0 0 0 8 0V8.5H3zM21 12a4 4 0 0 0-8 0v3.5h8z" })));
 };
 
 var Squares2 = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
         React.createElement("rect", { x: "1", y: "8", fill: color1 ? color1 : '#735CFF', rx: "2" }),
-        React.createElement("rect", { x: "8", y: "1", fill: color2 ? color2 : '#B0FFFF', opacity: ".5", rx: "2" })));
+        React.createElement("rect", { x: "8", y: "1", fill: color2 ? color2 : '#61FFFF', opacity: ".5", rx: "2" })));
 };
 
 var Squares3 = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
         React.createElement("rect", { x: "8", y: "8", fill: color1 ? color1 : '#735CFF', rx: "2" }),
-        React.createElement("rect", { x: "1", y: "1", fill: color2 ? color2 : '#B0FFFF', opacity: ".5", rx: "2" })));
+        React.createElement("rect", { x: "1", y: "1", fill: color2 ? color2 : '#61FFFF', opacity: ".5", rx: "2" })));
 };
 
 var Squares4 = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
         React.createElement("rect", { x: "8", y: "1", fill: color1 ? color1 : '#735CFF', rx: "2" }),
-        React.createElement("rect", { x: "1", y: "8", fill: color2 ? color2 : '#B0FFFF', opacity: ".5", rx: "2" })));
+        React.createElement("rect", { x: "1", y: "8", fill: color2 ? color2 : '#61FFFF', opacity: ".5", rx: "2" })));
 };
 
 var Squares = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
         React.createElement("rect", { x: "1", y: "1", fill: color1 ? color1 : '#735CFF', rx: "2" }),
-        React.createElement("rect", { x: "8", y: "8", fill: color2 ? color2 : '#B0FFFF', opacity: ".5", rx: "2" })));
+        React.createElement("rect", { x: "8", y: "8", fill: color2 ? color2 : '#61FFFF', opacity: ".5", rx: "2" })));
 };
 
 var Studio = function (_a) {
@@ -276,7 +287,7 @@ var User = function (_a) {
 
 var IconUniversal = function (_a) {
     var name = _a.name, _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["name", "size", "color1", "color2", "className"]);
-    var icons = { Apple: Apple, Backpack: Backpack, BadgeAlert: BadgeAlert, BadgeCheck: BadgeCheck, BadgeDollarSign: BadgeDollarSign, BadgeEuroSign: BadgeEuroSign, BadgeHelp: BadgeHelp, BadgeInfo: BadgeInfo, BadgeMinus: BadgeMinus, BadgePlus: BadgePlus, BadgeX: BadgeX, Badge: Badge, Boost: Boost, Forge: Forge, Grow: Grow, Intello: Intello, Layers: Layers, MapPin: MapPin, PillHorizontal2: PillHorizontal2, PillHorizontal: PillHorizontal, PillVertical2: PillVertical2, PillVertical: PillVertical, Pills2: Pills2, Pills: Pills, Squares2: Squares2, Squares3: Squares3, Squares4: Squares4, Squares: Squares, Studio: Studio, Tag: Tag, Tags: Tags, User: User };
+    var icons = { Apple: Apple, Backpack: Backpack, BadgeAlert: BadgeAlert, BadgeCheck: BadgeCheck, BadgeDollarSign: BadgeDollarSign, BadgeEuroSign: BadgeEuroSign, BadgeHelp: BadgeHelp, BadgeInfo: BadgeInfo, BadgeMinus: BadgeMinus, BadgePlus: BadgePlus, BadgeX: BadgeX, Badge: Badge, Boost: Boost, File: File, Forge: Forge, Grow: Grow, Intello: Intello, Layers: Layers, MapPin: MapPin, PillHorizontal2: PillHorizontal2, PillHorizontal: PillHorizontal, PillVertical2: PillVertical2, PillVertical: PillVertical, Pills2: Pills2, Pills: Pills, Squares2: Squares2, Squares3: Squares3, Squares4: Squares4, Squares: Squares, Studio: Studio, Tag: Tag, Tags: Tags, User: User };
     var IconComponent = icons[name];
     if (!IconComponent) {
         return null;
@@ -284,5 +295,5 @@ var IconUniversal = function (_a) {
     return React.createElement(IconComponent, __assign({ width: size, height: size, color1: color1, color2: color2, className: className }, props));
 };
 
-export { Apple, Backpack, Badge, BadgeAlert, BadgeCheck, BadgeDollarSign, BadgeEuroSign, BadgeHelp, BadgeInfo, BadgeMinus, BadgePlus, BadgeX, Boost, Forge, Grow, IconUniversal, Intello, Layers, MapPin, PillHorizontal, PillHorizontal2, PillVertical, PillVertical2, Pills, Pills2, Squares, Squares2, Squares3, Squares4, Studio, Tag, Tags, User };
+export { Apple, Backpack, Badge, BadgeAlert, BadgeCheck, BadgeDollarSign, BadgeEuroSign, BadgeHelp, BadgeInfo, BadgeMinus, BadgePlus, BadgeX, Boost, File, Forge, Grow, IconUniversal, Intello, Layers, MapPin, PillHorizontal, PillHorizontal2, PillVertical, PillVertical2, Pills, Pills2, Squares, Squares2, Squares3, Squares4, Studio, Tag, Tags, User };
 //# sourceMappingURL=index.esm.js.map
