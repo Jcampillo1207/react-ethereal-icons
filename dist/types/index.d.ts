@@ -38,6 +38,7 @@ export { default as PillVertical2 } from './icons/PillVertical2';
 export { default as PillVertical } from './icons/PillVertical';
 export { default as Pills2 } from './icons/Pills2';
 export { default as Pills } from './icons/Pills';
+export { default as Search } from './icons/Search';
 export { default as Squares2 } from './icons/Squares2';
 export { default as Squares3 } from './icons/Squares3';
 export { default as Squares4 } from './icons/Squares4';

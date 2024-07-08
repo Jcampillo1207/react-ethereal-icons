@@ -142,12 +142,11 @@ var Bag = function (_a) {
 };
 
 var Banknote = function (_a) {
-    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1; _a.color2; var className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
         React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M1 16V8a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2" }),
-        React.createElement("circle", { cx: "12", cy: "12", r: "3", fill: color2 ? color2 : '#61FFFF', opacity: ".5" }),
-        React.createElement("circle", { cx: "18", cy: "12", r: "1", fill: color1 ? color1 : '#61FFFF', opacity: ".5" }),
-        React.createElement("circle", { cx: "6", cy: "12", r: "1", fill: color2 ? color2 : '#61FFFF', opacity: ".5" })));
+        React.createElement("g", { fill: "#61FFFF", opacity: ".5" },
+            React.createElement("path", { d: "M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0M19 12a1 1 0 1 1-2 0 1 1 0 0 1 2 0M7 12a1 1 0 1 1-2 0 1 1 0 0 1 2 0" }))));
 };
 
 var Boost = function (_a) {
@@ -338,6 +337,13 @@ var Pills = function (_a) {
         React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M3 12a4 4 0 0 0 8 0V8.5H3zM21 12a4 4 0 0 0-8 0v3.5h8z" })));
 };
 
+var Search = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', "fill-rule": "evenodd", d: "M10.9 1C5.432 1 1 5.432 1 10.9s4.432 9.9 9.9 9.9c2.338 0 4.486-.81 6.18-2.165l4.042 4.043a1.1 1.1 0 1 0 1.556-1.556l-4.043-4.043A9.86 9.86 0 0 0 20.8 10.9c0-5.468-4.432-9.9-9.9-9.9m-7.7 9.9a7.7 7.7 0 1 1 15.4 0 7.7 7.7 0 0 1-15.4 0", "clip-rule": "evenodd" }),
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', "fill-opacity": ".5", d: "M10.9 3.2a7.7 7.7 0 1 0 0 15.4 7.7 7.7 0 0 0 0-15.4" })));
+};
+
 var Squares2 = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
@@ -396,7 +402,7 @@ var User = function (_a) {
 
 var IconUniversal = function (_a) {
     var name = _a.name, _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["name", "size", "color1", "color2", "className"]);
-    var icons = { Apple: Apple, Backpack: Backpack, BadgeAlert: BadgeAlert, BadgeCheck: BadgeCheck, BadgeDollarSign: BadgeDollarSign, BadgeEuroSign: BadgeEuroSign, BadgeHelp: BadgeHelp, BadgeInfo: BadgeInfo, BadgeMinus: BadgeMinus, BadgePlus: BadgePlus, BadgeX: BadgeX, Badge: Badge, Bag: Bag, Banknote: Banknote, Boost: Boost, Contrast: Contrast, CreditCard2: CreditCard2, CreditCard3: CreditCard3, CreditCard: CreditCard, File2: File2, File: File, Forge: Forge, Grow: Grow, Home: Home, Intello: Intello, Layers: Layers, Mail: Mail, MapPin: MapPin, MessageCircleDots: MessageCircleDots, MessageCircle: MessageCircle, MessageSquareDots: MessageSquareDots, MessageSquare: MessageSquare, MessagesCircle: MessagesCircle, MessagesSquare: MessagesSquare, PillHorizontal2: PillHorizontal2, PillHorizontal: PillHorizontal, PillVertical2: PillVertical2, PillVertical: PillVertical, Pills2: Pills2, Pills: Pills, Squares2: Squares2, Squares3: Squares3, Squares4: Squares4, Squares: Squares, Studio: Studio, Tag: Tag, Tags: Tags, User: User };
+    var icons = { Apple: Apple, Backpack: Backpack, BadgeAlert: BadgeAlert, BadgeCheck: BadgeCheck, BadgeDollarSign: BadgeDollarSign, BadgeEuroSign: BadgeEuroSign, BadgeHelp: BadgeHelp, BadgeInfo: BadgeInfo, BadgeMinus: BadgeMinus, BadgePlus: BadgePlus, BadgeX: BadgeX, Badge: Badge, Bag: Bag, Banknote: Banknote, Boost: Boost, Contrast: Contrast, CreditCard2: CreditCard2, CreditCard3: CreditCard3, CreditCard: CreditCard, File2: File2, File: File, Forge: Forge, Grow: Grow, Home: Home, Intello: Intello, Layers: Layers, Mail: Mail, MapPin: MapPin, MessageCircleDots: MessageCircleDots, MessageCircle: MessageCircle, MessageSquareDots: MessageSquareDots, MessageSquare: MessageSquare, MessagesCircle: MessagesCircle, MessagesSquare: MessagesSquare, PillHorizontal2: PillHorizontal2, PillHorizontal: PillHorizontal, PillVertical2: PillVertical2, PillVertical: PillVertical, Pills2: Pills2, Pills: Pills, Search: Search, Squares2: Squares2, Squares3: Squares3, Squares4: Squares4, Squares: Squares, Studio: Studio, Tag: Tag, Tags: Tags, User: User };
     var IconComponent = icons[name];
     if (!IconComponent) {
         return null;
@@ -445,6 +451,7 @@ exports.PillVertical = PillVertical;
 exports.PillVertical2 = PillVertical2;
 exports.Pills = Pills;
 exports.Pills2 = Pills2;
+exports.Search = Search;
 exports.Squares = Squares;
 exports.Squares2 = Squares2;
 exports.Squares3 = Squares3;

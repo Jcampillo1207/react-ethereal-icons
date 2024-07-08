@@ -40,6 +40,7 @@ import PillVertical2 from './PillVertical2';
 import PillVertical from './PillVertical';
 import Pills2 from './Pills2';
 import Pills from './Pills';
+import Search from './Search';
 import Squares2 from './Squares2';
 import Squares3 from './Squares3';
 import Squares4 from './Squares4';
@@ -50,7 +51,7 @@ import Tags from './Tags';
 import User from './User';
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
-  name: 'Apple' | 'Backpack' | 'BadgeAlert' | 'BadgeCheck' | 'BadgeDollarSign' | 'BadgeEuroSign' | 'BadgeHelp' | 'BadgeInfo' | 'BadgeMinus' | 'BadgePlus' | 'BadgeX' | 'Badge' | 'Bag' | 'Banknote' | 'Boost' | 'Contrast' | 'CreditCard2' | 'CreditCard3' | 'CreditCard' | 'File2' | 'File' | 'Forge' | 'Grow' | 'Home' | 'Intello' | 'Layers' | 'Mail' | 'MapPin' | 'MessageCircleDots' | 'MessageCircle' | 'MessageSquareDots' | 'MessageSquare' | 'MessagesCircle' | 'MessagesSquare' | 'PillHorizontal2' | 'PillHorizontal' | 'PillVertical2' | 'PillVertical' | 'Pills2' | 'Pills' | 'Squares2' | 'Squares3' | 'Squares4' | 'Squares' | 'Studio' | 'Tag' | 'Tags' | 'User';
+  name: 'Apple' | 'Backpack' | 'BadgeAlert' | 'BadgeCheck' | 'BadgeDollarSign' | 'BadgeEuroSign' | 'BadgeHelp' | 'BadgeInfo' | 'BadgeMinus' | 'BadgePlus' | 'BadgeX' | 'Badge' | 'Bag' | 'Banknote' | 'Boost' | 'Contrast' | 'CreditCard2' | 'CreditCard3' | 'CreditCard' | 'File2' | 'File' | 'Forge' | 'Grow' | 'Home' | 'Intello' | 'Layers' | 'Mail' | 'MapPin' | 'MessageCircleDots' | 'MessageCircle' | 'MessageSquareDots' | 'MessageSquare' | 'MessagesCircle' | 'MessagesSquare' | 'PillHorizontal2' | 'PillHorizontal' | 'PillVertical2' | 'PillVertical' | 'Pills2' | 'Pills' | 'Search' | 'Squares2' | 'Squares3' | 'Squares4' | 'Squares' | 'Studio' | 'Tag' | 'Tags' | 'User';
   size?: number;
   color1?: string;
   color2?: string;
@@ -58,7 +59,7 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const IconUniversal: React.FC<IconProps> = ({ name, size = 24, color1, color2, className, ...props }) => {
-  const icons = { Apple, Backpack, BadgeAlert, BadgeCheck, BadgeDollarSign, BadgeEuroSign, BadgeHelp, BadgeInfo, BadgeMinus, BadgePlus, BadgeX, Badge, Bag, Banknote, Boost, Contrast, CreditCard2, CreditCard3, CreditCard, File2, File, Forge, Grow, Home, Intello, Layers, Mail, MapPin, MessageCircleDots, MessageCircle, MessageSquareDots, MessageSquare, MessagesCircle, MessagesSquare, PillHorizontal2, PillHorizontal, PillVertical2, PillVertical, Pills2, Pills, Squares2, Squares3, Squares4, Squares, Studio, Tag, Tags, User };
+  const icons = { Apple, Backpack, BadgeAlert, BadgeCheck, BadgeDollarSign, BadgeEuroSign, BadgeHelp, BadgeInfo, BadgeMinus, BadgePlus, BadgeX, Badge, Bag, Banknote, Boost, Contrast, CreditCard2, CreditCard3, CreditCard, File2, File, Forge, Grow, Home, Intello, Layers, Mail, MapPin, MessageCircleDots, MessageCircle, MessageSquareDots, MessageSquare, MessagesCircle, MessagesSquare, PillHorizontal2, PillHorizontal, PillVertical2, PillVertical, Pills2, Pills, Search, Squares2, Squares3, Squares4, Squares, Studio, Tag, Tags, User };
   const IconComponent = icons[name];
   if (!IconComponent) {
     return null;
