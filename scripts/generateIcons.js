@@ -168,7 +168,7 @@ const Ethereal: React.FC<IconProps> = ({ name, size = 24, color, strokeWidth = 2
     return null;
   }
 
-  return <IconComponent width={size} height={size} color={color} strokeWidth={strokeWidth} color1={color1} color2={color2} className={className} {...props} />;
+  return <IconComponent width={size} height={size} color={color} strokeWidth={strokeWidth} color1={color1} color2={color2} className={\`\${className} text-foreground\`} {...props} />;
 };
 
 export default Ethereal;
