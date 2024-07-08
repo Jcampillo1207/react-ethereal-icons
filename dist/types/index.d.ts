@@ -11,6 +11,7 @@ export { default as BadgePlus } from './icons/BadgePlus';
 export { default as BadgeX } from './icons/BadgeX';
 export { default as Badge } from './icons/Badge';
 export { default as Boost } from './icons/Boost';
+export { default as File2 } from './icons/File2';
 export { default as File } from './icons/File';
 export { default as Forge } from './icons/Forge';
 export { default as Grow } from './icons/Grow';

@@ -13,6 +13,7 @@ import BadgePlus from './BadgePlus';
 import BadgeX from './BadgeX';
 import Badge from './Badge';
 import Boost from './Boost';
+import File2 from './File2';
 import File from './File';
 import Forge from './Forge';
 import Grow from './Grow';
@@ -35,7 +36,7 @@ import Tags from './Tags';
 import User from './User';
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
-  name: 'Apple' | 'Backpack' | 'BadgeAlert' | 'BadgeCheck' | 'BadgeDollarSign' | 'BadgeEuroSign' | 'BadgeHelp' | 'BadgeInfo' | 'BadgeMinus' | 'BadgePlus' | 'BadgeX' | 'Badge' | 'Boost' | 'File' | 'Forge' | 'Grow' | 'Intello' | 'Layers' | 'MapPin' | 'PillHorizontal2' | 'PillHorizontal' | 'PillVertical2' | 'PillVertical' | 'Pills2' | 'Pills' | 'Squares2' | 'Squares3' | 'Squares4' | 'Squares' | 'Studio' | 'Tag' | 'Tags' | 'User';
+  name: 'Apple' | 'Backpack' | 'BadgeAlert' | 'BadgeCheck' | 'BadgeDollarSign' | 'BadgeEuroSign' | 'BadgeHelp' | 'BadgeInfo' | 'BadgeMinus' | 'BadgePlus' | 'BadgeX' | 'Badge' | 'Boost' | 'File2' | 'File' | 'Forge' | 'Grow' | 'Intello' | 'Layers' | 'MapPin' | 'PillHorizontal2' | 'PillHorizontal' | 'PillVertical2' | 'PillVertical' | 'Pills2' | 'Pills' | 'Squares2' | 'Squares3' | 'Squares4' | 'Squares' | 'Studio' | 'Tag' | 'Tags' | 'User';
   size?: number;
   color1?: string;
   color2?: string;
@@ -43,7 +44,7 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const IconUniversal: React.FC<IconProps> = ({ name, size = 24, color1, color2, className, ...props }) => {
-  const icons = { Apple, Backpack, BadgeAlert, BadgeCheck, BadgeDollarSign, BadgeEuroSign, BadgeHelp, BadgeInfo, BadgeMinus, BadgePlus, BadgeX, Badge, Boost, File, Forge, Grow, Intello, Layers, MapPin, PillHorizontal2, PillHorizontal, PillVertical2, PillVertical, Pills2, Pills, Squares2, Squares3, Squares4, Squares, Studio, Tag, Tags, User };
+  const icons = { Apple, Backpack, BadgeAlert, BadgeCheck, BadgeDollarSign, BadgeEuroSign, BadgeHelp, BadgeInfo, BadgeMinus, BadgePlus, BadgeX, Badge, Boost, File2, File, Forge, Grow, Intello, Layers, MapPin, PillHorizontal2, PillHorizontal, PillVertical2, PillVertical, Pills2, Pills, Squares2, Squares3, Squares4, Squares, Studio, Tag, Tags, User };
   const IconComponent = icons[name];
   if (!IconComponent) {
     return null;

@@ -140,6 +140,15 @@ var Boost = function (_a) {
         React.createElement("path", { fill: color1 ? color1 : '#A635FF', d: "M21.959 10.244c1.35.78 1.35 2.728 0 3.507l-10.588 6.114c-1.35.779-3.038-.195-3.038-1.754V5.885c0-1.56 1.688-2.533 3.038-1.754z", opacity: ".5" })));
 };
 
+var File2 = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1; _a.color2; var className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M16 1H5.25c-.597 0-1.169.232-1.591.644A2.17 2.17 0 0 0 3 3.2v17.6c0 .584.237 1.143.659 1.556.422.412.994.644 1.591.644h13.5c.597 0 1.169-.232 1.591-.644S21 21.383 21 20.8V6z" }),
+        React.createElement("g", { fill: "#61FFFF", opacity: ".5" },
+            React.createElement("path", { d: "M14 1v4.667A2.333 2.333 0 0 0 16.333 8H21" }),
+            React.createElement("path", { d: "m21 6-5-5h-2v4.667A2.333 2.333 0 0 0 16.333 8H21z" }))));
+};
+
 var File = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
@@ -287,7 +296,7 @@ var User = function (_a) {
 
 var IconUniversal = function (_a) {
     var name = _a.name, _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["name", "size", "color1", "color2", "className"]);
-    var icons = { Apple: Apple, Backpack: Backpack, BadgeAlert: BadgeAlert, BadgeCheck: BadgeCheck, BadgeDollarSign: BadgeDollarSign, BadgeEuroSign: BadgeEuroSign, BadgeHelp: BadgeHelp, BadgeInfo: BadgeInfo, BadgeMinus: BadgeMinus, BadgePlus: BadgePlus, BadgeX: BadgeX, Badge: Badge, Boost: Boost, File: File, Forge: Forge, Grow: Grow, Intello: Intello, Layers: Layers, MapPin: MapPin, PillHorizontal2: PillHorizontal2, PillHorizontal: PillHorizontal, PillVertical2: PillVertical2, PillVertical: PillVertical, Pills2: Pills2, Pills: Pills, Squares2: Squares2, Squares3: Squares3, Squares4: Squares4, Squares: Squares, Studio: Studio, Tag: Tag, Tags: Tags, User: User };
+    var icons = { Apple: Apple, Backpack: Backpack, BadgeAlert: BadgeAlert, BadgeCheck: BadgeCheck, BadgeDollarSign: BadgeDollarSign, BadgeEuroSign: BadgeEuroSign, BadgeHelp: BadgeHelp, BadgeInfo: BadgeInfo, BadgeMinus: BadgeMinus, BadgePlus: BadgePlus, BadgeX: BadgeX, Badge: Badge, Boost: Boost, File2: File2, File: File, Forge: Forge, Grow: Grow, Intello: Intello, Layers: Layers, MapPin: MapPin, PillHorizontal2: PillHorizontal2, PillHorizontal: PillHorizontal, PillVertical2: PillVertical2, PillVertical: PillVertical, Pills2: Pills2, Pills: Pills, Squares2: Squares2, Squares3: Squares3, Squares4: Squares4, Squares: Squares, Studio: Studio, Tag: Tag, Tags: Tags, User: User };
     var IconComponent = icons[name];
     if (!IconComponent) {
         return null;
@@ -295,5 +304,5 @@ var IconUniversal = function (_a) {
     return React.createElement(IconComponent, __assign({ width: size, height: size, color1: color1, color2: color2, className: className }, props));
 };
 
-export { Apple, Backpack, Badge, BadgeAlert, BadgeCheck, BadgeDollarSign, BadgeEuroSign, BadgeHelp, BadgeInfo, BadgeMinus, BadgePlus, BadgeX, Boost, File, Forge, Grow, IconUniversal, Intello, Layers, MapPin, PillHorizontal, PillHorizontal2, PillVertical, PillVertical2, Pills, Pills2, Squares, Squares2, Squares3, Squares4, Studio, Tag, Tags, User };
+export { Apple, Backpack, Badge, BadgeAlert, BadgeCheck, BadgeDollarSign, BadgeEuroSign, BadgeHelp, BadgeInfo, BadgeMinus, BadgePlus, BadgeX, Boost, File, File2, Forge, Grow, IconUniversal, Intello, Layers, MapPin, PillHorizontal, PillHorizontal2, PillVertical, PillVertical2, Pills, Pills2, Squares, Squares2, Squares3, Squares4, Studio, Tag, Tags, User };
 //# sourceMappingURL=index.esm.js.map
