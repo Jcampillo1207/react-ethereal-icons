@@ -14,6 +14,7 @@ export { default as Bag } from './icons/Bag';
 export { default as Boost } from './icons/Boost';
 export { default as Contrast } from './icons/Contrast';
 export { default as CreditCard2 } from './icons/CreditCard2';
+export { default as CreditCard3 } from './icons/CreditCard3';
 export { default as CreditCard } from './icons/CreditCard';
 export { default as File2 } from './icons/File2';
 export { default as File } from './icons/File';

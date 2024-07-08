@@ -161,15 +161,22 @@ var CreditCard2 = function (_a) {
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
         React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M1 18V6a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2" }),
         React.createElement("g", { fill: "#61FFFF", opacity: ".5" },
-            React.createElement("path", { d: "M1 10V6h22v4zM3.5 18a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5z" }))));
+            React.createElement("path", { d: "M1 10V6h22v4zM5 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0M8 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0M11 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0" }))));
 };
 
-var CreditCard = function (_a) {
+var CreditCard3 = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1; _a.color2; var className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
         React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M1 18V6a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2" }),
         React.createElement("g", { fill: "#61FFFF", opacity: ".5" },
-            React.createElement("path", { d: "M1 10V6h22v4zM5 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0M8 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0M11 17a1 1 0 1 1-2 0 1 1 0 0 1 2 0" }))));
+            React.createElement("path", { d: "M1 10V6h22v4zM3.5 18a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5z" }))));
+};
+
+var CreditCard = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M1 18V6a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2" }),
+        React.createElement("path", { fill: color2 ? color2 : '#61FFFF', d: "M1 10V6h22v4z", opacity: ".5" })));
 };
 
 var File2 = function (_a) {
@@ -380,7 +387,7 @@ var User = function (_a) {
 
 var IconUniversal = function (_a) {
     var name = _a.name, _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["name", "size", "color1", "color2", "className"]);
-    var icons = { Apple: Apple, Backpack: Backpack, BadgeAlert: BadgeAlert, BadgeCheck: BadgeCheck, BadgeDollarSign: BadgeDollarSign, BadgeEuroSign: BadgeEuroSign, BadgeHelp: BadgeHelp, BadgeInfo: BadgeInfo, BadgeMinus: BadgeMinus, BadgePlus: BadgePlus, BadgeX: BadgeX, Badge: Badge, Bag: Bag, Boost: Boost, Contrast: Contrast, CreditCard2: CreditCard2, CreditCard: CreditCard, File2: File2, File: File, Forge: Forge, Grow: Grow, Home: Home, Intello: Intello, Layers: Layers, Mail: Mail, MapPin: MapPin, MessageCircleDots: MessageCircleDots, MessageCircle: MessageCircle, MessageSquareDots: MessageSquareDots, MessageSquare: MessageSquare, MessagesCircle: MessagesCircle, MessagesSquare: MessagesSquare, PillHorizontal2: PillHorizontal2, PillHorizontal: PillHorizontal, PillVertical2: PillVertical2, PillVertical: PillVertical, Pills2: Pills2, Pills: Pills, Squares2: Squares2, Squares3: Squares3, Squares4: Squares4, Squares: Squares, Studio: Studio, Tag: Tag, Tags: Tags, User: User };
+    var icons = { Apple: Apple, Backpack: Backpack, BadgeAlert: BadgeAlert, BadgeCheck: BadgeCheck, BadgeDollarSign: BadgeDollarSign, BadgeEuroSign: BadgeEuroSign, BadgeHelp: BadgeHelp, BadgeInfo: BadgeInfo, BadgeMinus: BadgeMinus, BadgePlus: BadgePlus, BadgeX: BadgeX, Badge: Badge, Bag: Bag, Boost: Boost, Contrast: Contrast, CreditCard2: CreditCard2, CreditCard3: CreditCard3, CreditCard: CreditCard, File2: File2, File: File, Forge: Forge, Grow: Grow, Home: Home, Intello: Intello, Layers: Layers, Mail: Mail, MapPin: MapPin, MessageCircleDots: MessageCircleDots, MessageCircle: MessageCircle, MessageSquareDots: MessageSquareDots, MessageSquare: MessageSquare, MessagesCircle: MessagesCircle, MessagesSquare: MessagesSquare, PillHorizontal2: PillHorizontal2, PillHorizontal: PillHorizontal, PillVertical2: PillVertical2, PillVertical: PillVertical, Pills2: Pills2, Pills: Pills, Squares2: Squares2, Squares3: Squares3, Squares4: Squares4, Squares: Squares, Studio: Studio, Tag: Tag, Tags: Tags, User: User };
     var IconComponent = icons[name];
     if (!IconComponent) {
         return null;
@@ -405,6 +412,7 @@ exports.Boost = Boost;
 exports.Contrast = Contrast;
 exports.CreditCard = CreditCard;
 exports.CreditCard2 = CreditCard2;
+exports.CreditCard3 = CreditCard3;
 exports.File = File;
 exports.File2 = File2;
 exports.Forge = Forge;
