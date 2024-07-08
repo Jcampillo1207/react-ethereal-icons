@@ -37,7 +37,7 @@ const generateIconComponent = async (filePath, iconName, isStroke = true) => {
       .replace(/<svg /, `<svg viewBox="0 0 24 24" `)
       .replace(/stroke="[^"]*"/g, 'stroke={color ? color : "currentColor"}')
       .replace(/fill="[^"]*"/g, 'fill={color ? color : "currentColor"}')
-      .replace(/stroke-width="[^"]*"/g, "") // Eliminar stroke-width existente
+      .replace(/stroke-width="[^"]*"/g, "")
       .replace(/<path/g, "<path strokeWidth={strokeWidth}") // Agregar strokeWidth personalizado
       .replace(/<circle/g, "<circle strokeWidth={strokeWidth}")
       .replace(/<rect/g, "<rect strokeWidth={strokeWidth}")
