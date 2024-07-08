@@ -73,6 +73,7 @@ export { default as Grow } from './icons/Grow';
 export { default as Habitaloo } from './icons/Habitaloo';
 export { default as HabitalooInvert } from './icons/HabitalooInvert';
 export { default as Intello } from './icons/Intello';
+export { default as IntelloLight } from './icons/IntelloLight';
 export { default as Lojit } from './icons/Lojit';
 export { default as LojitLight } from './icons/LojitLight';
 export { default as Studio } from './icons/Studio';
