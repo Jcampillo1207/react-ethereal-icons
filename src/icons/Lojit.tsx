@@ -28,7 +28,7 @@ interface LojitProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Lojit: React.FC<LojitProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill={color1 ? color1 : "none"}><path fill={color2 ? color2 : "#2FAC66"} d="M1.005 16.127V3.297a2.297 2.297 0 0 1 4.594 0v11.017c0 .61.242 1.194.673 1.625l.467.467c.431.431 1.016.673 1.625.673h2.978a2.297 2.297 0 0 1 0 4.594H6.55c-.61 0-1.194-.242-1.624-.673L1.678 17.75a2.3 2.3 0 0 1-.673-1.624"/><path fill={color1 ? color1 : "#fff"} d="M22.99 15.912v4.791A2.297 2.297 0 0 1 20.693 23h-2.297a2.297 2.297 0 0 1-2.297-2.297v-3.445a2.297 2.297 0 0 0-2.297-2.297h-1.345c-2.047 0-3.071-2.475-1.625-3.922l2.495-2.494a2.297 2.297 0 0 1 3.248 0l5.743 5.743c.43.43.672 1.015.672 1.624"/></svg>
+  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill={color1 ? color1 : "none"}><path fill={color2 ? color2 : "#2FAC66"} d="M1.005 16.127V3.297a2.297 2.297 0 0 1 4.594 0v11.017c0 .61.242 1.194.673 1.625l.467.467c.431.431 1.016.673 1.625.673h2.978a2.297 2.297 0 0 1 0 4.594H6.55c-.61 0-1.194-.242-1.624-.673L1.678 17.75a2.3 2.3 0 0 1-.673-1.624"/><path fill={color1 ? color1 : "#0A0A0A"} d="M22.99 15.912v4.791A2.297 2.297 0 0 1 20.693 23h-2.297a2.297 2.297 0 0 1-2.297-2.297v-3.445a2.297 2.297 0 0 0-2.297-2.297h-1.345c-2.047 0-3.071-2.475-1.625-3.922l2.495-2.494a2.297 2.297 0 0 1 3.248 0l5.743 5.743c.43.43.672 1.015.672 1.624"/></svg>
 );
 
 export default Lojit;
