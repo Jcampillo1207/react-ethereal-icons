@@ -74,7 +74,7 @@ import React from 'react';
  * @param {object} props - SVG component props, including any valid SVG attribute.
  * @param {number} [props.size=24] - Icon size.
  * @param {string} [props.color] - Icon color.
- * @param {number} [props.strokeWidth=1.5] - Stroke width.
+ * @param {number} [props.strokeWidth=2] - Stroke width.
  * @param {string} [props.color1] - First fill color (for icons with two colors).
  * @param {string} [props.color2] - Second fill color (for icons with two colors).
  * @param {string} [props.className] - Additional CSS class for the icon.
@@ -89,7 +89,7 @@ interface ${iconName}Props extends React.SVGProps<SVGSVGElement> {
   className?: string;
 }
 
-const ${iconName}: React.FC<${iconName}Props> = ({ size = 24, color, strokeWidth = 1.5, color1, color2, className, ...props }) => (
+const ${iconName}: React.FC<${iconName}Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
   ${cleanedJsxCode.replace(
     "<svg ",
     "<svg className={className} color={color} width={size} height={size} {...props} "
@@ -157,7 +157,7 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
 }
 
-const Ethereal: React.FC<IconProps> = ({ name, size = 24, color, strokeWidth = 1.5, color1, color2, className, ...props }) => {
+const Ethereal: React.FC<IconProps> = ({ name, size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => {
   const icons = { ${iconNames.join(", ")} };
   const IconComponent = icons[name];
   if (!IconComponent) {
