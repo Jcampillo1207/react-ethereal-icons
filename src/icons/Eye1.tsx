@@ -28,7 +28,7 @@ interface Eye1Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Eye1: React.FC<Eye1Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7"/><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 14.333c1.227 0 2.222-1.044 2.222-2.333S13.227 9.667 12 9.667 9.778 10.71 9.778 12s.995 2.333 2.222 2.333"/></svg>
+  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7"/><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 14.333c1.227 0 2.222-1.044 2.222-2.333S13.227 9.667 12 9.667 9.778 10.71 9.778 12s.995 2.333 2.222 2.333"/></svg>
 );
 
 export default Eye1;

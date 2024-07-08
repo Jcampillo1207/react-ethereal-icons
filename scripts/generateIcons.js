@@ -96,7 +96,7 @@ interface ${iconName}Props extends React.SVGProps<SVGSVGElement> {
 const ${iconName}: React.FC<${iconName}Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
   ${cleanedJsxCode.replace(
     "<svg ",
-    "<svg className={className} color={color} width={size} height={size} {...props} "
+    "<svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} "
   )}
 );
 

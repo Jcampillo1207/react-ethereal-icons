@@ -28,7 +28,7 @@ interface Contrast2Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Contrast2: React.FC<Contrast2Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M7.556 5.097A6.53 6.53 0 0 0 3.953 7.05c-2.604 2.734-2.604 7.166 0 9.9a6.53 6.53 0 0 0 3.603 1.953m12.491-1.953c2.604-2.734 2.604-7.166 0-9.9s-6.824-2.733-9.428 0c-2.603 2.734-2.603 7.166 0 9.9s6.825 2.733 9.428 0"/></svg>
+  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M7.556 5.097A6.53 6.53 0 0 0 3.953 7.05c-2.604 2.734-2.604 7.166 0 9.9a6.53 6.53 0 0 0 3.603 1.953m12.491-1.953c2.604-2.734 2.604-7.166 0-9.9s-6.824-2.733-9.428 0c-2.603 2.734-2.603 7.166 0 9.9s6.825 2.733 9.428 0"/></svg>
 );
 
 export default Contrast2;

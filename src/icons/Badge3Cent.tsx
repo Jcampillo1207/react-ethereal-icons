@@ -28,7 +28,7 @@ interface Badge3CentProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Badge3Cent: React.FC<Badge3CentProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 16.443a4.6 4.6 0 0 1-3.11-1.3 4.37 4.37 0 0 1 0-6.286 4.6 4.6 0 0 1 3.11-1.3m0 8.886a4.6 4.6 0 0 0 3.333-1.3M12 16.443V7.557m0 8.886v1.113m0-10a4.6 4.6 0 0 1 3.333 1.301M12 7.557V6.444M22 12l-2.778-7.222L12 2 4.778 4.778 2 12l2.778 7.222L12 22l7.222-2.778z"/></svg>
+  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 16.443a4.6 4.6 0 0 1-3.11-1.3 4.37 4.37 0 0 1 0-6.286 4.6 4.6 0 0 1 3.11-1.3m0 8.886a4.6 4.6 0 0 0 3.333-1.3M12 16.443V7.557m0 8.886v1.113m0-10a4.6 4.6 0 0 1 3.333 1.301M12 7.557V6.444M22 12l-2.778-7.222L12 2 4.778 4.778 2 12l2.778 7.222L12 22l7.222-2.778z"/></svg>
 );
 
 export default Badge3Cent;

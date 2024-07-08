@@ -28,7 +28,7 @@ interface Eye2Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Eye2: React.FC<Eye2Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M2 8.533S5 4 12 4s10 4.533 10 4.533M2 14.2s3-6.8 10-6.8 10 6.8 10 6.8S19 21 12 21 2 14.2 2 14.2m12.222 0c0 1.252-.995 2.267-2.222 2.267S9.778 15.452 9.778 14.2s.995-2.267 2.222-2.267 2.222 1.015 2.222 2.267"/></svg>
+  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M2 8.533S5 4 12 4s10 4.533 10 4.533M2 14.2s3-6.8 10-6.8 10 6.8 10 6.8S19 21 12 21 2 14.2 2 14.2m12.222 0c0 1.252-.995 2.267-2.222 2.267S9.778 15.452 9.778 14.2s.995-2.267 2.222-2.267 2.222 1.015 2.222 2.267"/></svg>
 );
 
 export default Eye2;

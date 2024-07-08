@@ -28,7 +28,7 @@ interface User1Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const User1: React.FC<User1Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={className} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke- d="M2 22s0-8.889 10-8.889S22 22 22 22m-6.072-10.516a5.555 5.555 0 1 0-7.856-7.857 5.555 5.555 0 0 0 7.856 7.857Z"/></svg>
+  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke- d="M2 22s0-8.889 10-8.889S22 22 22 22m-6.072-10.516a5.555 5.555 0 1 0-7.856-7.857 5.555 5.555 0 0 0 7.856 7.857Z"/></svg>
 );
 
 export default User1;
