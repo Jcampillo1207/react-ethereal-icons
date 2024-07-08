@@ -12,7 +12,6 @@ import React from 'react';
  * @param {string} [props.color1] - First fill color (for icons with two colors).
  * @param {string} [props.color2] - Second fill color (for icons with two colors).
  * @param {string} [props.className] - Additional CSS class for the icon.
- * @returns {JSX.Element} JSX element representing the SVG icon.
  */
 
 interface Badge2PercentProps extends React.SVGProps<SVGSVGElement> {
