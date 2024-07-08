@@ -69,7 +69,7 @@ export default ${iconName};
 
 const generateUniversalIconComponent = async (iconNames) => {
   const iconImports = iconNames
-    .map((iconName) => `import ${iconName} from './${iconName}';`)
+    .map((iconName) => `import ${iconName} from './icons/${iconName}';`)
     .join("\n");
   const iconType = iconNames.map((iconName) => `'${iconName}'`).join(" | ");
 
@@ -113,6 +113,10 @@ const generateIndexFile = async (iconNames) => {
   await fs.outputFile(indexFile, indexContent);
 };
 
+const toPascalCase = (str) => {
+  return str.replace(/(^\w|-\w)/g, (s) => s.replace("-", "").toUpperCase());
+};
+
 const generateIcons = async () => {
   await fs.emptyDir(iconsDir);
   const files = await fs.readdir(svgDir);
@@ -121,9 +125,7 @@ const generateIcons = async () => {
 
   for (const file of files) {
     if (path.extname(file) === ".svg") {
-      const iconName = path
-        .basename(file, ".svg")
-        .replace(/(^.|_.)/g, (s) => s.toUpperCase());
+      const iconName = toPascalCase(path.basename(file, ".svg"));
       iconNames.push(iconName);
       await generateIconComponent(path.join(svgDir, file), iconName);
     }
