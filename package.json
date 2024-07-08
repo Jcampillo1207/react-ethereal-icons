@@ -20,7 +20,8 @@
     "ethereal-icons",
     "typescript",
     "scalable",
-    "customizable"
+    "customizable",
+    "opacity"
   ],
   "author": "José Campillo",
   "license": "ISC",
