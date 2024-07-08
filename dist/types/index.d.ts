@@ -11,6 +11,7 @@ export { default as BadgePlus } from './icons/BadgePlus';
 export { default as BadgeX } from './icons/BadgeX';
 export { default as Badge } from './icons/Badge';
 export { default as Bag } from './icons/Bag';
+export { default as Banknote } from './icons/Banknote';
 export { default as Boost } from './icons/Boost';
 export { default as Contrast } from './icons/Contrast';
 export { default as CreditCard2 } from './icons/CreditCard2';

@@ -141,6 +141,15 @@ var Bag = function (_a) {
         React.createElement("path", { stroke: "#61FFFF", "stroke-linecap": "round", "stroke-": true, d: "M14 8V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v4", opacity: ".5" })));
 };
 
+var Banknote = function (_a) {
+    var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
+    return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
+        React.createElement("path", { fill: color1 ? color1 : '#735CFF', d: "M1 16V8a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2" }),
+        React.createElement("circle", { cx: "12", cy: "12", r: "3", fill: color2 ? color2 : '#61FFFF', opacity: ".5" }),
+        React.createElement("circle", { cx: "18", cy: "12", r: "1", fill: color1 ? color1 : '#61FFFF', opacity: ".5" }),
+        React.createElement("circle", { cx: "6", cy: "12", r: "1", fill: color2 ? color2 : '#61FFFF', opacity: ".5" })));
+};
+
 var Boost = function (_a) {
     var _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["size", "color1", "color2", "className"]);
     return (React.createElement("svg", __assign({ className: className, width: size, height: size }, props, { viewBox: "0 0 24 24", xmlns: "http://www.w3.org/2000/svg", fill: "none" }),
@@ -387,7 +396,7 @@ var User = function (_a) {
 
 var IconUniversal = function (_a) {
     var name = _a.name, _b = _a.size, size = _b === void 0 ? 24 : _b, color1 = _a.color1, color2 = _a.color2, className = _a.className, props = __rest(_a, ["name", "size", "color1", "color2", "className"]);
-    var icons = { Apple: Apple, Backpack: Backpack, BadgeAlert: BadgeAlert, BadgeCheck: BadgeCheck, BadgeDollarSign: BadgeDollarSign, BadgeEuroSign: BadgeEuroSign, BadgeHelp: BadgeHelp, BadgeInfo: BadgeInfo, BadgeMinus: BadgeMinus, BadgePlus: BadgePlus, BadgeX: BadgeX, Badge: Badge, Bag: Bag, Boost: Boost, Contrast: Contrast, CreditCard2: CreditCard2, CreditCard3: CreditCard3, CreditCard: CreditCard, File2: File2, File: File, Forge: Forge, Grow: Grow, Home: Home, Intello: Intello, Layers: Layers, Mail: Mail, MapPin: MapPin, MessageCircleDots: MessageCircleDots, MessageCircle: MessageCircle, MessageSquareDots: MessageSquareDots, MessageSquare: MessageSquare, MessagesCircle: MessagesCircle, MessagesSquare: MessagesSquare, PillHorizontal2: PillHorizontal2, PillHorizontal: PillHorizontal, PillVertical2: PillVertical2, PillVertical: PillVertical, Pills2: Pills2, Pills: Pills, Squares2: Squares2, Squares3: Squares3, Squares4: Squares4, Squares: Squares, Studio: Studio, Tag: Tag, Tags: Tags, User: User };
+    var icons = { Apple: Apple, Backpack: Backpack, BadgeAlert: BadgeAlert, BadgeCheck: BadgeCheck, BadgeDollarSign: BadgeDollarSign, BadgeEuroSign: BadgeEuroSign, BadgeHelp: BadgeHelp, BadgeInfo: BadgeInfo, BadgeMinus: BadgeMinus, BadgePlus: BadgePlus, BadgeX: BadgeX, Badge: Badge, Bag: Bag, Banknote: Banknote, Boost: Boost, Contrast: Contrast, CreditCard2: CreditCard2, CreditCard3: CreditCard3, CreditCard: CreditCard, File2: File2, File: File, Forge: Forge, Grow: Grow, Home: Home, Intello: Intello, Layers: Layers, Mail: Mail, MapPin: MapPin, MessageCircleDots: MessageCircleDots, MessageCircle: MessageCircle, MessageSquareDots: MessageSquareDots, MessageSquare: MessageSquare, MessagesCircle: MessagesCircle, MessagesSquare: MessagesSquare, PillHorizontal2: PillHorizontal2, PillHorizontal: PillHorizontal, PillVertical2: PillVertical2, PillVertical: PillVertical, Pills2: Pills2, Pills: Pills, Squares2: Squares2, Squares3: Squares3, Squares4: Squares4, Squares: Squares, Studio: Studio, Tag: Tag, Tags: Tags, User: User };
     var IconComponent = icons[name];
     if (!IconComponent) {
         return null;
@@ -408,6 +417,7 @@ exports.BadgeMinus = BadgeMinus;
 exports.BadgePlus = BadgePlus;
 exports.BadgeX = BadgeX;
 exports.Bag = Bag;
+exports.Banknote = Banknote;
 exports.Boost = Boost;
 exports.Contrast = Contrast;
 exports.CreditCard = CreditCard;
