@@ -1,6 +1,6 @@
 {
   "name": "ethereal-icons",
-  "version": "1.0.53",
+  "version": "1.0.54",
   "description": "Ethereal Icons is a React icon library that provides a collection of customizable and scalable SVG icons for modern web applications.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
