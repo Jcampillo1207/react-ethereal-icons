@@ -1,0 +1,46 @@
+{
+  "name": "ethereal-icons",
+  "version": "1.0.20",
+  "description": "Ethereal Icons is a React icon library that provides a collection of customizable and scalable SVG icons for modern web applications.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs",
+    "generate-icons": "node scripts/generateIcons.js",
+    "ship": "npm run generate-icons && npm run build && npm version patch && npm publish --access public"
+  },
+  "keywords": [
+    "react",
+    "icons",
+    "svg",
+    "components",
+    "library",
+    "ethereal-icons",
+    "typescript",
+    "scalable",
+    "customizable"
+  ],
+  "author": "José Campillo",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@svgr/core": "^8.1.0",
+    "@svgr/rollup": "^8.1.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "fs-extra": "^11.2.0",
+    "rollup": "^4.18.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "svgo": "^3.3.2",
+    "typescript": "^5.5.3"
+  },
+  "files": [
+    "dist"
+  ]
+}
