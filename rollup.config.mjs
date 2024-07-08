@@ -1,19 +1,20 @@
-// rollup.config.mjs
-import typescript from 'rollup-plugin-typescript2';
-import { nodeResolve } from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
+import typescript from "rollup-plugin-typescript2";
+import { nodeResolve } from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
 
-export default {
-  input: 'src/index.ts',
+const variants = ["ethereal", "solid", "outline"];
+
+export default variants.map((variant) => ({
+  input: `src/${variant}/index.ts`,
   output: [
     {
-      file: 'dist/index.cjs.js',
-      format: 'cjs',
+      file: `dist/${variant}/index.cjs.js`,
+      format: "cjs",
       sourcemap: true,
     },
     {
-      file: 'dist/index.esm.js',
-      format: 'esm',
+      file: `dist/${variant}/index.esm.js`,
+      format: "esm",
       sourcemap: true,
     },
   ],
@@ -21,9 +22,9 @@ export default {
     nodeResolve(),
     commonjs(),
     typescript({
-      tsconfig: './tsconfig.json',
+      tsconfig: "./tsconfig.json",
       useTsconfigDeclarationDir: true,
     }),
   ],
-  external: ['react', 'react-dom'],
-};
+  external: ["react", "react-dom"],
+}));
