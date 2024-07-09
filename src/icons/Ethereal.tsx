@@ -156,6 +156,12 @@ import HexagonPause from './HexagonPause';
 import HexagonPauseDashed from './HexagonPauseDashed';
 import HexagonX from './HexagonX';
 import HexagonXDashed from './HexagonXDashed';
+import House1 from './House1';
+import House2 from './House2';
+import House3 from './House3';
+import House4 from './House4';
+import House5 from './House5';
+import House6 from './House6';
 import Intello from './Intello';
 import IntelloLight from './IntelloLight';
 import LifeSaver from './LifeSaver';
@@ -189,6 +195,8 @@ import PentagonPause from './PentagonPause';
 import PentagonPauseDashed from './PentagonPauseDashed';
 import PentagonX from './PentagonX';
 import PentagonXDashed from './PentagonXDashed';
+import PokerFace from './PokerFace';
+import Sad from './Sad';
 import Scan from './Scan';
 import ScanBarcode from './ScanBarcode';
 import ScanEye from './ScanEye';
@@ -226,6 +234,12 @@ import User3 from './User3';
 import User3Check from './User3Check';
 import User4 from './User4';
 import User4Check from './User4Check';
+import Warehouse1 from './Warehouse1';
+import Warehouse1Open from './Warehouse1Open';
+import Warehouse1Semiopen from './Warehouse1Semiopen';
+import Warehouse2 from './Warehouse2';
+import Warehouse2Open from './Warehouse2Open';
+import Warehouse2Semiopen from './Warehouse2Semiopen';
 import Zetline from './Zetline';
 import ZetlineLight from './ZetlineLight';
 import { IconName } from './types';
@@ -241,7 +255,7 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Ethereal: React.FC<IconProps> = ({ name, size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => {
-  const icons = { Accesibility1, Accesibility2, Accesibility3, Accesibility4, Audac, AudacLight, Baby1, Baby2, Baby3, Baby4, Badge1, Badge1Cent, Badge1Check, Badge1Dollarsign, Badge1Euro, Badge1Help, Badge1Info, Badge1Minus, Badge1Percent, Badge1Plus, Badge1X, Badge2, Badge2Cent, Badge2Check, Badge2Dollarsign, Badge2Euro, Badge2Help, Badge2Info, Badge2Minus, Badge2Percent, Badge2Plus, Badge2X, Badge3, Badge3Cent, Badge3Check, Badge3Dollarsign, Badge3Euro, Badge3Help, Badge3Info, Badge3Minus, Badge3Percent, Badge3Plus, Badge3X, Badge4, Badge4Cent, Badge4Check, Badge4Dollarsign, Badge4Euro, Badge4Help, Badge4Info, Badge4Minus, Badge4Percent, Badge4Plus, Badge4X, Bolt, Bolt2, Boost, ChevronDown, ChevronDownDashed, ChevronFirst, ChevronFirstDashed, ChevronLast, ChevronLastDashed, ChevronLeft, ChevronLeftDashed, ChevronRight, ChevronRightDashed, ChevronUp, ChevronUpDashed, ChevronsDown, ChevronsDownDashed, ChevronsDownUp, ChevronsDownUpDashed, ChevronsLeft, ChevronsLeftDashed, ChevronsLeftRight, ChevronsLeftRightDashed, ChevronsRight, ChevronsRightDashed, ChevronsRightLeft, ChevronsRightLeftDashed, ChevronsUp, ChevronsUpDashed, ChevronsUpDown, ChevronsUpDownDashed, Circle, CircleChevronDown, CircleChevronDownDashed, CircleChevronLeft, CircleChevronLeftDashed, CircleChevronRight, CircleChevronRightDashed, CircleChevronUp, CircleChevronUpDashed, CircleDashed, CircleDot, CircleDotDashed, Colecto, ColectoLight, Contrast1, Contrast2, Contrast3, Contrast4, Diamond, DiamondDot, DiamondDotDashed, Donut, Eclipse, EtherealLogo, Eye1, Eye1Closed, Eye2, Eye2Closed, Eye3, Eye3Closed, Eye4, Eye4Closed, FingerMiddle, FingerPointingDown, FingerPointingDown2, FingerPointingLeft, FingerPointingLeft2, FingerPointingRight, FingerPointingRight2, FingerPointingUp, FingerPointingUp2, Forge, Glasses1, Glasses10, Glasses11, Glasses12, Glasses2, Glasses3, Glasses4, Glasses5, Glasses6, Glasses7, Glasses8, Glasses9, Grab, Grow, Habitaloo, HabitalooInvert, HalfMoon, HalfMoonStar, HalfMoonStars, Hand, HandPeaceSign, Hexagon, HexagonAlert, HexagonAlertDashed, HexagonDashed, HexagonPause, HexagonPauseDashed, HexagonX, HexagonXDashed, Intello, IntelloLight, LifeSaver, Lojit, LojitLight, Mana, Mask, Moon, MoonStar, Octagon, OctagonAlert, OctagonAlertDashed, OctagonDashed, OctagonPause, OctagonPauseDashed, OctagonX, OctagonXDashed, PanelBottomClose, PanelBottomOpen, PanelLeftClose, PanelLeftOpen, PanelRightClose, PanelRightOpen, PanelUpClose, PanelUpOpen, Pentagon, PentagonAlert, PentagonAlertDashed, PentagonDashed, PentagonPause, PentagonPauseDashed, PentagonX, PentagonXDashed, Scan, ScanBarcode, ScanEye, ScanFile, ScanLine, ScanQrCode, ScanSearch, ScanText, Search, SearchCheck, SearchCode, SearchPlus, SearchPlus1, SearchX, Smile, Square, SquareChevronDown, SquareChevronLeft, SquareChevronRight, SquareChevronUp, SquareDot, SquareDotDashed, Studio, Terminal, ThumbsDown, ThumbsUp, Triangle, Typescript, Typescript1, User1, User1Check, User2, User2Check, User3, User3Check, User4, User4Check, Zetline, ZetlineLight };
+  const icons = { Accesibility1, Accesibility2, Accesibility3, Accesibility4, Audac, AudacLight, Baby1, Baby2, Baby3, Baby4, Badge1, Badge1Cent, Badge1Check, Badge1Dollarsign, Badge1Euro, Badge1Help, Badge1Info, Badge1Minus, Badge1Percent, Badge1Plus, Badge1X, Badge2, Badge2Cent, Badge2Check, Badge2Dollarsign, Badge2Euro, Badge2Help, Badge2Info, Badge2Minus, Badge2Percent, Badge2Plus, Badge2X, Badge3, Badge3Cent, Badge3Check, Badge3Dollarsign, Badge3Euro, Badge3Help, Badge3Info, Badge3Minus, Badge3Percent, Badge3Plus, Badge3X, Badge4, Badge4Cent, Badge4Check, Badge4Dollarsign, Badge4Euro, Badge4Help, Badge4Info, Badge4Minus, Badge4Percent, Badge4Plus, Badge4X, Bolt, Bolt2, Boost, ChevronDown, ChevronDownDashed, ChevronFirst, ChevronFirstDashed, ChevronLast, ChevronLastDashed, ChevronLeft, ChevronLeftDashed, ChevronRight, ChevronRightDashed, ChevronUp, ChevronUpDashed, ChevronsDown, ChevronsDownDashed, ChevronsDownUp, ChevronsDownUpDashed, ChevronsLeft, ChevronsLeftDashed, ChevronsLeftRight, ChevronsLeftRightDashed, ChevronsRight, ChevronsRightDashed, ChevronsRightLeft, ChevronsRightLeftDashed, ChevronsUp, ChevronsUpDashed, ChevronsUpDown, ChevronsUpDownDashed, Circle, CircleChevronDown, CircleChevronDownDashed, CircleChevronLeft, CircleChevronLeftDashed, CircleChevronRight, CircleChevronRightDashed, CircleChevronUp, CircleChevronUpDashed, CircleDashed, CircleDot, CircleDotDashed, Colecto, ColectoLight, Contrast1, Contrast2, Contrast3, Contrast4, Diamond, DiamondDot, DiamondDotDashed, Donut, Eclipse, EtherealLogo, Eye1, Eye1Closed, Eye2, Eye2Closed, Eye3, Eye3Closed, Eye4, Eye4Closed, FingerMiddle, FingerPointingDown, FingerPointingDown2, FingerPointingLeft, FingerPointingLeft2, FingerPointingRight, FingerPointingRight2, FingerPointingUp, FingerPointingUp2, Forge, Glasses1, Glasses10, Glasses11, Glasses12, Glasses2, Glasses3, Glasses4, Glasses5, Glasses6, Glasses7, Glasses8, Glasses9, Grab, Grow, Habitaloo, HabitalooInvert, HalfMoon, HalfMoonStar, HalfMoonStars, Hand, HandPeaceSign, Hexagon, HexagonAlert, HexagonAlertDashed, HexagonDashed, HexagonPause, HexagonPauseDashed, HexagonX, HexagonXDashed, House1, House2, House3, House4, House5, House6, Intello, IntelloLight, LifeSaver, Lojit, LojitLight, Mana, Mask, Moon, MoonStar, Octagon, OctagonAlert, OctagonAlertDashed, OctagonDashed, OctagonPause, OctagonPauseDashed, OctagonX, OctagonXDashed, PanelBottomClose, PanelBottomOpen, PanelLeftClose, PanelLeftOpen, PanelRightClose, PanelRightOpen, PanelUpClose, PanelUpOpen, Pentagon, PentagonAlert, PentagonAlertDashed, PentagonDashed, PentagonPause, PentagonPauseDashed, PentagonX, PentagonXDashed, PokerFace, Sad, Scan, ScanBarcode, ScanEye, ScanFile, ScanLine, ScanQrCode, ScanSearch, ScanText, Search, SearchCheck, SearchCode, SearchPlus, SearchPlus1, SearchX, Smile, Square, SquareChevronDown, SquareChevronLeft, SquareChevronRight, SquareChevronUp, SquareDot, SquareDotDashed, Studio, Terminal, ThumbsDown, ThumbsUp, Triangle, Typescript, Typescript1, User1, User1Check, User2, User2Check, User3, User3Check, User4, User4Check, Warehouse1, Warehouse1Open, Warehouse1Semiopen, Warehouse2, Warehouse2Open, Warehouse2Semiopen, Zetline, ZetlineLight };
   const IconComponent = icons[name];
   if (!IconComponent) {
     return null;
