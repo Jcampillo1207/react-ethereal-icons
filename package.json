@@ -28,9 +28,9 @@
   "author": "José Campillo",
   "license": "ISC",
   "dependencies": {
+    "inquirer": "^8.2.6",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "inquirer": "^8.2.4"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^26.0.1",
