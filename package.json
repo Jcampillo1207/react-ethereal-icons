@@ -8,7 +8,7 @@
   "scripts": {
     "build": "rollup -c rollup.config.mjs",
     "generate-icons": "node scripts/generateIcons.js",
-    "ship-git": "npm run generate-icons && npm run build && git add . && git commit -m 'Build' && git push origin main && npm version patch && npm publish --registry=https://npm.pkg.github.com/ && npm run create-release",
+    "ship-git": "npm run generate-icons && npm run build && git add . && git commit -m 'Build' && git push origin main && npm version patch && npm publish && npm run create-release",
     "ship": "npm run generate-icons && npm run build && npm version patch && npm publish --access public",
     "create-release": "node scripts/createRelease.js"
   },
