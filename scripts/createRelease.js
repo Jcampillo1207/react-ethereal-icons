@@ -3,7 +3,6 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
 
-// Read package.json to get the version
 const packageJsonPath = path.join(__dirname, "..", "package.json");
 const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf-8"));
 const version = packageJson.version;
