@@ -9,7 +9,6 @@ const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf-8"));
 const version = packageJson.version;
 
 (async () => {
-  // Ask the user for the release name and description
   const answers = await inquirer.prompt([
     {
       type: "input",
