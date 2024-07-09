@@ -23,7 +23,7 @@ const generateIconComponent = async (filePath, iconName, isStroke = true) => {
       typescript: true,
       expandProps: "end",
       prettier: true,
-      svgo: false, // No usar SVGO de SVGR, ya optimizamos manualmente
+      svgo: false,
     },
     { componentName: iconName }
   );
