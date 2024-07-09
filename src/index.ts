@@ -115,3 +115,4 @@ export { default as User4 } from './icons/User4';
 export { default as User4Check } from './icons/User4Check';
 export { default as Zetline } from './icons/Zetline';
 export { default as ZetlineLight } from './icons/ZetlineLight';
+export { IconName } from './icons/types';

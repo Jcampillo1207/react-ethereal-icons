@@ -2,20 +2,21 @@ const fs = require("fs-extra");
 const path = require("path");
 const { transform } = require("@svgr/core");
 const { optimize } = require("svgo");
-require("dotenv").config();
+require("dotenv").config(); // Load environment variables
 
 const svgDir = path.join(__dirname, "../svg");
 const iconsDir = path.join(__dirname, "../src/icons");
 const indexFile = path.join(__dirname, "../src/index.ts");
+const typesFile = path.join(__dirname, "../src/icons/types.ts");
 
 const generateIconComponent = async (filePath, iconName, isStroke = true) => {
   let svgCode = await fs.readFile(filePath, "utf-8");
 
-  // Optimizar el SVG
+  // Optimize the SVG
   const optimizedSvg = optimize(svgCode, { path: filePath });
   svgCode = optimizedSvg.data;
 
-  // Transformar el SVG optimizado en un componente React
+  // Transform the optimized SVG into a React component
   const jsxCode = await transform(
     svgCode,
     {
@@ -31,7 +32,7 @@ const generateIconComponent = async (filePath, iconName, isStroke = true) => {
   let cleanedJsxCode;
 
   if (isStroke) {
-    // Reemplazar atributos existentes para íconos con stroke
+    // Replace attributes for stroke icons
     cleanedJsxCode = jsxCode
       .replace(/width=".*?"/g, "")
       .replace(/height=".*?"/g, "")
@@ -40,9 +41,9 @@ const generateIconComponent = async (filePath, iconName, isStroke = true) => {
       .replace(
         /(<(path|circle|rect|polygon|line|polyline|ellipse)[^>]*?)fill="[^"]*"/g,
         '$1 fill={color ? color : "currentColor"}'
-      ) // Reemplazar fill existente solo de elementos internos con stroke
-      .replace(/stroke-width="[^"]*"/g, "") // Eliminar stroke-width existente
-      .replace(/<path/g, "<path strokeWidth={strokeWidth}") // Agregar strokeWidth personalizado
+      )
+      .replace(/stroke-width="[^"]*"/g, "")
+      .replace(/<path/g, "<path strokeWidth={strokeWidth}")
       .replace(/<circle/g, "<circle strokeWidth={strokeWidth}")
       .replace(/<rect/g, "<rect strokeWidth={strokeWidth}")
       .replace(/<polygon/g, "<polygon strokeWidth={strokeWidth}")
@@ -50,7 +51,7 @@ const generateIconComponent = async (filePath, iconName, isStroke = true) => {
       .replace(/<polyline/g, "<polyline strokeWidth={strokeWidth}")
       .replace(/<ellipse/g, "<ellipse strokeWidth={strokeWidth}");
   } else {
-    // Reemplazar atributos existentes para íconos con fill y dos colores
+    // Replace attributes for fill icons
     let fillCounter = 0;
     cleanedJsxCode = jsxCode
       .replace(/width=".*?"/g, "")
@@ -64,7 +65,7 @@ const generateIconComponent = async (filePath, iconName, isStroke = true) => {
       });
   }
 
-  // Añadir props TypeScript para el componente
+  // Add TypeScript props for the component
   const tsxCode = `
 import React from 'react';
 
@@ -104,13 +105,19 @@ const ${iconName}: React.FC<${iconName}Props> = ({ size = 24, color, strokeWidth
 export default ${iconName};
   `;
 
-  // Escribir el componente en el archivo correspondiente
+  // Write the component to the appropriate file
   const componentPath = path.join(iconsDir, `${iconName}.tsx`);
   await fs.outputFile(componentPath, tsxCode);
+
+  // Write type definition for the icon name
+  await fs.appendFile(typesFile, `  | "${iconName}"\n`);
 };
 
 const generateIcons = async () => {
   await fs.emptyDir(iconsDir);
+
+  // Initialize the types file
+  await fs.outputFile(typesFile, `export type IconName =\n`);
 
   const processDirectory = async (dir, isStroke) => {
     const files = await fs.readdir(dir);
@@ -133,15 +140,18 @@ const generateIcons = async () => {
 
   await processDirectory(svgDir, true);
 
+  // Close the types file
+  await fs.appendFile(typesFile, `;\n`);
+
   await generateUniversalIconComponent();
   await generateIndexFile();
 };
 
 const generateUniversalIconComponent = async () => {
   const files = await fs.readdir(iconsDir);
-  const iconNames = files.map((file) =>
-    toPascalCase(path.basename(file, ".tsx"))
-  );
+  const iconNames = files
+    .filter((file) => file.endsWith(".tsx"))
+    .map((file) => toPascalCase(path.basename(file, ".tsx")));
 
   const iconImports = iconNames
     .map((iconName) => `import ${iconName} from './${iconName}';`)
@@ -151,9 +161,10 @@ const generateUniversalIconComponent = async () => {
   const componentCode = `
 import React from 'react';
 ${iconImports}
+import { IconName } from './types';
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
-  name: ${iconType};
+  name: IconName;
   size?: number;
   color?: string;
   strokeWidth?: number;
@@ -181,9 +192,9 @@ export default Ethereal;
 
 const generateIndexFile = async () => {
   const files = await fs.readdir(iconsDir);
-  const iconNames = files.map((file) =>
-    toPascalCase(path.basename(file, ".tsx"))
-  );
+  const iconNames = files
+    .filter((file) => file.endsWith(".tsx"))
+    .map((file) => toPascalCase(path.basename(file, ".tsx")));
 
   const exports = iconNames
     .map(
@@ -191,7 +202,7 @@ const generateIndexFile = async () => {
         `export { default as ${iconName} } from './icons/${iconName}';`
     )
     .join("\n");
-  const indexContent = `${exports}`;
+  const indexContent = `${exports}\nexport { IconName } from './icons/types';`;
   await fs.outputFile(indexFile, indexContent);
 };
 

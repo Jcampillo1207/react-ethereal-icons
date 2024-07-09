@@ -116,9 +116,10 @@ import User4 from './User4';
 import User4Check from './User4Check';
 import Zetline from './Zetline';
 import ZetlineLight from './ZetlineLight';
+import { IconName } from './types';
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
-  name: 'Accesibility1' | 'Accesibility2' | 'Accesibility3' | 'Accesibility4' | 'Audac' | 'AudacLight' | 'Baby1' | 'Baby2' | 'Baby3' | 'Baby4' | 'Badge1' | 'Badge1Cent' | 'Badge1Check' | 'Badge1Dollarsign' | 'Badge1Euro' | 'Badge1Help' | 'Badge1Info' | 'Badge1Minus' | 'Badge1Percent' | 'Badge1Plus' | 'Badge1X' | 'Badge2' | 'Badge2Cent' | 'Badge2Check' | 'Badge2Dollarsign' | 'Badge2Euro' | 'Badge2Help' | 'Badge2Info' | 'Badge2Minus' | 'Badge2Percent' | 'Badge2Plus' | 'Badge2X' | 'Badge3' | 'Badge3Cent' | 'Badge3Check' | 'Badge3Dollarsign' | 'Badge3Euro' | 'Badge3Help' | 'Badge3Info' | 'Badge3Minus' | 'Badge3Percent' | 'Badge3Plus' | 'Badge3X' | 'Badge4' | 'Badge4Cent' | 'Badge4Check' | 'Badge4Dollarsign' | 'Badge4Euro' | 'Badge4Help' | 'Badge4Info' | 'Badge4Minus' | 'Badge4Percent' | 'Badge4Plus' | 'Badge4X' | 'Boost' | 'Colecto' | 'ColectoLight' | 'Contrast1' | 'Contrast2' | 'Contrast3' | 'Contrast4' | 'EtherealLogo' | 'Eye1' | 'Eye1Closed' | 'Eye2' | 'Eye2Closed' | 'Eye3' | 'Eye3Closed' | 'Eye4' | 'Eye4Closed' | 'FingerMiddle' | 'FingerPointingDown' | 'FingerPointingDown2' | 'FingerPointingLeft' | 'FingerPointingLeft2' | 'FingerPointingRight' | 'FingerPointingRight2' | 'FingerPointingUp' | 'FingerPointingUp2' | 'Forge' | 'Glasses1' | 'Glasses10' | 'Glasses11' | 'Glasses12' | 'Glasses2' | 'Glasses3' | 'Glasses4' | 'Glasses5' | 'Glasses6' | 'Glasses7' | 'Glasses8' | 'Glasses9' | 'Grab' | 'Grow' | 'Habitaloo' | 'HabitalooInvert' | 'Hand' | 'HandPeaceSign' | 'Intello' | 'IntelloLight' | 'Lojit' | 'LojitLight' | 'Mask' | 'Studio' | 'ThumbsDown' | 'ThumbsUp' | 'User1' | 'User1Check' | 'User2' | 'User2Check' | 'User3' | 'User3Check' | 'User4' | 'User4Check' | 'Zetline' | 'ZetlineLight';
+  name: IconName;
   size?: number;
   color?: string;
   strokeWidth?: number;
