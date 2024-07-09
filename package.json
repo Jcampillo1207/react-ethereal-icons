@@ -27,13 +27,6 @@
   ],
   "author": "José Campillo",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Jcampillo1207/react-ethereal-icons.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "dependencies": {
     "dotenv": "^16.4.5",
     "inquirer": "^8.2.6",
