@@ -58,6 +58,27 @@ const App = () => (
 export default App;
 ```
 
+## Using Types
+
+Ethereal Icons also provides TypeScript support to ensure type safety and autocompletion in your code editor. The IconName type includes all the available icon names, allowing you to use them with confidence.
+
+```jsx
+import React from "react";
+import { Ethereal, IconName } from "ethereal-icons";
+
+const icons: IconName[] = ["User", "Apple", "AnotherIcon"];
+
+const App = () => (
+  <div>
+    {icons.map((icon) => (
+      <Ethereal key={icon} name={icon} size={48} className="custom-class" />
+    ))}
+  </div>
+);
+
+export default App;
+```
+
 ### Props
 
 - `size`: Sets the width and height of the icon. Defaults to `24`.
