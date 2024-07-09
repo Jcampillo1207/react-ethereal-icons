@@ -70,15 +70,42 @@ import Eye3 from './Eye3';
 import Eye3Closed from './Eye3Closed';
 import Eye4 from './Eye4';
 import Eye4Closed from './Eye4Closed';
+import FingerMiddle from './FingerMiddle';
+import FingerPointingDown from './FingerPointingDown';
+import FingerPointingDown2 from './FingerPointingDown2';
+import FingerPointingLeft from './FingerPointingLeft';
+import FingerPointingLeft2 from './FingerPointingLeft2';
+import FingerPointingRight from './FingerPointingRight';
+import FingerPointingRight2 from './FingerPointingRight2';
+import FingerPointingUp from './FingerPointingUp';
+import FingerPointingUp2 from './FingerPointingUp2';
 import Forge from './Forge';
+import Glasses1 from './Glasses1';
+import Glasses10 from './Glasses10';
+import Glasses11 from './Glasses11';
+import Glasses12 from './Glasses12';
+import Glasses2 from './Glasses2';
+import Glasses3 from './Glasses3';
+import Glasses4 from './Glasses4';
+import Glasses5 from './Glasses5';
+import Glasses6 from './Glasses6';
+import Glasses7 from './Glasses7';
+import Glasses8 from './Glasses8';
+import Glasses9 from './Glasses9';
+import Grab from './Grab';
 import Grow from './Grow';
 import Habitaloo from './Habitaloo';
 import HabitalooInvert from './HabitalooInvert';
+import Hand from './Hand';
+import HandPeaceSign from './HandPeaceSign';
 import Intello from './Intello';
 import IntelloLight from './IntelloLight';
 import Lojit from './Lojit';
 import LojitLight from './LojitLight';
+import Mask from './Mask';
 import Studio from './Studio';
+import ThumbsDown from './ThumbsDown';
+import ThumbsUp from './ThumbsUp';
 import User1 from './User1';
 import User1Check from './User1Check';
 import User2 from './User2';
@@ -91,7 +118,7 @@ import Zetline from './Zetline';
 import ZetlineLight from './ZetlineLight';
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
-  name: 'Accesibility1' | 'Accesibility2' | 'Accesibility3' | 'Accesibility4' | 'Audac' | 'AudacLight' | 'Baby1' | 'Baby2' | 'Baby3' | 'Baby4' | 'Badge1' | 'Badge1Cent' | 'Badge1Check' | 'Badge1Dollarsign' | 'Badge1Euro' | 'Badge1Help' | 'Badge1Info' | 'Badge1Minus' | 'Badge1Percent' | 'Badge1Plus' | 'Badge1X' | 'Badge2' | 'Badge2Cent' | 'Badge2Check' | 'Badge2Dollarsign' | 'Badge2Euro' | 'Badge2Help' | 'Badge2Info' | 'Badge2Minus' | 'Badge2Percent' | 'Badge2Plus' | 'Badge2X' | 'Badge3' | 'Badge3Cent' | 'Badge3Check' | 'Badge3Dollarsign' | 'Badge3Euro' | 'Badge3Help' | 'Badge3Info' | 'Badge3Minus' | 'Badge3Percent' | 'Badge3Plus' | 'Badge3X' | 'Badge4' | 'Badge4Cent' | 'Badge4Check' | 'Badge4Dollarsign' | 'Badge4Euro' | 'Badge4Help' | 'Badge4Info' | 'Badge4Minus' | 'Badge4Percent' | 'Badge4Plus' | 'Badge4X' | 'Boost' | 'Colecto' | 'ColectoLight' | 'Contrast1' | 'Contrast2' | 'Contrast3' | 'Contrast4' | 'EtherealLogo' | 'Eye1' | 'Eye1Closed' | 'Eye2' | 'Eye2Closed' | 'Eye3' | 'Eye3Closed' | 'Eye4' | 'Eye4Closed' | 'Forge' | 'Grow' | 'Habitaloo' | 'HabitalooInvert' | 'Intello' | 'IntelloLight' | 'Lojit' | 'LojitLight' | 'Studio' | 'User1' | 'User1Check' | 'User2' | 'User2Check' | 'User3' | 'User3Check' | 'User4' | 'User4Check' | 'Zetline' | 'ZetlineLight';
+  name: 'Accesibility1' | 'Accesibility2' | 'Accesibility3' | 'Accesibility4' | 'Audac' | 'AudacLight' | 'Baby1' | 'Baby2' | 'Baby3' | 'Baby4' | 'Badge1' | 'Badge1Cent' | 'Badge1Check' | 'Badge1Dollarsign' | 'Badge1Euro' | 'Badge1Help' | 'Badge1Info' | 'Badge1Minus' | 'Badge1Percent' | 'Badge1Plus' | 'Badge1X' | 'Badge2' | 'Badge2Cent' | 'Badge2Check' | 'Badge2Dollarsign' | 'Badge2Euro' | 'Badge2Help' | 'Badge2Info' | 'Badge2Minus' | 'Badge2Percent' | 'Badge2Plus' | 'Badge2X' | 'Badge3' | 'Badge3Cent' | 'Badge3Check' | 'Badge3Dollarsign' | 'Badge3Euro' | 'Badge3Help' | 'Badge3Info' | 'Badge3Minus' | 'Badge3Percent' | 'Badge3Plus' | 'Badge3X' | 'Badge4' | 'Badge4Cent' | 'Badge4Check' | 'Badge4Dollarsign' | 'Badge4Euro' | 'Badge4Help' | 'Badge4Info' | 'Badge4Minus' | 'Badge4Percent' | 'Badge4Plus' | 'Badge4X' | 'Boost' | 'Colecto' | 'ColectoLight' | 'Contrast1' | 'Contrast2' | 'Contrast3' | 'Contrast4' | 'EtherealLogo' | 'Eye1' | 'Eye1Closed' | 'Eye2' | 'Eye2Closed' | 'Eye3' | 'Eye3Closed' | 'Eye4' | 'Eye4Closed' | 'FingerMiddle' | 'FingerPointingDown' | 'FingerPointingDown2' | 'FingerPointingLeft' | 'FingerPointingLeft2' | 'FingerPointingRight' | 'FingerPointingRight2' | 'FingerPointingUp' | 'FingerPointingUp2' | 'Forge' | 'Glasses1' | 'Glasses10' | 'Glasses11' | 'Glasses12' | 'Glasses2' | 'Glasses3' | 'Glasses4' | 'Glasses5' | 'Glasses6' | 'Glasses7' | 'Glasses8' | 'Glasses9' | 'Grab' | 'Grow' | 'Habitaloo' | 'HabitalooInvert' | 'Hand' | 'HandPeaceSign' | 'Intello' | 'IntelloLight' | 'Lojit' | 'LojitLight' | 'Mask' | 'Studio' | 'ThumbsDown' | 'ThumbsUp' | 'User1' | 'User1Check' | 'User2' | 'User2Check' | 'User3' | 'User3Check' | 'User4' | 'User4Check' | 'Zetline' | 'ZetlineLight';
   size?: number;
   color?: string;
   strokeWidth?: number;
@@ -101,7 +128,7 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Ethereal: React.FC<IconProps> = ({ name, size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => {
-  const icons = { Accesibility1, Accesibility2, Accesibility3, Accesibility4, Audac, AudacLight, Baby1, Baby2, Baby3, Baby4, Badge1, Badge1Cent, Badge1Check, Badge1Dollarsign, Badge1Euro, Badge1Help, Badge1Info, Badge1Minus, Badge1Percent, Badge1Plus, Badge1X, Badge2, Badge2Cent, Badge2Check, Badge2Dollarsign, Badge2Euro, Badge2Help, Badge2Info, Badge2Minus, Badge2Percent, Badge2Plus, Badge2X, Badge3, Badge3Cent, Badge3Check, Badge3Dollarsign, Badge3Euro, Badge3Help, Badge3Info, Badge3Minus, Badge3Percent, Badge3Plus, Badge3X, Badge4, Badge4Cent, Badge4Check, Badge4Dollarsign, Badge4Euro, Badge4Help, Badge4Info, Badge4Minus, Badge4Percent, Badge4Plus, Badge4X, Boost, Colecto, ColectoLight, Contrast1, Contrast2, Contrast3, Contrast4, EtherealLogo, Eye1, Eye1Closed, Eye2, Eye2Closed, Eye3, Eye3Closed, Eye4, Eye4Closed, Forge, Grow, Habitaloo, HabitalooInvert, Intello, IntelloLight, Lojit, LojitLight, Studio, User1, User1Check, User2, User2Check, User3, User3Check, User4, User4Check, Zetline, ZetlineLight };
+  const icons = { Accesibility1, Accesibility2, Accesibility3, Accesibility4, Audac, AudacLight, Baby1, Baby2, Baby3, Baby4, Badge1, Badge1Cent, Badge1Check, Badge1Dollarsign, Badge1Euro, Badge1Help, Badge1Info, Badge1Minus, Badge1Percent, Badge1Plus, Badge1X, Badge2, Badge2Cent, Badge2Check, Badge2Dollarsign, Badge2Euro, Badge2Help, Badge2Info, Badge2Minus, Badge2Percent, Badge2Plus, Badge2X, Badge3, Badge3Cent, Badge3Check, Badge3Dollarsign, Badge3Euro, Badge3Help, Badge3Info, Badge3Minus, Badge3Percent, Badge3Plus, Badge3X, Badge4, Badge4Cent, Badge4Check, Badge4Dollarsign, Badge4Euro, Badge4Help, Badge4Info, Badge4Minus, Badge4Percent, Badge4Plus, Badge4X, Boost, Colecto, ColectoLight, Contrast1, Contrast2, Contrast3, Contrast4, EtherealLogo, Eye1, Eye1Closed, Eye2, Eye2Closed, Eye3, Eye3Closed, Eye4, Eye4Closed, FingerMiddle, FingerPointingDown, FingerPointingDown2, FingerPointingLeft, FingerPointingLeft2, FingerPointingRight, FingerPointingRight2, FingerPointingUp, FingerPointingUp2, Forge, Glasses1, Glasses10, Glasses11, Glasses12, Glasses2, Glasses3, Glasses4, Glasses5, Glasses6, Glasses7, Glasses8, Glasses9, Grab, Grow, Habitaloo, HabitalooInvert, Hand, HandPeaceSign, Intello, IntelloLight, Lojit, LojitLight, Mask, Studio, ThumbsDown, ThumbsUp, User1, User1Check, User2, User2Check, User3, User3Check, User4, User4Check, Zetline, ZetlineLight };
   const IconComponent = icons[name];
   if (!IconComponent) {
     return null;
