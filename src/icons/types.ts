@@ -205,6 +205,7 @@ export type IconName =
   | "SearchPlus"
   | "SearchX"
   | "Search"
+  | "Smile"
   | "SquareChevronDown"
   | "SquareChevronLeft"
   | "SquareChevronRight"

@@ -202,6 +202,7 @@ export { default as SearchCode } from './icons/SearchCode';
 export { default as SearchPlus } from './icons/SearchPlus';
 export { default as SearchPlus1 } from './icons/SearchPlus1';
 export { default as SearchX } from './icons/SearchX';
+export { default as Smile } from './icons/Smile';
 export { default as Square } from './icons/Square';
 export { default as SquareChevronDown } from './icons/SquareChevronDown';
 export { default as SquareChevronLeft } from './icons/SquareChevronLeft';
