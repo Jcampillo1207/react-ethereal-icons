@@ -2,6 +2,7 @@ const fs = require("fs-extra");
 const path = require("path");
 const { transform } = require("@svgr/core");
 const { optimize } = require("svgo");
+require("dotenv").config();
 
 const svgDir = path.join(__dirname, "../svg");
 const iconsDir = path.join(__dirname, "../src/icons");
