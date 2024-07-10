@@ -156,6 +156,7 @@ export type IconName =
   | "Boost"
   | "BoosthubIntello"
   | "BulbIntello"
+  | "CheckIntello"
   | "ColectoLight"
   | "Colecto"
   | "DevelopmentIntello"
