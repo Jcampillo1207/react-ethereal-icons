@@ -56,6 +56,7 @@ export { default as Bolt } from './icons/Bolt';
 export { default as Bolt2 } from './icons/Bolt2';
 export { default as Boost } from './icons/Boost';
 export { default as BoosthubIntello } from './icons/BoosthubIntello';
+export { default as BulbIntello } from './icons/BulbIntello';
 export { default as ChevronDown } from './icons/ChevronDown';
 export { default as ChevronDownDashed } from './icons/ChevronDownDashed';
 export { default as ChevronFirst } from './icons/ChevronFirst';

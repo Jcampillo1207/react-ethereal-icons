@@ -155,6 +155,7 @@ export type IconName =
   | "Audac"
   | "Boost"
   | "BoosthubIntello"
+  | "BulbIntello"
   | "ColectoLight"
   | "Colecto"
   | "DevelopmentIntello"
