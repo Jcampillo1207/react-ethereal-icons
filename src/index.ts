@@ -178,6 +178,7 @@ export { default as OctagonPause } from './icons/OctagonPause';
 export { default as OctagonPauseDashed } from './icons/OctagonPauseDashed';
 export { default as OctagonX } from './icons/OctagonX';
 export { default as OctagonXDashed } from './icons/OctagonXDashed';
+export { default as OnboardingIntello } from './icons/OnboardingIntello';
 export { default as PanelBottomClose } from './icons/PanelBottomClose';
 export { default as PanelBottomOpen } from './icons/PanelBottomOpen';
 export { default as PanelLeftClose } from './icons/PanelLeftClose';

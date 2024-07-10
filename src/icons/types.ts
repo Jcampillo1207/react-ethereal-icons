@@ -165,6 +165,7 @@ export type IconName =
   | "Intello"
   | "LojitLight"
   | "Lojit"
+  | "OnboardingIntello"
   | "Studio"
   | "ZetlineLight"
   | "Zetline"
