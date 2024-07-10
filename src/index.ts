@@ -228,6 +228,7 @@ export { default as ThumbsUp } from './icons/ThumbsUp';
 export { default as Triangle } from './icons/Triangle';
 export { default as Typescript } from './icons/Typescript';
 export { default as Typescript1 } from './icons/Typescript1';
+export { default as UploadIntello } from './icons/UploadIntello';
 export { default as User1 } from './icons/User1';
 export { default as User1Check } from './icons/User1Check';
 export { default as User2 } from './icons/User2';
