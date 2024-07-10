@@ -22,7 +22,7 @@ const version = packageJson.version;
     },
   ]);
 
-  console.log("Creating GitHub release...");
+  console.log("Creating GitHub release");
   try {
     execSync(
       `gh release create ${answers.releaseName} --title "${answers.releaseName}" --notes "${answers.releaseDescription}" --target main`,
