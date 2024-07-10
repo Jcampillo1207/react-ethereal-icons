@@ -22,7 +22,6 @@ const version = packageJson.version;
     },
   ]);
 
-  // Create a new release using the GitHub CLI
   try {
     execSync(
       `gh release create ${answers.releaseName} --title "${answers.releaseName}" --notes "${answers.releaseDescription}" --target main`,
