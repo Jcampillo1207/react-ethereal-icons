@@ -2,7 +2,6 @@ const { execSync } = require("child_process");
 const inquirer = require("inquirer");
 const fs = require("fs");
 const path = require("path");
-require("dotenv").config();
 
 const packageJsonPath = path.join(__dirname, "..", "package.json");
 const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf-8"));
