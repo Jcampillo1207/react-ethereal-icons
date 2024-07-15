@@ -3,8 +3,8 @@ import React from 'react';
 
 /**
  * @component
- * @name Apple2
- * @description Automatically generated SVG icon component for Apple2.
+ * @name Play
+ * @description Automatically generated SVG icon component for Play.
  * @param {object} props - SVG component props, including any valid SVG attribute.
  * @param {number} [props.size=24] - Icon size.
  * @param {string} [props.color] - Icon color.
@@ -18,7 +18,7 @@ import React from 'react';
  * @returns {JSX.Element} JSX element representing the SVG icon.
  */
 
-interface Apple2Props extends React.SVGProps<SVGSVGElement> {
+interface PlayProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   color?: string;
   strokeWidth?: number;
@@ -27,9 +27,9 @@ interface Apple2Props extends React.SVGProps<SVGSVGElement> {
   className?: string;
 }
 
-const Apple2: React.FC<Apple2Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 7S8 5 6 5s-4 2-4 5 2 12 5 12 2.5-1 5-1 2 1 5 1 5-9 5-12-2-5-4-5-6 2-6 2m0 0c.044-2.682-.17-3.975-2-5M9 9c-2.253-.226-2.945.317-3 3"/></svg>
+const Play: React.FC<PlayProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
+  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linejoin="round" stroke- d="m5.932 3.543 12.705 6.687c1.425.75 1.425 2.79 0 3.54L5.931 20.457C4.6 21.158 3 20.192 3 18.687V5.313c0-1.505 1.6-2.471 2.932-1.77Z"/></svg>
 );
 
-export default Apple2;
+export default Play;
   
