@@ -2,6 +2,7 @@ export { default as Accesibility1 } from './icons/Accesibility1';
 export { default as Accesibility2 } from './icons/Accesibility2';
 export { default as Accesibility3 } from './icons/Accesibility3';
 export { default as Accesibility4 } from './icons/Accesibility4';
+export { default as Airplane1 } from './icons/Airplane1';
 export { default as Apple1 } from './icons/Apple1';
 export { default as Apple2 } from './icons/Apple2';
 export { default as AppleBitten } from './icons/AppleBitten';

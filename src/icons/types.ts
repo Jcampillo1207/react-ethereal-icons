@@ -3,6 +3,7 @@ export type IconName =
   | "Accesibility2"
   | "Accesibility3"
   | "Accesibility4"
+  | "Airplane1"
   | "Apple1"
   | "Apple2"
   | "AppleBitten"
