@@ -28,7 +28,7 @@ interface AlignHorizontalDistributionEndProps extends React.SVGProps<SVGSVGEleme
 }
 
 const AlignHorizontalDistributionEnd: React.FC<AlignHorizontalDistributionEndProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M20 8v8m0-8h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4m0-8V2m0 14v6m-10-3H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h4m0 14V5m0 14v3m0-17V2"/></svg>
+  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><g clip-path="url(#a)"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M20 8v8m0-8h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4m0-8V2m0 14v6m-10-3H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h4m0 14V5m0 14v3m0-17V2"/></g><defs><clipPath id="a"><path strokeWidth={strokeWidth}  fill={color ? color : "currentColor"} d="M0 0h24v24H0z"/></clipPath></defs></svg>
 );
 
 export default AlignHorizontalDistributionEnd;
