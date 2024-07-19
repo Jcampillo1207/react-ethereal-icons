@@ -28,7 +28,7 @@ interface ChevronDownDashedProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const ChevronDownDashed: React.FC<ChevronDownDashedProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round" stroke- d="m6 9 6 6 6-6"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round" stroke- d="m6 9 6 6 6-6"/></svg>
 );
 
 export default ChevronDownDashed;

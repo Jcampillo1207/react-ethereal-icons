@@ -28,7 +28,7 @@ interface KeyProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Key: React.FC<KeyProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m17 7-1 1m-.316 6.632a6.316 6.316 0 1 0-6.316-6.316c0 .927.273 1.891.632 2.684l-8 8v3h3v-2l2-.105V18h2l4-4c.793.359 1.758.632 2.684.632"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m17 7-1 1m-.316 6.632a6.316 6.316 0 1 0-6.316-6.316c0 .927.273 1.891.632 2.684l-8 8v3h3v-2l2-.105V18h2l4-4c.793.359 1.758.632 2.684.632"/></svg>
 );
 
 export default Key;

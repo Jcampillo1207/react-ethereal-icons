@@ -28,7 +28,7 @@ interface Armchair1Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Armchair1: React.FC<Armchair1Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M19 10V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v5m14 0a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2m0-9a2 2 0 0 0-2 2v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V12a2 2 0 0 0-2-2m0 0a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2m0 0h14M5 19v2m14-2v2"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M19 10V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v5m14 0a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2m0-9a2 2 0 0 0-2 2v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V12a2 2 0 0 0-2-2m0 0a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2m0 0h14M5 19v2m14-2v2"/></svg>
 );
 
 export default Armchair1;

@@ -28,7 +28,7 @@ interface Eye1ClosedProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Eye1Closed: React.FC<Eye1ClosedProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m3.111 3 3.655 3.7m2.877 2.914A3.39 3.39 0 0 0 8.667 12c0 1.864 1.492 3.375 3.333 3.375.92 0 1.754-.378 2.357-.989M9.643 9.615l4.714 4.772M9.643 9.615 6.766 6.7m7.591 7.687 2.877 2.913M20.89 21l-3.655-3.7M6.766 6.7C3.474 8.684 2 12 2 12s3 6.75 10 6.75a10 10 0 0 0 5.234-1.45m3.254-2.914C21.518 13.087 22 12 22 12s-3-6.75-10-6.75q-.573 0-1.111.058"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m3.111 3 3.655 3.7m2.877 2.914A3.39 3.39 0 0 0 8.667 12c0 1.864 1.492 3.375 3.333 3.375.92 0 1.754-.378 2.357-.989M9.643 9.615l4.714 4.772M9.643 9.615 6.766 6.7m7.591 7.687 2.877 2.913M20.89 21l-3.655-3.7M6.766 6.7C3.474 8.684 2 12 2 12s3 6.75 10 6.75a10 10 0 0 0 5.234-1.45m3.254-2.914C21.518 13.087 22 12 22 12s-3-6.75-10-6.75q-.573 0-1.111.058"/></svg>
 );
 
 export default Eye1Closed;

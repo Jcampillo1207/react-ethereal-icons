@@ -28,7 +28,7 @@ interface Flag2Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Flag2: React.FC<Flag2Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M20 15s-1-1-4-1-5 2-8 2-4-1-4-1V3s1 1 4 1 5-2 8-2 4 1 4 1zm0 0v7"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M20 15s-1-1-4-1-5 2-8 2-4-1-4-1V3s1 1 4 1 5-2 8-2 4 1 4 1zm0 0v7"/></svg>
 );
 
 export default Flag2;

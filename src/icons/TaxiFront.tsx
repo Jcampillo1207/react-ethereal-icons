@@ -28,7 +28,7 @@ interface TaxiFrontProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const TaxiFront: React.FC<TaxiFrontProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m19 11-1.497-3.743A2 2 0 0 0 15.646 6H8.354a2 2 0 0 0-1.857 1.257L5 11m14 0 2-2m-2 2H5m14 0a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2M5 11 3 9m2 2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2m0 0v1a1 1 0 1 0 2 0v-1m-2 0h2m0 0h10m2 0v1a1 1 0 1 1-2 0v-1m2 0h-2m0-4h.01M7 15h.01M10 2h4"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m19 11-1.497-3.743A2 2 0 0 0 15.646 6H8.354a2 2 0 0 0-1.857 1.257L5 11m14 0 2-2m-2 2H5m14 0a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2M5 11 3 9m2 2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2m0 0v1a1 1 0 1 0 2 0v-1m-2 0h2m0 0h10m2 0v1a1 1 0 1 1-2 0v-1m2 0h-2m0-4h.01M7 15h.01M10 2h4"/></svg>
 );
 
 export default TaxiFront;

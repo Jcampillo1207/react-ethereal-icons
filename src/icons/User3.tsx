@@ -28,7 +28,7 @@ interface User3Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const User3: React.FC<User3Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke- d="M4 22s0-7.778 8-7.778S20 22 20 22M15.233 9.587a4.36 4.36 0 0 0 0-6.285c-1.786-1.736-4.68-1.736-6.465 0a4.36 4.36 0 0 0 0 6.285c1.785 1.736 4.68 1.736 6.464 0Z"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke- d="M4 22s0-7.778 8-7.778S20 22 20 22M15.233 9.587a4.36 4.36 0 0 0 0-6.285c-1.786-1.736-4.68-1.736-6.465 0a4.36 4.36 0 0 0 0 6.285c1.785 1.736 4.68 1.736 6.464 0Z"/></svg>
 );
 
 export default User3;

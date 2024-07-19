@@ -28,7 +28,7 @@ interface ScooterProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Scooter: React.FC<ScooterProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 16s0-5-5-5-5 5-5 5h2m8 0h-2m2 0h6.199M12 16c2 0 4-3 4-6M5 8h4m-5 8s0 3 3 3 3-3 3-3m-6 0h6m8.199 0c.374-.6 1.041-1 1.801-1m-1.801 1A2.121 2.121 0 1 0 20 15m-4-5V7a2 2 0 0 0-2-2h-1m3 5c2 0 4 3 4 5"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 16s0-5-5-5-5 5-5 5h2m8 0h-2m2 0h6.199M12 16c2 0 4-3 4-6M5 8h4m-5 8s0 3 3 3 3-3 3-3m-6 0h6m8.199 0c.374-.6 1.041-1 1.801-1m-1.801 1A2.121 2.121 0 1 0 20 15m-4-5V7a2 2 0 0 0-2-2h-1m3 5c2 0 4 3 4 5"/></svg>
 );
 
 export default Scooter;

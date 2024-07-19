@@ -28,7 +28,7 @@ interface AProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const A: React.FC<AProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m6 19 1.8-4.2m0 0L12 5l4.2 9.8m-8.4 0h8.4m0 0L18 19"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m6 19 1.8-4.2m0 0L12 5l4.2 9.8m-8.4 0h8.4m0 0L18 19"/></svg>
 );
 
 export default A;

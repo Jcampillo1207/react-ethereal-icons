@@ -28,7 +28,7 @@ interface AntennaProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Antenna: React.FC<AntennaProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 17v5m10-10L17 2m0 10L12 2m0 10L9.5 7M7 2l2.5 5M7 12 2 2m17.5 5h-10m-5 0h5"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 17v5m10-10L17 2m0 10L12 2m0 10L9.5 7M7 2l2.5 5M7 12 2 2m17.5 5h-10m-5 0h5"/></svg>
 );
 
 export default Antenna;

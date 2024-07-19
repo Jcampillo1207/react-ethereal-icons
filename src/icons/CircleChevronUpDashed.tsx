@@ -28,7 +28,7 @@ interface CircleChevronUpDashedProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const CircleChevronUpDashed: React.FC<CircleChevronUpDashedProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round" stroke- d="M19.071 4.929c3.905 3.905 3.905 10.237 0 14.142s-10.237 3.905-14.142 0-3.905-10.237 0-14.142 10.237-3.905 14.142 0"/><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M7.993 12.986 12.007 9l3.986 4.014"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round" stroke- d="M19.071 4.929c3.905 3.905 3.905 10.237 0 14.142s-10.237 3.905-14.142 0-3.905-10.237 0-14.142 10.237-3.905 14.142 0"/><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M7.993 12.986 12.007 9l3.986 4.014"/></svg>
 );
 
 export default CircleChevronUpDashed;

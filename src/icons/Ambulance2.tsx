@@ -28,7 +28,7 @@ interface Ambulance2Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Ambulance2: React.FC<Ambulance2Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M14 18.5H9m5 0v-9m0 9h1m-6 0s0-2-2-2-2 2-2 2m4 0s0 2-2 2-2-2-2-2m0 0H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3.5m0 0h4a4 4 0 0 1 4 4v3a2 2 0 0 1-2 2h-1m0 0s0-2-2-2-2 2-2 2m4 0s0 2-2 2-2-2-2-2M8 8v2m0 0v2m0-2H6m2 0h2"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M14 18.5H9m5 0v-9m0 9h1m-6 0s0-2-2-2-2 2-2 2m4 0s0 2-2 2-2-2-2-2m0 0H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v3.5m0 0h4a4 4 0 0 1 4 4v3a2 2 0 0 1-2 2h-1m0 0s0-2-2-2-2 2-2 2m4 0s0 2-2 2-2-2-2-2M8 8v2m0 0v2m0-2H6m2 0h2"/></svg>
 );
 
 export default Ambulance2;

@@ -28,7 +28,7 @@ interface Caravan3Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Caravan3: React.FC<Caravan3Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M18 18h4v-2m-4 2h-2m2 0V8v0a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v8a2 2 0 0 0 2 2v0m8 0s0-2 2-2 2 2 2 2m-4 0s0 2 2 2 2-2 2-2m-4 0H8m4 0v-8a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8m-4 0s0-2 2-2 2 2 2 2m-4 0s0 2 2 2 2-2 2-2"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M18 18h4v-2m-4 2h-2m2 0V8v0a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v8a2 2 0 0 0 2 2v0m8 0s0-2 2-2 2 2 2 2m-4 0s0 2 2 2 2-2 2-2m-4 0H8m4 0v-8a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8m-4 0s0-2 2-2 2 2 2 2m-4 0s0 2 2 2 2-2 2-2"/></svg>
 );
 
 export default Caravan3;

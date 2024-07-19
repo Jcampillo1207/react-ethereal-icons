@@ -28,7 +28,7 @@ interface AlarmClockProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const AlarmClock: React.FC<AlarmClockProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M5 2 2 5m20 0-3-3m-5 12-2-2V8m7 14-3.045-3.045m0 0A7.96 7.96 0 0 1 12 20a7.96 7.96 0 0 1-3.955-1.045m7.91 0a8 8 0 1 0-7.91 0m0 0L5 22"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M5 2 2 5m20 0-3-3m-5 12-2-2V8m7 14-3.045-3.045m0 0A7.96 7.96 0 0 1 12 20a7.96 7.96 0 0 1-3.955-1.045m7.91 0a8 8 0 1 0-7.91 0m0 0L5 22"/></svg>
 );
 
 export default AlarmClock;

@@ -28,7 +28,7 @@ interface CProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const C: React.FC<CProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M17 8c-.74-1.568-2.089-3-4.552-3C7 5 7 12 7 12s0 7 5.448 7c2.463 0 3.813-1.432 4.552-3"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M17 8c-.74-1.568-2.089-3-4.552-3C7 5 7 12 7 12s0 7 5.448 7c2.463 0 3.813-1.432 4.552-3"/></svg>
 );
 
 export default C;

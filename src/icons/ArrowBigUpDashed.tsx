@@ -28,7 +28,7 @@ interface ArrowBigUpDashedProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const ArrowBigUpDashed: React.FC<ArrowBigUpDashedProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M9 19h6m-6-4v-3H5l7-7 7 7h-4v3z"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M9 19h6m-6-4v-3H5l7-7 7 7h-4v3z"/></svg>
 );
 
 export default ArrowBigUpDashed;

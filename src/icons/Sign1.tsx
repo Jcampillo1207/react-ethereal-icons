@@ -28,7 +28,7 @@ interface Sign1Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Sign1: React.FC<Sign1Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M10 7V4l2-2 2 2v3m-4 0H4v10h6m0-10h4m-4 10v4c0 .6.4 1 1 1h2c.6 0 1-.4 1-1v-4m-4 0h4m0 0h6V7h-6"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M10 7V4l2-2 2 2v3m-4 0H4v10h6m0-10h4m-4 10v4c0 .6.4 1 1 1h2c.6 0 1-.4 1-1v-4m-4 0h4m0 0h6V7h-6"/></svg>
 );
 
 export default Sign1;

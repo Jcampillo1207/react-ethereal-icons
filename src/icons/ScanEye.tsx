@@ -28,7 +28,7 @@ interface ScanEyeProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const ScanEye: React.FC<ScanEyeProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M7 2H4a2 2 0 0 0-2 2v3m0 10v3a2 2 0 0 0 2 2h3m10 0h3a2 2 0 0 0 2-2v-3M17 2h3a2 2 0 0 1 2 2v3M5 12s2.1-5 7-5 7 5 7 5-2.1 5-7 5-7-5-7-5"/><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M7 2H4a2 2 0 0 0-2 2v3m0 10v3a2 2 0 0 0 2 2h3m10 0h3a2 2 0 0 0 2-2v-3M17 2h3a2 2 0 0 1 2 2v3M5 12s2.1-5 7-5 7 5 7 5-2.1 5-7 5-7-5-7-5"/><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/></svg>
 );
 
 export default ScanEye;

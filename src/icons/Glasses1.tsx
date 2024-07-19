@@ -28,7 +28,7 @@ interface Glasses1Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Glasses1: React.FC<Glasses1Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M10 15a4 4 0 0 1-8 0m8 0a4 4 0 0 0-8 0m8 0h4m0 0a4 4 0 0 1 8 0m-8 0a4 4 0 0 0 8 0M2 15V6.5a2 2 0 0 1 .8-1.6L4 4m18 11V6.5a2 2 0 0 0-.8-1.6L20 4"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M10 15a4 4 0 0 1-8 0m8 0a4 4 0 0 0-8 0m8 0h4m0 0a4 4 0 0 1 8 0m-8 0a4 4 0 0 0 8 0M2 15V6.5a2 2 0 0 1 .8-1.6L4 4m18 11V6.5a2 2 0 0 0-.8-1.6L20 4"/></svg>
 );
 
 export default Glasses1;

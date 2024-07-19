@@ -28,7 +28,7 @@ interface Accesibility4Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Accesibility4: React.FC<Accesibility4Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M20.889 22v-6.706H9.778l7.778-7.823-4.445-3.353L8.667 7.47m2.817 12.892a5.53 5.53 0 0 1-7.857 0 5.61 5.61 0 0 1 0-7.903 5.52 5.52 0 0 1 3.929-1.637M22 4.118c0 .617-.497 1.117-1.111 1.117s-1.111-.5-1.111-1.117c0-.618.497-1.118 1.11-1.118S22 3.5 22 4.118"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M20.889 22v-6.706H9.778l7.778-7.823-4.445-3.353L8.667 7.47m2.817 12.892a5.53 5.53 0 0 1-7.857 0 5.61 5.61 0 0 1 0-7.903 5.52 5.52 0 0 1 3.929-1.637M22 4.118c0 .617-.497 1.117-1.111 1.117s-1.111-.5-1.111-1.117c0-.618.497-1.118 1.11-1.118S22 3.5 22 4.118"/></svg>
 );
 
 export default Accesibility4;

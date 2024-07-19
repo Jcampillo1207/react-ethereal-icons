@@ -28,7 +28,7 @@ interface Warehouse2OpenProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Warehouse2Open: React.FC<Warehouse2OpenProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M22 9.132V21a1 1 0 0 1-1 1h-3V12a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v10H3a1 1 0 0 1-1-1V9.132a2 2 0 0 1 .971-1.715L12 2l9.029 5.417A2 2 0 0 1 22 9.132"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M22 9.132V21a1 1 0 0 1-1 1h-3V12a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v10H3a1 1 0 0 1-1-1V9.132a2 2 0 0 1 .971-1.715L12 2l9.029 5.417A2 2 0 0 1 22 9.132"/></svg>
 );
 
 export default Warehouse2Open;

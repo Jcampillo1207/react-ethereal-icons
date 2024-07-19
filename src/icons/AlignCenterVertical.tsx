@@ -28,7 +28,7 @@ interface AlignCenterVerticalProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const AlignCenterVertical: React.FC<AlignCenterVerticalProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 22V2M8 4H6a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2m0 4H4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h4m8 0h4a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-4m0-4h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 22V2M8 4H6a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2m0 4H4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h4m8 0h4a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-4m0-4h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2"/></svg>
 );
 
 export default AlignCenterVertical;

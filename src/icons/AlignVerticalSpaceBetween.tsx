@@ -28,7 +28,7 @@ interface AlignVerticalSpaceBetweenProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const AlignVerticalSpaceBetween: React.FC<AlignVerticalSpaceBetweenProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M19 21H5m14 0h3m-3 0v-4a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v4m0 0H2M17 3H7m10 0h5m-5 0v4a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V3m0 0H2"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M19 21H5m14 0h3m-3 0v-4a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v4m0 0H2M17 3H7m10 0h5m-5 0v4a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V3m0 0H2"/></svg>
 );
 
 export default AlignVerticalSpaceBetween;

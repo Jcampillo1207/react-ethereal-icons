@@ -28,7 +28,7 @@ interface Warehouse1Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Warehouse1: React.FC<Warehouse1Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M6 22H3a1 1 0 0 1-1-1V9.132a2 2 0 0 1 .971-1.715L12 2l9.029 5.417A2 2 0 0 1 22 9.132V21a1 1 0 0 1-1 1h-3M6 22v-5.5M6 22h12m0 0v-5.5M11 7h2m5 9.5V11H6v5.5m12 0H6"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M6 22H3a1 1 0 0 1-1-1V9.132a2 2 0 0 1 .971-1.715L12 2l9.029 5.417A2 2 0 0 1 22 9.132V21a1 1 0 0 1-1 1h-3M6 22v-5.5M6 22h12m0 0v-5.5M11 7h2m5 9.5V11H6v5.5m12 0H6"/></svg>
 );
 
 export default Warehouse1;

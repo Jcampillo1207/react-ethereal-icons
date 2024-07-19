@@ -28,7 +28,7 @@ interface Apple2Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Apple2: React.FC<Apple2Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 7S8 5 6 5s-4 2-4 5 2 12 5 12 2.5-1 5-1 2 1 5 1 5-9 5-12-2-5-4-5-6 2-6 2m0 0c.044-2.682-.17-3.975-2-5M9 9c-2.253-.226-2.945.317-3 3"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 7S8 5 6 5s-4 2-4 5 2 12 5 12 2.5-1 5-1 2 1 5 1 5-9 5-12-2-5-4-5-6 2-6 2m0 0c.044-2.682-.17-3.975-2-5M9 9c-2.253-.226-2.945.317-3 3"/></svg>
 );
 
 export default Apple2;

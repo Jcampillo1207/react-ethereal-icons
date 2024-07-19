@@ -28,7 +28,7 @@ interface AirplaneLanding2Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const AirplaneLanding2: React.FC<AirplaneLanding2Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M18.807 3.621 21.292 3l.743 5.058a2 2 0 0 1-1.45 2.22L14.291 12l2 3-2.03.507c-1.652.252-2.454.134-3.53-.807L9.292 13l-5 1c-1.157.083-2.33-.887-2-2 .723-2.44 3.003-3.6 5-4l10-1V5.562a2 2 0 0 1 1.515-1.94M18.292 21h-16"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M18.807 3.621 21.292 3l.743 5.058a2 2 0 0 1-1.45 2.22L14.291 12l2 3-2.03.507c-1.652.252-2.454.134-3.53-.807L9.292 13l-5 1c-1.157.083-2.33-.887-2-2 .723-2.44 3.003-3.6 5-4l10-1V5.562a2 2 0 0 1 1.515-1.94M18.292 21h-16"/></svg>
 );
 
 export default AirplaneLanding2;

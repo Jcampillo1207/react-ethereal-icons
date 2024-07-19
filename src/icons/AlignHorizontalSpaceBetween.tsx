@@ -28,7 +28,7 @@ interface AlignHorizontalSpaceBetweenProps extends React.SVGProps<SVGSVGElement>
 }
 
 const AlignHorizontalSpaceBetween: React.FC<AlignHorizontalSpaceBetweenProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M3 19V5m0 14v3m0-3h4a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H3m0 0V2m18 15V7m0 10v5m0-5h-4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h4m0 0V2"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M3 19V5m0 14v3m0-3h4a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H3m0 0V2m18 15V7m0 10v5m0-5h-4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h4m0 0V2"/></svg>
 );
 
 export default AlignHorizontalSpaceBetween;

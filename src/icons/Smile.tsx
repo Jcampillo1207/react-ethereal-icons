@@ -28,7 +28,7 @@ interface SmileProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Smile: React.FC<SmileProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M9 8h.01M7 13a7.07 7.07 0 0 0 10 0m-2-5h.01m4.061 11.071c3.905-3.905 3.905-10.237 0-14.142s-10.237-3.905-14.142 0-3.905 10.237 0 14.142 10.237 3.905 14.142 0"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M9 8h.01M7 13a7.07 7.07 0 0 0 10 0m-2-5h.01m4.061 11.071c3.905-3.905 3.905-10.237 0-14.142s-10.237-3.905-14.142 0-3.905 10.237 0 14.142 10.237 3.905 14.142 0"/></svg>
 );
 
 export default Smile;

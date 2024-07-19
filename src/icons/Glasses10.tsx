@@ -28,7 +28,7 @@ interface Glasses10Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Glasses10: React.FC<Glasses10Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m12 13-1.804 3.608A4.326 4.326 0 0 1 2 14.675V12m10 1 1.804 3.608A4.326 4.326 0 0 0 22 14.675V12m-10 1 .187-.056A25.4 25.4 0 0 1 22 12v0m-10 1-.187-.056A25.4 25.4 0 0 0 2 12v0m0 0V7.828a2 2 0 0 1 .586-1.414L4 5m18 7V7.828a2 2 0 0 0-.586-1.414L20 5"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m12 13-1.804 3.608A4.326 4.326 0 0 1 2 14.675V12m10 1 1.804 3.608A4.326 4.326 0 0 0 22 14.675V12m-10 1 .187-.056A25.4 25.4 0 0 1 22 12v0m-10 1-.187-.056A25.4 25.4 0 0 0 2 12v0m0 0V7.828a2 2 0 0 1 .586-1.414L4 5m18 7V7.828a2 2 0 0 0-.586-1.414L20 5"/></svg>
 );
 
 export default Glasses10;

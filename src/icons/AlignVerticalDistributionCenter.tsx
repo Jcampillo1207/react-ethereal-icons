@@ -28,7 +28,7 @@ interface AlignVerticalDistributionCenterProps extends React.SVGProps<SVGSVGElem
 }
 
 const AlignVerticalDistributionCenter: React.FC<AlignVerticalDistributionCenterProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M8 7v1a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V7M8 7V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1M8 7H2m14 0h6m0 10h-3m0 0v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v1m14 0v1a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-1m0 0H2"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M8 7v1a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V7M8 7V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1M8 7H2m14 0h6m0 10h-3m0 0v-1a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v1m14 0v1a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-1m0 0H2"/></svg>
 );
 
 export default AlignVerticalDistributionCenter;

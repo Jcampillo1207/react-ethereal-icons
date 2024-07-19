@@ -28,7 +28,7 @@ interface PanelLeftCloseProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const PanelLeftClose: React.FC<PanelLeftCloseProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M8.667 2v20M17 8l-4 4 4 4m5-11.778v15.556A2.22 2.22 0 0 1 19.778 22H4.222A2.22 2.22 0 0 1 2 19.778V4.222C2 2.995 2.995 2 4.222 2h15.556C21.005 2 22 2.995 22 4.222"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M8.667 2v20M17 8l-4 4 4 4m5-11.778v15.556A2.22 2.22 0 0 1 19.778 22H4.222A2.22 2.22 0 0 1 2 19.778V4.222C2 2.995 2.995 2 4.222 2h15.556C21.005 2 22 2.995 22 4.222"/></svg>
 );
 
 export default PanelLeftClose;

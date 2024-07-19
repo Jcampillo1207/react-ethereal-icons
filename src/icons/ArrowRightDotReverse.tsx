@@ -28,7 +28,7 @@ interface ArrowRightDotReverseProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const ArrowRightDotReverse: React.FC<ArrowRightDotReverseProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M8 12h14m0 0-7 7m7-7-7-7M3 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M8 12h14m0 0-7 7m7-7-7-7M3 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/></svg>
 );
 
 export default ArrowRightDotReverse;

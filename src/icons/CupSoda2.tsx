@@ -28,7 +28,7 @@ interface CupSoda2Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const CupSoda2: React.FC<CupSoda2Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M6 8H5m1 0h6M6 8l.714 5M18 8h1m-1 0h-6m6 0-1 7m-5-7 1-6h2M6.714 13 8 22h8l1-7M6.714 13h1.872c.905 0 1.774.36 2.414 1s1.509 1 2.414 1H17"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M6 8H5m1 0h6M6 8l.714 5M18 8h1m-1 0h-6m6 0-1 7m-5-7 1-6h2M6.714 13 8 22h8l1-7M6.714 13h1.872c.905 0 1.774.36 2.414 1s1.509 1 2.414 1H17"/></svg>
 );
 
 export default CupSoda2;

@@ -28,7 +28,7 @@ interface Badge4EuroProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Badge4Euro: React.FC<Badge4EuroProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M16.444 15.143c-1.779 1.735-4.664 1.735-6.443 0A4.38 4.38 0 0 1 8.667 12m0 0c0-1.137.444-2.275 1.334-3.143 1.78-1.735 4.664-1.735 6.443 0M8.667 12H6.444m2.223 0h4.444M2 7.556v8.888l3.889 3.89L12 22l6.111-1.667L22 16.444V7.556l-3.889-3.89L12 2 5.889 3.667z"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M16.444 15.143c-1.779 1.735-4.664 1.735-6.443 0A4.38 4.38 0 0 1 8.667 12m0 0c0-1.137.444-2.275 1.334-3.143 1.78-1.735 4.664-1.735 6.443 0M8.667 12H6.444m2.223 0h4.444M2 7.556v8.888l3.889 3.89L12 22l6.111-1.667L22 16.444V7.556l-3.889-3.89L12 2 5.889 3.667z"/></svg>
 );
 
 export default Badge4Euro;

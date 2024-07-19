@@ -28,7 +28,7 @@ interface AlignVerticalJustifyStartProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const AlignVerticalJustifyStart: React.FC<AlignVerticalJustifyStartProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M22 2H2m2 18v-2a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2m3-10V8a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M22 2H2m2 18v-2a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2m3-10V8a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2"/></svg>
 );
 
 export default AlignVerticalJustifyStart;

@@ -28,7 +28,7 @@ interface AirplaneFrontProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const AirplaneFront: React.FC<AirplaneFrontProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 15h.009M12 10.429c-2.481 0-3.38 2.23-3.889 4.489M12 10.428c2.481 0 3.38 2.232 3.889 4.49M12 10.428V5m-3.889 9.918c-.645 2.864 1.63 4.163 3.889 4.078 2.259.085 4.535-1.214 3.889-4.078m-7.778 0L4 15.646m11.889-.728 4.111.728M2 16l2-.354m0 0V18m18-2-2-.354m0 0V18"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 15h.009M12 10.429c-2.481 0-3.38 2.23-3.889 4.489M12 10.428c2.481 0 3.38 2.232 3.889 4.49M12 10.428V5m-3.889 9.918c-.645 2.864 1.63 4.163 3.889 4.078 2.259.085 4.535-1.214 3.889-4.078m-7.778 0L4 15.646m11.889-.728 4.111.728M2 16l2-.354m0 0V18m18-2-2-.354m0 0V18"/></svg>
 );
 
 export default AirplaneFront;

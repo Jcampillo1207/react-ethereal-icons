@@ -28,7 +28,7 @@ interface PlayProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Play: React.FC<PlayProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linejoin="round" stroke- d="m5.932 3.543 12.705 6.687c1.425.75 1.425 2.79 0 3.54L5.931 20.457C4.6 21.158 3 20.192 3 18.687V5.313c0-1.505 1.6-2.471 2.932-1.77Z"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linejoin="round" stroke- d="m5.932 3.543 12.705 6.687c1.425.75 1.425 2.79 0 3.54L5.931 20.457C4.6 21.158 3 20.192 3 18.687V5.313c0-1.505 1.6-2.471 2.932-1.77Z"/></svg>
 );
 
 export default Play;

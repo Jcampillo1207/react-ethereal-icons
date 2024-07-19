@@ -28,7 +28,7 @@ interface Airdrop1Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Airdrop1: React.FC<Airdrop1Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M7.407 15.86a6 6 0 1 1 9.186 0m-12.02 2.835A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2.572 6.695M12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M6 22l6-5 6 5z"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M7.407 15.86a6 6 0 1 1 9.186 0m-12.02 2.835A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2.572 6.695M12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M6 22l6-5 6 5z"/></svg>
 );
 
 export default Airdrop1;

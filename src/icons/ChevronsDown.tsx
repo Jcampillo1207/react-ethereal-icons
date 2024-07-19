@@ -28,7 +28,7 @@ interface ChevronsDownProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const ChevronsDown: React.FC<ChevronsDownProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m6 13 6 5 6-5M6 6l6 5 6-5"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m6 13 6 5 6-5M6 6l6 5 6-5"/></svg>
 );
 
 export default ChevronsDown;

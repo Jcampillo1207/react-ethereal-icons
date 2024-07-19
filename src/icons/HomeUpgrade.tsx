@@ -28,7 +28,7 @@ interface HomeUpgradeProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const HomeUpgrade: React.FC<HomeUpgradeProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M8 22H5.694a2 2 0 0 1-1.973-1.671l-1.528-9.171a2 2 0 0 1 .723-1.891L10.751 3a2 2 0 0 1 2.498 0l7.835 6.267a2 2 0 0 1 .723 1.89L20.28 20.33A2 2 0 0 1 18.306 22H14a2 2 0 0 1-2-2v-9m0 0-3 3m3-3 3 3"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M8 22H5.694a2 2 0 0 1-1.973-1.671l-1.528-9.171a2 2 0 0 1 .723-1.891L10.751 3a2 2 0 0 1 2.498 0l7.835 6.267a2 2 0 0 1 .723 1.89L20.28 20.33A2 2 0 0 1 18.306 22H14a2 2 0 0 1-2-2v-9m0 0-3 3m3-3 3 3"/></svg>
 );
 
 export default HomeUpgrade;

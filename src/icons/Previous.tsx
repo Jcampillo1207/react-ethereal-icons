@@ -28,7 +28,7 @@ interface PreviousProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Previous: React.FC<PreviousProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linejoin="round" stroke- d="m18.059 18.431-8.75-4.666c-1.412-.753-1.412-2.777 0-3.53l8.75-4.666C19.39 4.859 21 5.824 21 7.333v9.334c0 1.51-1.609 2.475-2.941 1.764Z"/><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M3 19V5"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linejoin="round" stroke- d="m18.059 18.431-8.75-4.666c-1.412-.753-1.412-2.777 0-3.53l8.75-4.666C19.39 4.859 21 5.824 21 7.333v9.334c0 1.51-1.609 2.475-2.941 1.764Z"/><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M3 19V5"/></svg>
 );
 
 export default Previous;

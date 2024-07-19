@@ -28,7 +28,7 @@ interface Glasses12Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Glasses12: React.FC<Glasses12Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M2 14h6.5a1.5 1.5 0 0 1 1.5 1.5M2 14v3a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-1.5M2 14V8.828a2 2 0 0 1 .586-1.414L4 6m18 8h-6.5a1.5 1.5 0 0 0-1.5 1.5m8-1.5v3a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-1.5m8-1.5V8.828a2 2 0 0 0-.586-1.414L20 6m-10 9.5s0-2 2-2 2 2 2 2"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M2 14h6.5a1.5 1.5 0 0 1 1.5 1.5M2 14v3a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-1.5M2 14V8.828a2 2 0 0 1 .586-1.414L4 6m18 8h-6.5a1.5 1.5 0 0 0-1.5 1.5m8-1.5v3a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-1.5m8-1.5V8.828a2 2 0 0 0-.586-1.414L20 6m-10 9.5s0-2 2-2 2 2 2 2"/></svg>
 );
 
 export default Glasses12;

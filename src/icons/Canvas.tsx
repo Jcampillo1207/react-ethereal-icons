@@ -28,7 +28,7 @@ interface CanvasProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Canvas: React.FC<CanvasProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M22 17.5h-4c-4 0-9 1-12 1s-4-1-4-1v-12s1 1 4 1 8-1 12-1h4z"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M22 17.5h-4c-4 0-9 1-12 1s-4-1-4-1v-12s1 1 4 1 8-1 12-1h4z"/></svg>
 );
 
 export default Canvas;

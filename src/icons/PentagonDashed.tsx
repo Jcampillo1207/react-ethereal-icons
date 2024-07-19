@@ -28,7 +28,7 @@ interface PentagonDashedProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const PentagonDashed: React.FC<PentagonDashedProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round" stroke- d="M2.871 8.316a2.16 2.16 0 0 0-.747 2.447l2.99 9.68C5.433 21.332 6.18 22 7.141 22h9.716c.961 0 1.708-.668 2.029-1.558l2.99-9.679c.32-.89 0-1.891-.748-2.447l-7.901-5.897A2.18 2.18 0 0 0 11.947 2a2.18 2.18 0 0 0-1.282.419z"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round" stroke- d="M2.871 8.316a2.16 2.16 0 0 0-.747 2.447l2.99 9.68C5.433 21.332 6.18 22 7.141 22h9.716c.961 0 1.708-.668 2.029-1.558l2.99-9.679c.32-.89 0-1.891-.748-2.447l-7.901-5.897A2.18 2.18 0 0 0 11.947 2a2.18 2.18 0 0 0-1.282.419z"/></svg>
 );
 
 export default PentagonDashed;

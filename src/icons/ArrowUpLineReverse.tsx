@@ -28,7 +28,7 @@ interface ArrowUpLineReverseProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const ArrowUpLineReverse: React.FC<ArrowUpLineReverseProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 7v14m0-14 6 6m-6-6-6 6M5 3h14"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 7v14m0-14 6 6m-6-6-6 6M5 3h14"/></svg>
 );
 
 export default ArrowUpLineReverse;

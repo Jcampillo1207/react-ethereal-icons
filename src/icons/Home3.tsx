@@ -28,7 +28,7 @@ interface Home3Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Home3: React.FC<Home3Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M10 18h4m-2 4h6.306a2 2 0 0 0 1.973-1.671l1.528-9.171a2 2 0 0 0-.723-1.891L13.249 3a2 2 0 0 0-2.498 0L2.916 9.267a2 2 0 0 0-.723 1.89L3.72 20.33A2 2 0 0 0 5.694 22z"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M10 18h4m-2 4h6.306a2 2 0 0 0 1.973-1.671l1.528-9.171a2 2 0 0 0-.723-1.891L13.249 3a2 2 0 0 0-2.498 0L2.916 9.267a2 2 0 0 0-.723 1.89L3.72 20.33A2 2 0 0 0 5.694 22z"/></svg>
 );
 
 export default Home3;

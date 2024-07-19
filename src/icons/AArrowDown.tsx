@@ -28,7 +28,7 @@ interface AArrowDownProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const AArrowDown: React.FC<AArrowDownProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m2 17 1.2-3m6.8 3-1.2-3m-5.6 0L6 7l2.8 7m-5.6 0h5.6m9.2 3 4-4m-4 4-4-4m4 4V7"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m2 17 1.2-3m6.8 3-1.2-3m-5.6 0L6 7l2.8 7m-5.6 0h5.6m9.2 3 4-4m-4 4-4-4m4 4V7"/></svg>
 );
 
 export default AArrowDown;

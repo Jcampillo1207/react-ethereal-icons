@@ -28,7 +28,7 @@ interface EtherealLogoProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const EtherealLogo: React.FC<EtherealLogoProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill={color1 ? color1 : "none"}><path fill={color2 ? color2 : "#735CFF"} d="M17.218 6.782a9.5 9.5 0 0 1 0 13.436 9.5 9.5 0 1 1 0-13.435"/><path fill={color1 ? color1 : "#61FFFF"} d="M21.096 2.904a6.5 6.5 0 1 1-9.192 9.192 6.5 6.5 0 0 1 9.192-9.192" opacity=".5"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill={color1 ? color1 : "none"}><path fill={color2 ? color2 : "#735CFF"} d="M17.218 6.782a9.5 9.5 0 0 1 0 13.436 9.5 9.5 0 1 1 0-13.435"/><path fill={color1 ? color1 : "#61FFFF"} d="M21.096 2.904a6.5 6.5 0 1 1-9.192 9.192 6.5 6.5 0 0 1 9.192-9.192" opacity=".5"/></svg>
 );
 
 export default EtherealLogo;

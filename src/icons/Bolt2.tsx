@@ -28,7 +28,7 @@ interface Bolt2Props extends React.SVGProps<SVGSVGElement> {
 }
 
 const Bolt2: React.FC<Bolt2Props> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m17.794 19.964 4-6.928a2 2 0 0 0 0-1.998L17.73 4.074a2 2 0 0 0-1.732-1l-8.062-.036a2 2 0 0 0-1.731.998l-4 6.928a2 2 0 0 0 0 1.998l4.063 6.965a2 2 0 0 0 1.732 1l8.062.035a2 2 0 0 0 1.731-.998"/><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M10.5 14.598a3 3 0 1 0 3-5.196 3 3 0 0 0-3 5.196"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m17.794 19.964 4-6.928a2 2 0 0 0 0-1.998L17.73 4.074a2 2 0 0 0-1.732-1l-8.062-.036a2 2 0 0 0-1.731.998l-4 6.928a2 2 0 0 0 0 1.998l4.063 6.965a2 2 0 0 0 1.732 1l8.062.035a2 2 0 0 0 1.731-.998"/><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M10.5 14.598a3 3 0 1 0 3-5.196 3 3 0 0 0-3 5.196"/></svg>
 );
 
 export default Bolt2;

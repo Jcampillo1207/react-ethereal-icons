@@ -28,7 +28,7 @@ interface HalfMoonStarsProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const HalfMoonStars: React.FC<HalfMoonStarsProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M18 4h2m0 0h2m-2 0V2m0 2v2m-6 4h2m0 0h2m-2 0V8m0 2v2m3.071 7.071c-3.905 3.905-10.237 3.905-14.142 0s-3.905-10.237 0-14.142c1.18-1.18 3.082-2.504 4.571-2.97-1.648 1.647-2.958 4.497-2.958 6.828a8.787 8.787 0 0 0 8.786 8.787c2.33 0 5.066-1.426 6.714-3.074-.467 1.49-1.79 3.391-2.97 4.571"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M18 4h2m0 0h2m-2 0V2m0 2v2m-6 4h2m0 0h2m-2 0V8m0 2v2m3.071 7.071c-3.905 3.905-10.237 3.905-14.142 0s-3.905-10.237 0-14.142c1.18-1.18 3.082-2.504 4.571-2.97-1.648 1.647-2.958 4.497-2.958 6.828a8.787 8.787 0 0 0 8.786 8.787c2.33 0 5.066-1.426 6.714-3.074-.467 1.49-1.79 3.391-2.97 4.571"/></svg>
 );
 
 export default HalfMoonStars;

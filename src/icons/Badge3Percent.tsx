@@ -28,7 +28,7 @@ interface Badge3PercentProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Badge3Percent: React.FC<Badge3PercentProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m15.333 8.667-6.666 6.666m0-6.666h.01m6.656 6.666h.011M22 12l-2.778-7.222L12 2 4.778 4.778 2 12l2.778 7.222L12 22l7.222-2.778z"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m15.333 8.667-6.666 6.666m0-6.666h.01m6.656 6.666h.011M22 12l-2.778-7.222L12 2 4.778 4.778 2 12l2.778 7.222L12 22l7.222-2.778z"/></svg>
 );
 
 export default Badge3Percent;

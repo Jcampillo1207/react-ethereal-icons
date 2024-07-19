@@ -28,7 +28,7 @@ interface ArrowDownAZProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const ArrowDownAZ: React.FC<ArrowDownAZProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-foreground`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m3 16 4 4m0 0 4-4m-4 4V4m13 4h-5m5 0v2m0-2V6s0-2-2.5-2S15 6 15 6v2m0 0v2m0 4h5l-5 6h5"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m3 16 4 4m0 0 4-4m-4 4V4m13 4h-5m5 0v2m0-2V6s0-2-2.5-2S15 6 15 6v2m0 0v2m0 4h5l-5 6h5"/></svg>
 );
 
 export default ArrowDownAZ;
