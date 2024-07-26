@@ -3,8 +3,8 @@ import React from 'react';
 
 /**
  * @component
- * @name Airdrop
- * @description Automatically generated SVG icon component for Airdrop.
+ * @name Hospital
+ * @description Automatically generated SVG icon component for Hospital.
  * @param {object} props - SVG component props, including any valid SVG attribute.
  * @param {number} [props.size=24] - Icon size.
  * @param {string} [props.color] - Icon color.
@@ -18,7 +18,7 @@ import React from 'react';
  * @returns {JSX.Element} JSX element representing the SVG icon.
  */
 
-interface AirdropProps extends React.SVGProps<SVGSVGElement> {
+interface HospitalProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   color?: string;
   strokeWidth?: number;
@@ -27,9 +27,9 @@ interface AirdropProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
 }
 
-const Airdrop: React.FC<AirdropProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M7.407 15.86a6 6 0 1 1 9.186 0m-12.02 2.835A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2.572 6.695M12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M6 22l6-5 6 5z"/></svg>
+const Hospital: React.FC<HospitalProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M12 6v4m2 4h-4m4 4h-4m4-10h-4m8 4h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h2m12 13V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v18"/></svg>
 );
 
-export default Airdrop;
+export default Hospital;
   

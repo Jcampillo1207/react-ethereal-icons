@@ -3,8 +3,8 @@ import React from 'react';
 
 /**
  * @component
- * @name Airdrop
- * @description Automatically generated SVG icon component for Airdrop.
+ * @name ShowerHead
+ * @description Automatically generated SVG icon component for ShowerHead.
  * @param {object} props - SVG component props, including any valid SVG attribute.
  * @param {number} [props.size=24] - Icon size.
  * @param {string} [props.color] - Icon color.
@@ -18,7 +18,7 @@ import React from 'react';
  * @returns {JSX.Element} JSX element representing the SVG icon.
  */
 
-interface AirdropProps extends React.SVGProps<SVGSVGElement> {
+interface ShowerHeadProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   color?: string;
   strokeWidth?: number;
@@ -27,9 +27,9 @@ interface AirdropProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
 }
 
-const Airdrop: React.FC<AirdropProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M7.407 15.86a6 6 0 1 1 9.186 0m-12.02 2.835A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2.572 6.695M12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M6 22l6-5 6 5z"/></svg>
+const ShowerHead: React.FC<ShowerHeadProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="m4 4 2.5 2.5m7 0a4.95 4.95 0 0 0-7 7M15 5 5 15m9 2v.01M10 16v.01M13 13v.01M16 10v.01M11 20v.01M17 14v.01M20 11v.01"/></svg>
 );
 
-export default Airdrop;
+export default ShowerHead;
   

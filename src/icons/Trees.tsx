@@ -3,8 +3,8 @@ import React from 'react';
 
 /**
  * @component
- * @name Airdrop
- * @description Automatically generated SVG icon component for Airdrop.
+ * @name Trees
+ * @description Automatically generated SVG icon component for Trees.
  * @param {object} props - SVG component props, including any valid SVG attribute.
  * @param {number} [props.size=24] - Icon size.
  * @param {string} [props.color] - Icon color.
@@ -18,7 +18,7 @@ import React from 'react';
  * @returns {JSX.Element} JSX element representing the SVG icon.
  */
 
-interface AirdropProps extends React.SVGProps<SVGSVGElement> {
+interface TreesProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   color?: string;
   strokeWidth?: number;
@@ -27,9 +27,9 @@ interface AirdropProps extends React.SVGProps<SVGSVGElement> {
   className?: string;
 }
 
-const Airdrop: React.FC<AirdropProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M7.407 15.86a6 6 0 1 1 9.186 0m-12.02 2.835A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10a9.96 9.96 0 0 1-2.572 6.695M12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4M6 22l6-5 6 5z"/></svg>
+const Trees: React.FC<TreesProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M7 16v6m6-3v3m-1-3h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 1 1 6 0"/></svg>
 );
 
-export default Airdrop;
+export default Trees;
   
