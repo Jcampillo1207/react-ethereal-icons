@@ -28,7 +28,7 @@ interface PoolProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Pool: React.FC<PoolProps> = ({ size = 24, color, strokeWidth = 2, color1, color2, className, ...props }) => (
-  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M22 22h-1c-1.451 0-2.722-.859-3-2-.278 1.141-1.549 2-3 2s-2.722-.859-3-2c-.278 1.141-1.549 2-3 2s-2.722-.859-3-2c-.278 1.141-1.549 2-3 2H2M19 2l-.265.088c-1.32.44-1.98.66-2.357 1.184S16 4.492 16 5.883V16M11 2l-.265.088c-1.32.44-1.98.66-2.357 1.184S8 4.492 8 5.883V16M8 6h8m-8 4h8m-8 4h8"/></svg>
+  <svg className={`${className} text-inherit`} color={color} width={size} height={size} {...props} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"   fill="none"><path strokeWidth={strokeWidth} stroke={color ? color : "currentColor"} stroke-linecap="round" stroke-linejoin="round" stroke- d="M22 21h-1c-1.451 0-2.722-.859-3-2-.278 1.141-1.549 2-3 2s-2.722-.859-3-2c-.278 1.141-1.549 2-3 2s-2.722-.859-3-2c-.278 1.141-1.549 2-3 2H2M19 3l-.265.088c-1.32.44-1.98.66-2.357 1.184S16 5.492 16 6.883V17M11 3l-.265.088c-1.32.44-1.98.66-2.357 1.184S8 5.492 8 6.883V17M8 7h8m-8 4h8m-8 4h8"/></svg>
 );
 
 export default Pool;
