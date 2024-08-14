@@ -1,4 +1,5 @@
 export type IconName =
+  | "SpeedTrain"
   | "AArrowDown"
   | "AArrowUp"
   | "ACircle"
@@ -164,6 +165,10 @@ export type IconName =
   | "Bed2"
   | "BedSide"
   | "Billboard2"
+  | "BillboardBuilding"
+  | "BillboardBusStop"
+  | "BillboardUrban"
+  | "BillboardWall"
   | "Billboard"
   | "Bolt2"
   | "Bolt"
